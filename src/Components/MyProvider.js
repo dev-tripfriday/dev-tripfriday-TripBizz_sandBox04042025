@@ -118,13 +118,13 @@ const seatTypeObj = {
 };
 
 const firebaseConfig = {
-  apiKey: "AIzaSyB7JnBcB_jf_H65HyS86iFVoL1WwCnIbDI",
-  authDomain: "tripbizz.com",
-  projectId: "trav-biz",
-  storageBucket: "trav-biz.appspot.com",
-  messagingSenderId: "217583970561",
-  appId: "1:217583970561:web:c06d8142847a77af689300",
-  measurementId: "G-W8FRX38DD4",
+  apiKey: "AIzaSyCO0L6F5WZbtH7Um6sJQh3EXeU4yXPWdA8",
+  authDomain: "tripbizz-sandbox.firebaseapp.com",
+  projectId: "tripbizz-sandbox",
+  storageBucket: "tripbizz-sandbox.appspot.com",
+  messagingSenderId: "197605633859",
+  appId: "1:197605633859:web:0bd44687729bd9edd089f6",
+  measurementId: "G-VBBVE79Z1K",
 };
 
 if (!firebase.apps.length) {
