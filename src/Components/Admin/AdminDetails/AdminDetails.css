@@ -1,0 +1,698 @@
+.adminPage-block {
+  position: relative;
+}
+
+.admin-upload {
+  display: flex;
+  height: 75vh;
+  overflow-y: scroll;
+  align-items: center;
+  justify-content: center;
+}
+.admin-upload .tripsPage-totalPrice-Desktop {
+  display: flex;
+  border-radius: 0.8rem;
+  flex-direction: column;
+}
+.admin-upload .tripsPage-totalPrice-Desktop .tripsPage-totalPrice-section {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+.admin-upload .tripsPage-totalPrice-Desktop .tripsPage-totalPrice-section .tripsPage-roomDtls-room {
+  background-color: rgb(235, 235, 235);
+  padding: 10px;
+  border-radius: 0.8rem;
+  margin-bottom: 10px;
+}
+.admin-upload .tripsPage-totalPrice-Desktop .tripsPage-totalPrice-section .tripsPage-roomDtls-room .tripsPage-roomDtls-room-titleSection {
+  display: grid;
+  grid-template-columns: 4fr 1fr;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.admin-upload .tripsPage-totalPrice-Desktop .tripsPage-totalPrice-section .tripsPage-roomDtls-room .tripsPage-roomDtls-room-titleSection .tripsPage-roomDtls-room-type {
+  font-size: 12pt;
+  font-weight: bold;
+  color: #001219;
+}
+.admin-upload .tripsPage-totalPrice-Desktop .tripsPage-totalPrice-section .tripsPage-roomDtls-room .tripsPage-roomDtls-room-titleSection .tripsPage-roomDtls-room-price {
+  font-size: 12pt;
+  font-weight: bold;
+  color: #BB3E03;
+}
+.admin-upload .tripsPage-totalPrice-Desktop .tripsPage-totalPrice-section .tripsPage-roomDtls-room .tripsPage-roomDtls-room-titleSection .tripsPage-roomDtls-room-price .tripsPage-roomDtls-room-price-icon {
+  margin-right: 3px;
+}
+.admin-upload .tripsPage-totalPrice-Desktop .tripsPage-totalPrice-section .tripsPage-roomDtls-room .tripsPage-roomDtls-room-otherSection {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.admin-upload .tripsPage-totalPrice-Desktop .tripsPage-totalPrice-section .tripsPage-roomDtls-room .tripsPage-roomDtls-room-otherSection .tripsPage-roomDtls-room-meals {
+  font-size: 10pt;
+  font-weight: bold;
+  color: rgb(80, 80, 80);
+}
+.admin-upload .tripsPage-totalPrice-Desktop .tripsPage-totalPrice-section .tripsPage-roomDtls-room .tripsPage-roomDtls-room-otherSection .tripsPage-roomDtls-room-meals .tripsPage-roomDtls-room-meals-icon {
+  margin-right: 5px;
+  color: #001219;
+}
+.admin-upload .tripsPage-totalPrice-Desktop .tripsPage-totalPrice-section .tripsPage-roomDtls-room .tripsPage-roomDtls-room-otherSection .tripsPage-roomDtls-room-cancel {
+  font-size: 10pt;
+  font-weight: bold;
+  color: rgb(100, 100, 100);
+}
+.admin-upload .tripsPage-totalPrice-Desktop .tripsPage-totalPrice-section .tripsPage-roomDtls-room .tripsPage-roomDtls-room-otherSection .tripsPage-roomDtls-room-cancel .tripsPage-roomDtls-room-cancel-icon {
+  margin-right: 5px;
+  color: #001219;
+}
+.admin-upload .tripsPage-totalPrice-Desktop .tripsPage-totalPrice-section .tripsPage-totalPrice {
+  display: flex;
+  justify-content: space-between;
+}
+.admin-upload .tripsPage-totalPrice-Desktop .tripsPage-totalPrice-section .tripsPage-totalPrice .tripsPage-totalPrice-title {
+  font-size: 12pt;
+  font-weight: bold;
+  color: #001219;
+}
+.admin-upload .tripsPage-totalPrice-Desktop .tripsPage-totalPrice-section .tripsPage-totalPrice .tripsPage-totalPrice-price {
+  font-size: 12pt;
+  font-weight: bold;
+  color: #BB3E03;
+}
+.admin-upload .tripsPage-totalPrice-Desktop .tripsPage-totalPrice-section .tripsPage-totalPrice .tripsPage-totalPrice-price .tripsPage-totalPrice-price-icon {
+  margin-right: 5px;
+}
+.admin-upload .tripsPage-totalPrice-Desktop .tripsPage-totalPrice-sections {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.admin-upload .tripsPage-totalPrice-Desktop .tripsPage-totalPrice-sections .tripsPage-totalPrice-title {
+  font-size: 12pt;
+  font-weight: bold;
+  margin-right: 6pt;
+  color: #001219;
+}
+.admin-upload .tripsPage-totalPrice-Desktop .tripsPage-totalPrice-sections .tripsPage-totalPrice-price {
+  font-size: 12pt;
+  font-weight: bold;
+  color: #BB3E03;
+}
+.admin-upload .tripsPage-totalPrice-Desktop .tripsPage-totalPrice-sections .tripsPage-totalPrice-price .tripsPage-totalPrice-price-icon {
+  margin-right: 5px;
+}
+
+.hotel-note {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.adminPage-main-statusSave {
+  display: flex;
+  padding: 10px;
+}
+.adminPage-main-statusSave .adminPage-main-status {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 0.8rem;
+  padding: 2px 20px;
+}
+.adminPage-main-statusSave .adminPage-main-status .adminPage-main-status-text {
+  margin-right: 5px;
+  font-size: 12pt;
+  font-weight: 700;
+  color: #001219;
+}
+.adminPage-main-statusSave .adminPage-main-status .adminPage-status-btn {
+  position: relative;
+  display: inline-flex;
+  vertical-align: middle;
+  gap: 20px;
+}
+.adminPage-main-statusSave .adminPage-main-status .adminPage-status-btn select {
+  display: flex;
+  border: none;
+  padding: 10px;
+  border-radius: 0.8rem;
+  margin: 5px 10px;
+  cursor: pointer;
+}
+.adminPage-main-statusSave .adminPage-main-save {
+  margin: 0px 15px;
+}
+.adminPage-main-statusSave .adminPage-main-save button {
+  display: flex;
+  align-items: center;
+  font-size: 10pt;
+  padding: 10px 15px;
+  border: 2px solid #001219;
+  border-radius: 0.8rem;
+  background-color: #f5f5f5;
+}
+
+.hotel-file {
+  font-size: 10pt;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.adminPage-main-block {
+  min-height: 100vh;
+  padding-top: 50px;
+}
+.adminPage-main-block .adminPage-main-header {
+  background-color: #fff;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+}
+.adminPage-main-block .adminPage-main-header .adminPage-main-topHeader {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 10px 0;
+}
+.adminPage-main-block .adminPage-main-header .adminPage-main-topHeader .adminPage-main-search {
+  display: flex;
+  flex-direction: row;
+}
+.adminPage-main-block .adminPage-main-header .adminPage-main-topHeader .adminPage-main-search .adminPage-main-input {
+  position: relative;
+  margin: 10px 0px;
+}
+.adminPage-main-block .adminPage-main-header .adminPage-main-topHeader .adminPage-main-search .adminPage-main-input input {
+  border-top-left-radius: 0.8rem;
+  border-bottom-left-radius: 0.8rem;
+  padding: 5px 10px 5px 30px;
+  width: 12vw;
+  border: 2px solid #001219;
+}
+.adminPage-main-block .adminPage-main-header .adminPage-main-topHeader .adminPage-main-search .adminPage-main-input .adminPage-main-input-icon {
+  position: absolute;
+  top: 10px;
+  left: 6px;
+}
+.adminPage-main-block .adminPage-main-header .adminPage-main-topHeader .adminPage-main-search .adminPage-main-button {
+  padding: 10px 0px;
+}
+.adminPage-main-block .adminPage-main-header .adminPage-main-topHeader .adminPage-main-search .adminPage-main-button button {
+  padding: 7px 10px;
+  background-color: #001219;
+  border-top-right-radius: 0.8rem;
+  border-bottom-right-radius: 0.8rem;
+  color: #fff;
+  border: none;
+}
+.adminPage-main-block .adminPage-main-header .adminPage-main-topHeader .adminPage-main-notifications {
+  margin: 15px 30px;
+}
+.adminPage-main-block .adminPage-main-header .adminPage-main-topHeader .adminPage-main-notifications .adminPage-main-notifications-icon {
+  font-size: 20pt;
+}
+.adminPage-main-block .adminPage-main-header .adminPage-main-topHeader .adminPage-main-logout {
+  padding: 10px;
+}
+.adminPage-main-block .adminPage-main-header .adminPage-main-topHeader .adminPage-main-logout button {
+  padding: 12px 30px;
+  background-color: #001219;
+  border-radius: 0.8rem;
+  color: #fff;
+  border: none;
+}
+.adminPage-main-block .adminDetails-main-content {
+  padding-top: 14vh;
+  padding-left: 80px;
+  height: 92vh;
+  overflow: scroll;
+}
+.adminPage-main-block .adminDetails-main-content .adminPage-main-section {
+  width: 80%;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 0.8rem;
+  margin-bottom: 10px;
+  box-shadow: 0.04rem 0.06rem 0.4rem rgba(0, 0, 0, 0.171);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.adminPage-main-block .adminDetails-main-content .adminPage-main-section .adminPage-main-body {
+  display: flex;
+  flex-direction: column;
+}
+.adminPage-main-block .adminDetails-main-content .adminPage-main-section .adminPage-main-body .adminPage-main-body-name {
+  font-size: 13pt;
+  font-weight: bold;
+  color: #001219;
+  margin-bottom: 10px;
+}
+.adminPage-main-block .adminDetails-main-content .adminPage-main-section .adminPage-main-body .adminPage-main-body-trip {
+  font-size: 20pt;
+  color: #94D2BD;
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+.adminPage-main-block .adminDetails-main-content .adminPage-main-section .adminPage-main-body .adminPage-main-body-date {
+  font-size: 12pt;
+  font-weight: 700;
+  color: #001219;
+}
+.adminPage-main-block .adminDetails-main-content .adminPage-main-section .adminPage-main-totalPrice {
+  margin-right: 10px;
+  font-size: 14pt;
+  font-weight: bold;
+  color: #BB3E03;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.adminPage-main-block .adminDetails-main-content .adminPage-main-section .adminPage-main-totalPrice span {
+  color: black;
+}
+.adminPage-main-block .adminDetails-main-content .adminPage-main-section .adminPage-main-totalPrice .adminPage-main-totalPrice-icon {
+  margin-right: 5px;
+}
+.adminPage-main-block .adminDetails-main-content .adminPage-user-section {
+  width: 82%;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 0.8rem;
+  margin-bottom: 10px;
+  box-shadow: 0.04rem 0.06rem 0.4rem rgba(0, 0, 0, 0.171);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+}
+.adminPage-main-block .adminDetails-main-content .adminPage-user-section .adminPage-user-title {
+  font-size: 13pt;
+  font-weight: bold;
+  color: #001219;
+  margin-bottom: 10px;
+}
+.adminPage-main-block .adminDetails-main-content .adminPage-user-section .adminPage-user-body {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15pt;
+  width: 100%;
+}
+.adminPage-main-block .adminDetails-main-content .adminPage-user-section .adminPage-user-body .adminPage-user-body-title {
+  font-size: 12pt;
+}
+.adminPage-main-block .adminDetails-main-content .adminPage-user-section .adminPage-user-body .adminPage-user-body-title span {
+  font-weight: bold;
+  margin-right: 5pt;
+}
+.adminPage-main-block .adminDetails-main-content .tripDetails-box {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  padding: 10pt;
+}
+.adminPage-main-block .adminDetails-main-content .tripDetails-box .tripDetails-hotel .tripDetails-hotel-header {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.adminPage-main-block .adminDetails-main-content .tripDetails-box .tripDetails-hotel .hotel-card-total {
+  width: 90%;
+  box-shadow: 0.04rem 0.06rem 0.4rem rgba(0, 0, 0, 0.171);
+  border-radius: 0.8rem;
+  padding: 10px 20px;
+  margin: 15px 5px;
+}
+.adminPage-main-block .adminDetails-main-content .tripDetails-box .tripDetails-hotel .hotel-card-total .hotel-card {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 15px;
+  border-radius: 0.8rem;
+  padding: 10px;
+}
+.adminPage-main-block .adminDetails-main-content .tripDetails-box .tripDetails-hotel .hotel-card-total .hotel-card .hotel-card-img {
+  width: 8vw;
+  height: 8vw;
+  border-radius: 0.4rem;
+  overflow: hidden;
+  margin-right: 10px;
+}
+.adminPage-main-block .adminDetails-main-content .tripDetails-box .tripDetails-hotel .hotel-card-total .hotel-card .hotel-card-img img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+.adminPage-main-block .adminDetails-main-content .tripDetails-box .tripDetails-hotel .hotel-card-total .hotel-card .hotel-card-details .hotel-card-details-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10pt;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+  flex-wrap: wrap;
+}
+.adminPage-main-block .adminDetails-main-content .tripDetails-box .tripDetails-hotel .hotel-card-total .hotel-card .hotel-card-name {
+  font-size: 13pt;
+  font-weight: bold;
+  margin-bottom: 8px;
+  display: inline;
+}
+.adminPage-main-block .adminDetails-main-content .tripDetails-box .tripDetails-hotel .hotel-card-total .hotel-card .hotel-card-rating {
+  font-size: 12pt;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+.adminPage-main-block .adminDetails-main-content .tripDetails-box .tripDetails-hotel .hotel-card-total .hotel-card .hotel-card-rating .hotel-card-rating-icon {
+  margin-right: 2px;
+  color: gold;
+}
+.adminPage-main-block .adminDetails-main-content .tripDetails-box .tripDetails-hotel .hotel-card-total .hotel-card .hotel-card-price {
+  font-size: 14pt;
+  font-weight: bold;
+  color: #BB3E03;
+}
+.adminPage-main-block .adminDetails-main-content .tripDetails-box .tripDetails-hotel .hotel-card-total .hotel-card .hotel-card-price .hotel-card-price-icon {
+  margin-right: 4px;
+}
+.adminPage-main-block .adminDetails-main-content .tripDetails-box .tripDetails-hotel .hotel-card-total .hotel-card .hotel-note {
+  display: flex;
+}
+.adminPage-main-block .adminDetails-main-content .tripDetails-box .tripDetails-hotel .hotel-card-total .hotel-card .hotel-note button {
+  padding: 10pt;
+  border-radius: 0.8rem;
+  font-size: 8pt;
+  font-weight: bold;
+  border: none;
+  outline: none;
+  color: #fff;
+  background-color: #001219;
+}
+.adminPage-main-block .adminDetails-main-content .tripDetails-box .tripDetails-hotel .hotel-card-total .hotel-card .hotel-card-hotelInfo-desc {
+  font-size: 10pt;
+  margin-bottom: 8px;
+  font-weight: bold;
+  color: rgb(80, 80, 80);
+}
+.adminPage-main-block .adminDetails-main-content .tripDetails-box .tripDetails-hotel .hotel-card-total .hotel-card .hotel-card-hotelInfo-desc .hotel-card-hotelInfo-desc-icon {
+  font-size: 11pt;
+  color: #001219;
+  margin-left: 5px;
+  cursor: pointer;
+}
+.adminPage-main-block .adminDetails-main-content .tripDetails-box .tripDetails-hotel .hotel-card-total .hotel-card .hotel-card-hotelInfo-btn button {
+  background-color: #001219;
+  border: none;
+  border-radius: 0.8rem;
+  color: white;
+  font-weight: bold;
+  font-size: 10pt;
+  padding: 4px 15px;
+}
+.adminPage-main-block .adminDetails-main-content .tripDetails-box .tripDetails-hotel .hotel-card-total .hotel-card-admin-details {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+  align-items: center;
+  margin: 10pt 0;
+}
+.adminPage-main-block .adminDetails-main-content .tripDetails-box .tripDetails-hotel .hotel-card-total .hotel-card-admin-details .hotel-card-upload {
+  cursor: pointer;
+  border: 1px solid #001219;
+  box-shadow: 0.04rem 0.06rem 0.4rem rgba(0, 0, 0, 0.171);
+  padding: 5px 10px;
+  border-radius: 0.8rem;
+  text-align: center;
+}
+.adminPage-main-block .adminDetails-main-content .tripDetails-box .tripDetails-hotel .hotel-card-total .hotel-card-admin-details .request-status {
+  font-size: 10pt;
+  display: flex;
+  flex-direction: column;
+  font-weight: bold;
+}
+.adminPage-main-block .adminDetails-main-content .tripDetails-box .tripDetails-hotel .hotel-card-total .hotel-card-admin-details .request-status span {
+  font-size: 8pt;
+  padding: 3pt 5pt;
+  font-weight: bold;
+  color: white;
+  border-radius: 0.8rem;
+  text-align: center;
+}
+.adminPage-main-block .adminDetails-main-content .tripDetails-box .tripDetails-hotel .hotel-card-total .hotel-card-admin-details-upload {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-items: center;
+  align-items: center;
+}
+.adminPage-main-block .adminDetails-main-content .tripDetails-box .tripDetails-hotel .hotel-card-total .hotel-card-admin-details-upload .upload-icon {
+  cursor: pointer;
+}
+.adminPage-main-block .adminDetails-main-content .tripDetails-box .tripDetails-hotel .hotel-card-total .hotelInfo-roomDtls-room {
+  background-color: whitesmoke;
+  padding: 10px;
+  border-radius: 0.8rem;
+  margin-bottom: 10px;
+}
+.adminPage-main-block .adminDetails-main-content .tripDetails-box .tripDetails-hotel .hotel-card-total .hotelInfo-roomDtls-room .hotelInfo-roomDtls-room-titleSection {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.adminPage-main-block .adminDetails-main-content .tripDetails-box .tripDetails-hotel .hotel-card-total .hotelInfo-roomDtls-room .hotelInfo-roomDtls-room-titleSection .hotelInfo-roomDtls-room-type {
+  font-size: 12pt;
+  font-weight: bold;
+  color: #001219;
+}
+.adminPage-main-block .adminDetails-main-content .tripDetails-box .tripDetails-hotel .hotel-card-total .hotelInfo-roomDtls-room .hotelInfo-roomDtls-room-titleSection .hotelInfo-roomDtls-room-price {
+  font-size: 12pt;
+  font-weight: bold;
+  color: #BB3E03;
+}
+.adminPage-main-block .adminDetails-main-content .tripDetails-box .tripDetails-hotel .hotel-card-total .hotelInfo-roomDtls-room .hotelInfo-roomDtls-room-titleSection .hotelInfo-roomDtls-room-price .hotelInfo-roomDtls-room-price-icon {
+  margin-right: 3px;
+}
+.adminPage-main-block .adminDetails-main-content .tripDetails-box .tripDetails-hotel .hotel-card-total .hotelInfo-roomDtls-room .hotelInfo-roomDtls-room-otherSection {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.adminPage-main-block .adminDetails-main-content .tripDetails-box .tripDetails-hotel .hotel-card-total .hotelInfo-roomDtls-room .hotelInfo-roomDtls-room-otherSection .hotelInfo-roomDtls-room-meals {
+  font-size: 10pt;
+  font-weight: bold;
+  color: rgb(80, 80, 80);
+}
+.adminPage-main-block .adminDetails-main-content .tripDetails-box .tripDetails-hotel .hotel-card-total .hotelInfo-roomDtls-room .hotelInfo-roomDtls-room-otherSection .hotelInfo-roomDtls-room-meals .hotelInfo-roomDtls-room-meals-icon {
+  margin-right: 5px;
+  color: #001219;
+}
+.adminPage-main-block .adminDetails-main-content .tripDetails-box .tripDetails-hotel .hotel-card-total .hotelInfo-roomDtls-room .hotelInfo-roomDtls-room-otherSection .hotelInfo-roomDtls-room-cancel {
+  font-size: 10pt;
+  font-weight: bold;
+  color: rgb(100, 100, 100);
+}
+.adminPage-main-block .adminDetails-main-content .tripDetails-box .tripDetails-hotel .hotel-card-total .hotelInfo-roomDtls-room .hotelInfo-roomDtls-room-otherSection .hotelInfo-roomDtls-room-cancel .hotelInfo-roomDtls-room-cancel-icon {
+  margin-right: 5px;
+  color: #001219;
+}
+.adminPage-main-block .adminDetails-main-content .tripDetails-box .tripDetails-hotel .hotel-card-total .hotelInfo-roomDtls-room .hotelInfo-roomDtls-room-inclusions {
+  margin-top: 10px;
+  font-size: 10pt;
+  font-weight: bold;
+  color: #001219;
+}
+
+.adminDetails-main-content::-webkit-scrollbar {
+  display: none; /* Hides the scrollbar */
+}
+
+.admin-upload-popup {
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+  align-items: center;
+  justify-content: center;
+}
+.admin-upload-popup div {
+  display: flex;
+  align-items: center;
+}
+.admin-upload-popup .admin-upload-file {
+  display: flex;
+  flex-direction: column;
+}
+.admin-upload-popup span {
+  font-size: 12pt;
+  font-weight: bolder;
+  text-align: left;
+}
+.admin-upload-popup input {
+  margin: 10px;
+  padding: 10px;
+  width: 20vw;
+}
+.admin-upload-popup textarea {
+  margin: 10px;
+  padding: 10px;
+  border-radius: 0.8rem;
+  border: 1px solid #001219;
+  width: 20vw;
+}
+.admin-upload-popup .spin {
+  padding: 10px 75px;
+  background: #001219;
+  border: none;
+  border-radius: 0.8rem;
+  color: white;
+  cursor: not-allowed;
+}
+.admin-upload-popup .spinner {
+  border: 4px solid #94D2BD;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-left: 4px solid #3498db;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  animation: spin 1s linear infinite;
+  margin-top: -8px;
+  margin-left: -8px;
+  display: inline-block;
+  border-width: 2px;
+  margin-top: 5px;
+  cursor: not-allowed;
+}
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.admin-upload-popup button {
+  background-color: #001219;
+  color: #f5f5f5;
+  border: none;
+  border-radius: 0.8rem;
+  width: 50%;
+  padding: 10px;
+}
+
+.admin-ticket-popup {
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+  align-items: center;
+  justify-content: center;
+}
+.admin-ticket-popup span {
+  font-size: 20pt;
+  font-weight: bolder;
+  text-align: left;
+}
+.admin-ticket-popup input {
+  padding: 8pt;
+  border-radius: 0.8rem;
+  margin: 10pt;
+}
+.admin-ticket-popup button {
+  background-color: #001219;
+  color: #f5f5f5;
+  border: none;
+  border-radius: 0.8rem;
+  width: 50%;
+  padding: 10px;
+}
+
+.hotel-ticket-cost span {
+  font-weight: bold;
+  color: #BB3E03;
+}
+
+.hotel-travellers button {
+  padding: 5px 10px;
+  border-radius: 0.8rem;
+  border: 1px solid #001219;
+  background: none;
+}
+
+.traveller-details-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  height: 70vh;
+  overflow: overlay;
+}
+.traveller-details-container .traveller-details-header {
+  font-size: 15pt;
+  font-weight: bolder;
+}
+.traveller-details-container .role-traveller-block {
+  border-radius: 8px;
+}
+.traveller-details-container .role-traveller-block .role-traveller-header {
+  font-size: 12pt;
+  font-weight: bold;
+}
+.traveller-details-container .role-traveller-block .role-traveller-box {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2.5pt;
+}
+.traveller-details-container .role-traveller-block .role-traveller-box div {
+  display: flex;
+  text-align: left;
+  font-size: 10pt;
+}
+.traveller-details-container .role-traveller-block .role-traveller-box div span {
+  font-weight: bold;
+  margin-left: 2pt;
+}
+
+.traveller-details-block {
+  border: 1px solid #94D2BD;
+  padding: 10pt;
+  border-radius: 8px;
+}
+
+.traveller-details-header {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10pt;
+}
+
+.traveller-details-box {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10pt;
+}
+
+.traveller-details-box div {
+  margin-bottom: 10px;
+}
+
+.traveller-details-box div .file {
+  cursor: pointer;
+}
+
+.traveller-details-box div .file:hover {
+  text-decoration: underline;
+}
+
+.traveller-details-box div span {
+  font-weight: bold;
+}/*# sourceMappingURL=AdminDetails.css.map */

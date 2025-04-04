@@ -1,0 +1,166 @@
+.commission-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  flex-wrap: wrap;
+  margin-left: 100px;
+  min-height: 100vh;
+  padding-top: 50px;
+}
+.commission-container .commission-main-tabs {
+  display: grid;
+  width: 35vw;
+  margin: 0 10vw;
+  gap: 10px;
+  border-radius: 0.8rem;
+  box-shadow: 0.04rem 0.06rem 0.4rem rgba(0, 0, 0, 0.17);
+  overflow: hidden;
+  padding: 15pt;
+  font-weight: bolder;
+  font-size: 20pt;
+}
+.commission-container .commission-main-tabs .commission-main-tabs-list {
+  cursor: pointer;
+  font-weight: 700;
+  padding: 15px 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.1s ease-in;
+  text-align: center;
+  height: 100%;
+  font-size: 10pt;
+}
+.commission-container .commission-main-tabs .commission-main-tabs-list-active {
+  background: #94D2BD;
+  color: #fff;
+}
+.commission-container .commission-flight-box {
+  display: flex;
+  flex-direction: column;
+  margin: 20pt 10pt;
+}
+.commission-container .commission-flight-box .commission-flight-header {
+  text-align: center;
+  font-size: 15pt;
+  font-weight: 500;
+}
+.commission-container .commission-flight-box .commission-flight-content {
+  display: flex;
+  flex-direction: column;
+}
+.commission-container .commission-flight-box .commission-flight-content .commission-flight-edit {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin: 10pt;
+}
+.commission-container .commission-flight-box .commission-flight-content .commission-flight-edit button {
+  border: 1px solid #001219;
+  background-color: #001219;
+  color: #fff;
+  border-radius: 0.8rem;
+  padding: 2pt 8pt;
+}
+.commission-container .commission-hotel-box {
+  display: flex;
+  flex-direction: column;
+  margin: 20pt 10pt;
+}
+.commission-container .commission-hotel-box .commission-hotel-header {
+  text-align: center;
+  font-size: 15pt;
+  font-weight: 500;
+}
+.commission-container .commission-hotel-box .commission-hotel-content {
+  display: flex;
+  flex-direction: column;
+}
+.commission-container .commission-hotel-box .commission-hotel-content .commission-hotel-edit {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin: 10pt;
+}
+.commission-container .commission-hotel-box .commission-hotel-content .commission-hotel-edit button {
+  border: 1px solid #001219;
+  background-color: #001219;
+  color: #fff;
+  border-radius: 0.8rem;
+  padding: 2pt 8pt;
+}
+
+.flightService-header {
+  font-size: 20pt;
+  font-weight: bolder;
+  text-align: center;
+}
+
+.flightServie-block {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.flightServie-block .flightService-type {
+  display: grid;
+  align-items: center;
+  gap: 10pt;
+  grid-template-columns: 1fr 1fr;
+  margin: 10pt;
+}
+.flightServie-block .flightService-type span {
+  font-size: 15pt;
+}
+.flightServie-block .flightService-type input {
+  border: 1px solid #001219;
+  border-radius: 0.8rem;
+  padding: 5pt 10pt;
+}
+.flightServie-block .flightService-submit button {
+  border: 1px solid #001219;
+  background-color: #001219;
+  color: #fff;
+  border-radius: 0.8rem;
+  padding: 5pt 10pt;
+}
+
+.hotelService-header {
+  font-size: 15pt;
+  font-weight: bolder;
+  text-align: center;
+}
+
+.hotelServie-block {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.hotelServie-block .hotelService-type {
+  display: grid;
+  align-items: center;
+  gap: 10pt;
+  grid-template-columns: 1fr 1fr;
+  margin: 10pt;
+}
+.hotelServie-block .hotelService-type span {
+  font-size: 12pt;
+}
+.hotelServie-block .hotelService-type input {
+  border: 1px solid #001219;
+  border-radius: 0.8rem;
+  padding: 5pt 10pt;
+  font-size: 12pt;
+}
+.hotelServie-block .hotelService-submit button {
+  border: 1px solid #001219;
+  background-color: #001219;
+  color: #fff;
+  border-radius: 0.8rem;
+  padding: 5pt 10pt;
+  font-size: 12pt;
+}/*# sourceMappingURL=CommissionSetting.css.map */

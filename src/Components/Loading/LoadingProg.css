@@ -1,0 +1,26 @@
+.loadingProg-block {
+  padding: 40px;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.loadingProg-section {
+  margin-bottom: 100px;
+  width: 100%;
+}
+
+.loadingProg-loader {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.loadingProg-loader-text {
+  font-size: 14pt;
+  font-weight: bold;
+  color: #001219;
+}/*# sourceMappingURL=LoadingProg.css.map */

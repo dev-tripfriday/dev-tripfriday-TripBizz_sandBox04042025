@@ -1,0 +1,2455 @@
+.tripDetails-header {
+  display: flex;
+  margin: 10px 20px;
+  flex-direction: column;
+}
+.tripDetails-header .tripDetails-download-report {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10pt;
+}
+.tripDetails-header .tripDetails-download-report button {
+  background-color: #001219;
+  border: none;
+  border-radius: 0.8rem;
+  color: white;
+  font-weight: bold;
+  font-size: 10pt;
+  padding: 4px 15px;
+}
+.tripDetails-header .tripDetails-header-name {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+.tripDetails-header .tripDetails-header-name span {
+  font-size: 10.5pt;
+  font-weight: bolder;
+}
+.tripDetails-header .tripDetails-header-name span span {
+  color: #94D2BD;
+}
+.tripDetails-header .tripDetails-header-name .trip-name {
+  font-size: 20pt;
+  font-weight: 900;
+}
+.tripDetails-header .tripDetails-header-date {
+  padding: 10px;
+  border-radius: 0.8rem;
+  background-color: #001219;
+  color: #f5f5f5;
+  width: 55%;
+}
+
+.tripDetails-box {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.info-icon {
+  font-size: 10pt;
+  cursor: pointer;
+  color: #001219;
+}
+
+.booking-popup {
+  height: 80vh;
+  width: 100%;
+}
+.tripDetails-box {
+  padding: 10pt;
+}
+.tripDetails-box .tripDetails-hotel-header {
+  font-size: 15pt;
+  font-weight: bolder;
+  margin: 10pt 0;
+}
+.tripDetails-box .hotel-card-total {
+  box-shadow: 0.04rem 0.06rem 0.4rem rgba(0, 0, 0, 0.171);
+  border-radius: 0.8rem;
+  padding-top: 15px;
+  margin: 10pt 0;
+}
+.tripDetails-box .hotel-card-total .timestamp {
+  padding: 3pt 10pt;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 10pt;
+}
+.tripDetails-box .hotel-card-total .timestamp span {
+  font-weight: bold;
+}
+.tripDetails-box .hotel-card-total .timestamp .delete-icon {
+  font-weight: bold;
+  color: #ff0000;
+  cursor: pointer;
+}
+.tripDetails-box .hotel-card-total .hotel-card {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 15px;
+  border-radius: 0.8rem;
+  padding: 10px 0px 10px 10px;
+}
+.tripDetails-box .hotel-card-total .hotel-card .hotel-card-img {
+  width: 30vw;
+  height: 30vw;
+  border-radius: 0.4rem;
+  overflow: hidden;
+  margin-right: 10px;
+}
+.tripDetails-box .hotel-card-total .hotel-card .hotel-card-img img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+.tripDetails-box .hotel-card-total .hotel-card .hotel-card-details {
+  width: 80%;
+}
+.tripDetails-box .hotel-card-total .hotel-card .hotel-card-details .hotelType {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.tripDetails-box .hotel-card-total .hotel-card .hotel-card-details .hotelType .hotel-card-download {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  border: 1px solid #001219;
+  border-radius: 0.8rem;
+  padding: 4pt;
+  font-size: 10pt;
+  font-weight: bolder;
+}
+.tripDetails-box .hotel-card-total .hotel-card .hotel-card-details .hotelType .hotelStatus {
+  font-size: 10pt;
+  padding: 5pt 8pt;
+  font-weight: bold;
+  color: white;
+  border-radius: 0.8rem;
+}
+.tripDetails-box .hotel-card-total .hotel-card .hotel-card-details .hotel-card-details-row {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+  flex-wrap: wrap;
+  margin: 10px;
+}
+.tripDetails-box .hotel-card-total .hotel-card .hotel-card-details .hotel-card-people {
+  margin: 10px;
+}
+.tripDetails-box .hotel-card-total .hotel-card .hotel-card-details .hotel-card-people span {
+  font-weight: bolder;
+}
+.tripDetails-box .hotel-card-total .hotel-card .hotel-card-header {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+.tripDetails-box .hotel-card-total .hotel-card .hotel-card-header .hotel-card-name {
+  font-size: 12pt;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+.tripDetails-box .hotel-card-total .hotel-card .hotel-card-header .hotelInfo-details-date {
+  font-size: 10pt;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: #94d2bd;
+  border-radius: 0.8rem 0rem 0rem 0.8rem;
+  padding: 5pt;
+}
+.tripDetails-box .hotel-card-total .hotel-card .hotel-card-header .hotelInfo-details-date span {
+  font-weight: bold;
+}
+.tripDetails-box .hotel-card-total .hotel-card .hotel-card-rating {
+  font-size: 12pt;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+.tripDetails-box .hotel-card-total .hotel-card .hotel-card-rating .hotel-card-rating-icon {
+  margin-right: 2px;
+  color: gold;
+}
+.tripDetails-box .hotel-card-total .hotel-card .hotel-card-price {
+  font-size: 14pt;
+  font-weight: bold;
+  color: #BB3E03;
+}
+.tripDetails-box .hotel-card-total .hotel-card .hotel-card-price .hotel-card-price-icon {
+  margin-right: 4px;
+}
+.tripDetails-box .hotel-card-total .hotel-card .hotel-card-hotelInfo-desc {
+  font-size: 10pt;
+  margin-bottom: 8px;
+  font-weight: bold;
+  color: rgb(80, 80, 80);
+}
+.tripDetails-box .hotel-card-total .hotel-card .hotel-card-hotelInfo-desc .hotel-card-hotelInfo-desc-icon {
+  font-size: 11pt;
+  color: #001219;
+  margin-left: 5px;
+  cursor: pointer;
+}
+.tripDetails-box .hotel-card-total .hotel-card .hotel-card-hotelInfo-btn button {
+  background-color: #001219;
+  border: none;
+  border-radius: 0.8rem;
+  color: white;
+  font-weight: bold;
+  font-size: 10pt;
+  padding: 4px 15px;
+}
+.tripDetails-box .hotel-card-total .hotelInfo-roomDtls-room {
+  background-color: whitesmoke;
+  padding: 10px;
+  border-radius: 0.8rem;
+  margin-bottom: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+  padding-left: 10px;
+}
+.tripDetails-box .hotel-card-total .hotelInfo-roomDtls-room .hotelInfo-roomDtls-room-titleSection {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.tripDetails-box .hotel-card-total .hotelInfo-roomDtls-room .hotelInfo-roomDtls-room-titleSection .hotelInfo-roomDtls-room-type {
+  font-size: 12pt;
+  font-weight: bold;
+  color: #001219;
+  width: 75%;
+}
+.tripDetails-box .hotel-card-total .hotelInfo-roomDtls-room .hotelInfo-roomDtls-room-titleSection .hotelInfo-roomDtls-room-price {
+  font-size: 10pt;
+  font-weight: bold;
+  color: #BB3E03;
+}
+.tripDetails-box .hotel-card-total .hotelInfo-roomDtls-room .hotelInfo-roomDtls-room-titleSection .hotelInfo-roomDtls-room-price .hotelInfo-roomDtls-room-price-icon {
+  margin-right: 3px;
+}
+.tripDetails-box .hotel-card-total .hotelInfo-roomDtls-room .hotelInfo-roomDtls-room-otherSection {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.tripDetails-box .hotel-card-total .hotelInfo-roomDtls-room .hotelInfo-roomDtls-room-otherSection .hotelInfo-roomDtls-room-meals {
+  font-size: 10pt;
+  font-weight: bold;
+  color: rgb(80, 80, 80);
+}
+.tripDetails-box .hotel-card-total .hotelInfo-roomDtls-room .hotelInfo-roomDtls-room-otherSection .hotelInfo-roomDtls-room-meals .hotelInfo-roomDtls-room-meals-icon {
+  margin-right: 5px;
+  color: #001219;
+}
+.tripDetails-box .hotel-card-total .hotelInfo-roomDtls-room .hotelInfo-roomDtls-room-otherSection .hotelInfo-roomDtls-room-cancel {
+  font-size: 10pt;
+  font-weight: bold;
+  color: rgb(100, 100, 100);
+}
+.tripDetails-box .hotel-card-total .hotelInfo-roomDtls-room .hotelInfo-roomDtls-room-otherSection .hotelInfo-roomDtls-room-cancel .hotelInfo-roomDtls-room-cancel-icon {
+  margin-right: 5px;
+  color: #001219;
+}
+.tripDetails-box .hotel-card-total .hotelInfo-roomDtls-room .hotelInfo-roomDtls-room-inclusions {
+  margin-top: 10px;
+  font-size: 10pt;
+  font-weight: bold;
+  color: #001219;
+}
+.tripDetails-box .tripsPage-createTrip {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10px;
+  width: 180px;
+}
+.tripDetails-box .tripsPage-createTrip button {
+  background-color: rgba(148, 210, 189, 0.1647058824);
+  border-radius: 8px;
+  padding: 4pt;
+  border: 0.1px solid #000000;
+  color: #001219;
+  width: 100%;
+  font-weight: bold;
+  font-size: 16px;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+}
+.tripDetails-box .expense-card {
+  display: flex;
+  box-shadow: 0.04rem 0.06rem 0.4rem rgba(0, 0, 0, 0.171);
+  border-radius: 0.8rem;
+  padding: 10pt 0 10pt 10pt;
+  width: 90%;
+}
+.tripDetails-box .expense-card .expense-card-img {
+  width: 10vw;
+  height: 8vw;
+  border-radius: 0.4rem;
+  overflow: hidden;
+  margin-right: 10px;
+}
+.tripDetails-box .expense-card .expense-card-img img {
+  -o-object-fit: contain;
+     object-fit: contain;
+  width: 100%;
+  height: 100%;
+}
+.tripDetails-box .expense-card .expense-card-details {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 10pt;
+}
+.tripDetails-box .expense-card .expense-card-details .expense-card-header {
+  display: flex;
+  justify-content: space-between;
+}
+.tripDetails-box .expense-card .expense-card-details .expense-card-header .expense-card-name {
+  font-size: 15pt;
+  font-weight: bold;
+}
+.tripDetails-box .expense-card .expense-card-details .expense-card-header .expense-details-date {
+  font-size: 10pt;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: #94d2bd;
+  border-radius: 0.8rem 0rem 0rem 0.8rem;
+  padding: 5pt;
+}
+.tripDetails-box .expense-card .expense-card-details .expense-card-header .expense-details-date span {
+  font-weight: bold;
+}
+.tripDetails-box .expense-card .expense-card-details .expense-card-desc {
+  display: flex;
+  justify-content: space-between;
+}
+.tripDetails-box .expense-card .expense-card-details .expense-card-desc .expense-card-people {
+  font-size: 12pt;
+  font-weight: bold;
+}
+.tripDetails-box .expense-card .expense-card-details .expense-card-desc .expense-card-people span {
+  font-weight: normal;
+}
+.tripDetails-box .expense-card .expense-card-details .expense-price {
+  font-size: 12pt;
+  font-weight: bold;
+  color: #BB3E03;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.tripDetails-box .expense-card .expense-card-details .expense-price span {
+  border-radius: 0.8rem;
+  border: 1px solid #001219;
+  color: #001219;
+  margin: 5pt;
+  padding: 3pt 6pt;
+  cursor: pointer;
+}
+.tripDetails-box .expense-card .expense-card-details .expense-price .expense-icon {
+  margin-right: 5px;
+}
+
+.tripDetails-box::after {
+  content: "";
+  display: block;
+  height: 12vh;
+}
+
+.tripsPage-totalPrice-Desktop {
+  display: flex;
+  border-radius: 0.8rem;
+  flex-direction: column;
+}
+.tripsPage-totalPrice-Desktop .tripsPage-totalPrice-section {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+.tripsPage-totalPrice-Desktop .tripsPage-totalPrice-section .tripsPage-roomDtls-room {
+  background-color: rgb(235, 235, 235);
+  padding: 10px;
+  border-radius: 0.8rem;
+  margin-bottom: 10px;
+}
+.tripsPage-totalPrice-Desktop .tripsPage-totalPrice-section .tripsPage-roomDtls-room .tripsPage-roomDtls-room-titleSection {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.tripsPage-totalPrice-Desktop .tripsPage-totalPrice-section .tripsPage-roomDtls-room .tripsPage-roomDtls-room-titleSection .tripsPage-roomDtls-room-type {
+  font-size: 12pt;
+  font-weight: bold;
+  color: #001219;
+}
+.tripsPage-totalPrice-Desktop .tripsPage-totalPrice-section .tripsPage-roomDtls-room .tripsPage-roomDtls-room-titleSection .tripsPage-roomDtls-room-price {
+  font-size: 12pt;
+  font-weight: bold;
+  color: #BB3E03;
+}
+.tripsPage-totalPrice-Desktop .tripsPage-totalPrice-section .tripsPage-roomDtls-room .tripsPage-roomDtls-room-titleSection .tripsPage-roomDtls-room-price .tripsPage-roomDtls-room-price-icon {
+  margin-right: 3px;
+}
+.tripsPage-totalPrice-Desktop .tripsPage-totalPrice-section .tripsPage-roomDtls-room .tripsPage-roomDtls-room-otherSection {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.tripsPage-totalPrice-Desktop .tripsPage-totalPrice-section .tripsPage-roomDtls-room .tripsPage-roomDtls-room-otherSection .tripsPage-roomDtls-room-meals {
+  font-size: 10pt;
+  font-weight: bold;
+  color: rgb(80, 80, 80);
+}
+.tripsPage-totalPrice-Desktop .tripsPage-totalPrice-section .tripsPage-roomDtls-room .tripsPage-roomDtls-room-otherSection .tripsPage-roomDtls-room-meals .tripsPage-roomDtls-room-meals-icon {
+  margin-right: 5px;
+  color: #001219;
+}
+.tripsPage-totalPrice-Desktop .tripsPage-totalPrice-section .tripsPage-roomDtls-room .tripsPage-roomDtls-room-otherSection .tripsPage-roomDtls-room-cancel {
+  font-size: 10pt;
+  font-weight: bold;
+  color: rgb(100, 100, 100);
+}
+.tripsPage-totalPrice-Desktop .tripsPage-totalPrice-section .tripsPage-roomDtls-room .tripsPage-roomDtls-room-otherSection .tripsPage-roomDtls-room-cancel .tripsPage-roomDtls-room-cancel-icon {
+  margin-right: 5px;
+  color: #001219;
+}
+.tripsPage-totalPrice-Desktop .tripsPage-totalPrice-section .tripsPage-totalPrice {
+  display: flex;
+  justify-content: space-between;
+}
+.tripsPage-totalPrice-Desktop .tripsPage-totalPrice-section .tripsPage-totalPrice .tripsPage-totalPrice-title {
+  font-size: 13pt;
+  font-weight: bold;
+  color: #001219;
+}
+.tripsPage-totalPrice-Desktop .tripsPage-totalPrice-section .tripsPage-totalPrice .tripsPage-totalPrice-price {
+  font-size: 15pt;
+  font-weight: bold;
+  color: #BB3E03;
+}
+.tripsPage-totalPrice-Desktop .tripsPage-totalPrice-section .tripsPage-totalPrice .tripsPage-totalPrice-price .tripsPage-totalPrice-price-icon {
+  margin-right: 5px;
+}
+.tripsPage-totalPrice-Desktop .tripsPage-totalPrice-sections {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.tripsPage-totalPrice-Desktop .tripsPage-totalPrice-sections .tripsPage-totalPrice-title {
+  font-size: 15pt;
+  font-weight: bold;
+  margin-right: 6pt;
+  color: #001219;
+}
+.tripsPage-totalPrice-Desktop .tripsPage-totalPrice-sections .tripsPage-totalPrice-price {
+  font-size: 15pt;
+  font-weight: bold;
+  color: #BB3E03;
+}
+.tripsPage-totalPrice-Desktop .tripsPage-totalPrice-sections .tripsPage-totalPrice-price .tripsPage-totalPrice-price-icon {
+  margin-right: 5px;
+}
+
+.tripDetails-header-back {
+  padding: 5px;
+  margin: 10px;
+}
+.tripDetails-header-back .tripDetails-header-back-icon {
+  cursor: pointer;
+}
+
+.delete-item span {
+  font-size: 12pt;
+}
+.delete-item div {
+  display: flex;
+  justify-content: space-around;
+  margin: 10pt;
+}
+.delete-item div button {
+  background-color: #001219;
+  border-radius: 0.8rem;
+  color: white;
+  border: none;
+  padding: 5pt 10pt;
+}
+.delete-item div .back {
+  background-color: #ececec;
+  color: #001219;
+}
+
+.tripDetails-add {
+  margin: 15px 0px;
+  margin-bottom: 5vw;
+  position: relative;
+}
+.tripDetails-add button {
+  background-color: #001219;
+  border-radius: 0.8rem;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+}
+.tripDetails-add .tripDetails-addTrips {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  box-shadow: 0.04rem 0.06rem 0.4rem rgba(0, 0, 0, 0.171);
+  padding: 10px 20px;
+  border-radius: 0.4rem;
+  transform: translate(-24%);
+}
+.tripDetails-add .tripDetails-addTrips span {
+  cursor: pointer;
+  border-bottom: 1px solid black;
+}
+
+.tripDetails-totalPrice-Mobile {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  box-shadow: 0.04rem 0.06rem 0.4rem rgba(0, 0, 0, 0.171);
+  background-color: white;
+  padding: 5px 10px;
+  justify-content: space-between;
+  align-items: center;
+}
+.tripDetails-totalPrice-Mobile .tripDetails-totalPrice-section-Mobile {
+  display: flex;
+  justify-content: space-between;
+}
+.tripDetails-totalPrice-Mobile .tripDetails-totalPrice-section-Mobile .tripDetails-totalPrice-title-Mobile {
+  font-size: 10pt;
+  font-weight: bold;
+  color: #001219;
+}
+.tripDetails-totalPrice-Mobile .tripDetails-totalPrice-section-Mobile .tripDetails-totalPrice-price-Mobile {
+  font-size: 10pt;
+  font-weight: bold;
+  color: #BB3E03;
+}
+.tripDetails-totalPrice-Mobile .tripDetails-totalPrice-section-Mobile .tripDetails-totalPrice-price-Mobile .tripDetails-totalPrice-price-icon {
+  margin-right: 5px;
+}
+.tripDetails-totalPrice-Mobile button {
+  background: #001219;
+  border-radius: 0.8rem;
+  color: #ececec;
+  border: none;
+  padding: 5pt;
+  margin: 5pt;
+}
+.tripDetails-totalPrice-Mobile .tripDetails-totalPrice-submit-Mobile {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 0px 20px 0px;
+}
+.tripDetails-totalPrice-Mobile .tripDetails-totalPrice-submit-Mobile button {
+  border-radius: 0.8rem;
+  background-color: #001219;
+  color: #ececec;
+  border: none;
+  padding: 10px;
+  font-size: 10pt;
+}
+
+.tripDetails-totalPrice-Desktop {
+  display: none;
+}
+
+.hotel-card-status {
+  display: flex;
+  flex-direction: column;
+  margin: 5pt 10pt;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 8pt;
+}
+.hotel-card-status .request-status {
+  font-size: 10pt;
+}
+.hotel-card-status .request-status span {
+  font-size: 8pt;
+  padding: 3pt 5pt;
+  font-weight: bold;
+  color: white;
+  border-radius: 0.8rem;
+}
+.hotel-card-status .hotel-card-download {
+  cursor: pointer;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  border: 1px solid #001219;
+  border-radius: 0.8rem;
+  padding: 4pt;
+  font-size: 10pt;
+  font-weight: bolder;
+}
+.hotel-card-status .hotelType {
+  gap: 15pt;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.hotel-card-status .hotelType .hotelStatus {
+  font-size: 10pt;
+}
+.hotel-card-status .hotelType .hotelStatus span {
+  padding: 3pt 5pt;
+  font-weight: bold;
+  color: white;
+  border-radius: 0.8rem;
+  font-size: 8pt;
+}
+.hotel-card-status .hotel-price-trips {
+  font-size: 12pt;
+  font-weight: bold;
+  color: #bb3e03;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.tripDetails-traveller-container {
+  height: 70vh;
+  overflow: scroll;
+}
+.tripDetails-traveller-container .tripDetails-traveller-block {
+  padding-bottom: 50pt;
+}
+.tripDetails-traveller-container .tripDetails-traveller-block .tripDetails-traveller-header {
+  font-size: 15pt;
+  font-weight: bolder;
+}
+.tripDetails-traveller-container .tripDetails-traveller-block .tripDetails-trip-type {
+  font-size: 12pt;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.tripDetails-traveller-container .tripDetails-traveller-block .tripDetails-traveller-box {
+  margin: 10pt;
+}
+.tripDetails-traveller-container .tripDetails-traveller-block .tripDetails-traveller-box span {
+  font-size: 12pt;
+}
+.tripDetails-traveller-container .tripDetails-traveller-block .tripDetails-traveller-box .tripDetails-traveller-details {
+  display: flex;
+  flex-direction: column;
+  gap: 15pt;
+}
+.tripDetails-traveller-container .tripDetails-traveller-block .tripDetails-traveller-box .tripDetails-traveller-details input {
+  border: none;
+  width: 50vw;
+  box-shadow: 0.04rem 0.06rem 0.4rem rgba(0, 0, 0, 0.171);
+  border-radius: 0.5rem;
+  padding: 5pt 10pt;
+  font-size: 10pt;
+}
+.tripDetails-traveller-container .tripDetails-traveller-block .tripDetails-traveller-box .tripDetails-company-details {
+  display: flex;
+  flex-direction: column;
+  gap: 15pt;
+}
+.tripDetails-traveller-container .tripDetails-traveller-block .tripDetails-traveller-box .tripDetails-company-details span {
+  border-radius: 0.5rem;
+  font-size: 10pt;
+}
+.tripDetails-traveller-container .tripDetails-traveller-block .tripDetails-submit {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 0px 20px 0px;
+}
+.tripDetails-traveller-container .tripDetails-traveller-block .tripDetails-submit button {
+  border-radius: 0.8rem;
+  background-color: #001219;
+  color: #ececec;
+  border: none;
+  padding: 10px;
+  font-size: 10pt;
+}
+.tripDetails-traveller-container .tripDetails-traveller-block .tripDetails-submit .edit {
+  background-color: #ececec;
+  color: #001219;
+}
+.tripDetails-traveller-container .tripDetails-traveller-sidebar .tripDetails-traveller-main {
+  gap: 5pt;
+  display: flex;
+  width: 80vw;
+  margin: auto;
+  overflow: scroll;
+}
+.tripDetails-traveller-container .tripDetails-traveller-sidebar .tripDetails-traveller-main .tripDetails-trip-details-flight .request-status {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.tripDetails-traveller-container .tripDetails-traveller-sidebar .tripDetails-traveller-main .tripDetails-trip-details-flight .request-status span {
+  text-align: center;
+  font-size: 8pt;
+  padding: 7px;
+  margin: 2pt;
+  color: white;
+  border-radius: 0.8rem;
+  font-weight: bold;
+  width: 90%;
+}
+.tripDetails-traveller-container .tripDetails-traveller-sidebar .tripDetails-traveller-main .tripDetails-trip-details-flight .request-status .pending {
+  background-color: #ffa500;
+}
+.tripDetails-traveller-container .tripDetails-traveller-sidebar .tripDetails-traveller-main .tripDetails-trip-details-flight .request-status .approve {
+  background-color: #008000;
+}
+.tripDetails-traveller-container .tripDetails-traveller-sidebar .tripDetails-traveller-main .tripDetails-trip-details-flight .tripDetails-trip-city {
+  display: flex;
+  width: 30vw;
+  flex-direction: column;
+  font-size: 10pt;
+}
+.tripDetails-traveller-container .tripDetails-traveller-sidebar .tripDetails-traveller-main .tripDetails-trip-details-hotel .request-status {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.tripDetails-traveller-container .tripDetails-traveller-sidebar .tripDetails-traveller-main .tripDetails-trip-details-hotel .request-status span {
+  text-align: center;
+  font-size: 8pt;
+  padding: 7px;
+  margin: 2pt;
+  color: white;
+  border-radius: 0.8rem;
+  font-weight: bold;
+  width: 90%;
+}
+.tripDetails-traveller-container .tripDetails-traveller-sidebar .tripDetails-traveller-main .tripDetails-trip-details-hotel .request-status .pending {
+  background-color: #ffa500;
+}
+.tripDetails-traveller-container .tripDetails-traveller-sidebar .tripDetails-traveller-main .tripDetails-trip-details-hotel .request-status .approve {
+  background-color: #008000;
+}
+.tripDetails-traveller-container .tripDetails-traveller-sidebar .tripDetails-traveller-main .tripDetails-trip-details-hotel .tripDetails-trip-city {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 5pt;
+  font-size: 10pt;
+}
+.tripDetails-traveller-container .tripDetails-traveller-sidebar .tripDetails-traveller-main .active {
+  background-color: rgba(0, 18, 25, 0.35);
+  color: white;
+  height: 100%;
+}
+.tripDetails-traveller-container .tripDetails-traveller-sidebar .tripDetails-traveller-main .tripDetails-submit {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30vw;
+}
+.tripDetails-traveller-container .tripDetails-traveller-sidebar .tripDetails-traveller-main .tripDetails-submit button {
+  border-radius: 0.8rem;
+  background-color: #001219;
+  color: #ececec;
+  border: none;
+  padding: 10px;
+  font-size: 10pt;
+  width: 30vw;
+}
+.tripDetails-traveller-container .tripDetails-traveller-sidebar .tripDetails-traveller-main .tripDetails-submit .edit {
+  background-color: #ececec;
+  color: #001219;
+}
+.tripDetails-traveller-container .tripDetails-traveller-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.expense-container {
+  height: 80vh;
+  overflow-y: scroll;
+  padding: 0 40pt;
+}
+.expense-container .expense-header {
+  font-size: 20pt;
+  font-weight: bolder;
+  text-align: center;
+  margin: 15pt;
+}
+.expense-container .expense-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10pt;
+}
+.expense-container .expense-form .expense-input-feild {
+  display: flex;
+  flex-direction: column;
+  gap: 5pt;
+}
+.expense-container .expense-form .expense-input-feild label {
+  font-size: 12pt;
+  font-weight: 600;
+}
+.expense-container .expense-form .expense-input-feild input {
+  border: none;
+  box-shadow: 0.04rem 0.06rem 0.4rem rgba(0, 0, 0, 0.171);
+  border-radius: 0.5rem;
+  padding: 5pt 10pt;
+  font-size: 10pt;
+  width: 100%;
+}
+.expense-container .expense-form .expense-input-feild select {
+  border: none;
+  box-shadow: 0.04rem 0.06rem 0.4rem rgba(0, 0, 0, 0.171);
+  border-radius: 0.5rem;
+  padding: 5pt 10pt;
+  font-size: 10pt;
+}
+.expense-container .expense-form .expense-input-feild textarea {
+  border: none;
+  box-shadow: 0.04rem 0.06rem 0.4rem rgba(0, 0, 0, 0.171);
+  border-radius: 0.5rem;
+  padding: 5pt 10pt;
+  font-size: 10pt;
+}
+.expense-container .expense-form .expense-submit {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.expense-container .expense-form .expense-submit button {
+  border-radius: 0.8rem;
+  background-color: #001219;
+  color: #ececec;
+  border: none;
+  padding: 5pt 10pt;
+  font-size: 10pt;
+  margin: 10pt;
+}
+
+.recheck-popup-container {
+  padding: 0 15pt;
+}
+.recheck-popup-container .recheck-popup-header {
+  font-size: 20pt;
+  font-weight: bolder;
+  text-align: center;
+}
+.recheck-popup-container .recheck-block .recheck-block-header {
+  display: flex;
+  font-size: 12pt;
+}
+.recheck-popup-container .recheck-block .recheck-block-header span {
+  font-weight: bold;
+}
+.recheck-popup-container .recheck-block .hotelInfo-roomDtls-room {
+  background-color: whitesmoke;
+  padding: 10px;
+  border-radius: 0.8rem;
+  margin-bottom: 10px;
+}
+.recheck-popup-container .recheck-block .hotelInfo-roomDtls-room .hotelInfo-roomDtls-room-titleSection {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.recheck-popup-container .recheck-block .hotelInfo-roomDtls-room .hotelInfo-roomDtls-room-titleSection .hotelInfo-roomDtls-room-type {
+  font-size: 12pt;
+  font-weight: bold;
+  color: #001219;
+  width: 75%;
+}
+.recheck-popup-container .recheck-block .hotelInfo-roomDtls-room .hotelInfo-roomDtls-room-titleSection .hotelInfo-roomDtls-room-price {
+  font-size: 10pt;
+  font-weight: bold;
+  color: #BB3E03;
+}
+.recheck-popup-container .recheck-block .hotelInfo-roomDtls-room .hotelInfo-roomDtls-room-titleSection .hotelInfo-roomDtls-room-price .hotelInfo-roomDtls-room-price-icon {
+  margin-right: 3px;
+}
+.recheck-popup-container .recheck-block .hotelInfo-roomDtls-room .hotelInfo-roomDtls-room-otherSection {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.recheck-popup-container .recheck-block .hotelInfo-roomDtls-room .hotelInfo-roomDtls-room-otherSection .hotelInfo-roomDtls-room-meals {
+  font-size: 10pt;
+  font-weight: bold;
+  color: rgb(80, 80, 80);
+}
+.recheck-popup-container .recheck-block .hotelInfo-roomDtls-room .hotelInfo-roomDtls-room-otherSection .hotelInfo-roomDtls-room-meals .hotelInfo-roomDtls-room-meals-icon {
+  margin-right: 5px;
+  color: #001219;
+}
+.recheck-popup-container .recheck-block .hotelInfo-roomDtls-room .hotelInfo-roomDtls-room-otherSection .hotelInfo-roomDtls-room-cancel {
+  font-size: 10pt;
+  font-weight: bold;
+  color: rgb(100, 100, 100);
+}
+.recheck-popup-container .recheck-block .hotelInfo-roomDtls-room .hotelInfo-roomDtls-room-otherSection .hotelInfo-roomDtls-room-cancel .hotelInfo-roomDtls-room-cancel-icon {
+  margin-right: 5px;
+  color: #001219;
+}
+.recheck-popup-container .recheck-block .hotelInfo-roomDtls-room .hotelInfo-roomDtls-room-inclusions {
+  margin-top: 10px;
+  font-size: 10pt;
+  font-weight: bold;
+  color: #001219;
+}
+.recheck-popup-container .recheck-block .recheck-block-rates {
+  display: flex;
+  justify-content: space-around;
+}
+.recheck-popup-container .recheck-block .recheck-block-rates .prices {
+  font-weight: bold;
+}
+.recheck-popup-container .recheck-block .recheck-block-rates .prices span {
+  font-size: 10pt;
+  font-weight: bold;
+  color: #bb3e03;
+}
+.recheck-popup-container .recheck-block .recheck-block-rates .prices span .hotelInfo-roomDtls-room-price-icon {
+  margin-right: 3px;
+}
+.recheck-popup-container .recheck-block .recheck-confirm {
+  margin: 15pt;
+  display: flex;
+  justify-content: space-around;
+}
+.recheck-popup-container .recheck-block .recheck-confirm button {
+  border-radius: 0.8rem;
+  background-color: #001219;
+  color: #ececec;
+  border: none;
+  padding: 5pt 10pt;
+  font-size: 12pt;
+  margin: 10pt;
+}
+.recheck-popup-container .recheck-block .recheck-confirm .delete-btn {
+  color: #001219;
+  background-color: #ececec;
+  font-size: 10pt;
+}
+.recheck-popup-container .recheck-na {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.recheck-popup-container .recheck-na .recheck-na-btn {
+  display: flex;
+  justify-content: center;
+}
+.recheck-popup-container .recheck-na .recheck-na-btn button {
+  border-radius: 0.8rem;
+  background-color: #001219;
+  color: #ececec;
+  border: none;
+  padding: 5pt 10pt;
+  font-size: 10pt;
+}
+
+.payment-container {
+  height: 65vh;
+  overflow: scroll;
+  display: flex;
+  flex-direction: column;
+}
+.payment-container .payment-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 5pt 30pt;
+}
+.payment-container .payment-block .payment-block-header {
+  font-size: 15pt;
+}
+.payment-container .payment-block .payment-block-main {
+  width: 100%;
+}
+.payment-container .payment-block .payment-block-main .payment-main-header {
+  font-size: 12pt;
+}
+.payment-container .payment-block .payment-block-main .payment-main-header .payment-main-checkbox {
+  display: flex;
+  align-items: center;
+  box-shadow: 0.04rem 0.06rem 0.4rem rgba(0, 0, 0, 0.171);
+  border-radius: 0.4rem;
+  padding: 0 8pt;
+  margin: 10pt 0;
+}
+.payment-container .payment-block .payment-block-main .payment-main-header .payment-main-checkbox .payment-main-submitted {
+  width: 100%;
+  padding: 1rem 0;
+  margin-inline-start: 0.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 10pt;
+  gap: 10pt;
+}
+.payment-container .payment-block .payment-block-main .payment-main-header .payment-main-checkbox .payment-main-submitted .status {
+  padding: 3pt 5pt;
+  font-weight: bold;
+  color: white;
+  border-radius: 0.8rem;
+}
+.payment-container .payment-block .payment-block-main .payment-main-header .payment-main-checkbox .payment-main-submitted .price-card {
+  display: flex;
+  align-items: center;
+}
+.payment-container .payment-block .payment-block-main .payment-main-header .payment-main-checkbox .payment-main-submitted .price-card .price {
+  font-weight: bold;
+  color: #bb3e03;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.payment-container .payment-block .payment-block-main .payment-main-header .payment-main-checkbox input {
+  width: 1rem;
+  height: 1rem;
+}
+.payment-container .payment-block .payment-block-main .payment-main-header .payment-main-checkbox label {
+  width: 100%;
+  padding: 1rem 0;
+  margin-inline-start: 0.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 10pt;
+}
+.payment-container .payment-block .payment-block-main .payment-main-header .payment-main-checkbox label .status {
+  padding: 3pt 5pt;
+  font-weight: bold;
+  color: white;
+  border-radius: 0.8rem;
+}
+.payment-container .payment-block .payment-block-main .payment-main-header .payment-main-checkbox label .price-card {
+  display: flex;
+  align-items: center;
+}
+.payment-container .payment-block .payment-block-main .payment-main-header .payment-main-checkbox label .price-card .price {
+  font-weight: bold;
+  color: #bb3e03;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.payment-container .payment-block .payment-block-main .payment-main-submitted {
+  width: 100%;
+  padding: 1rem 8pt;
+  margin-inline-start: 0.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 10pt;
+  gap: 10pt;
+  box-shadow: 0.04rem 0.06rem 0.4rem rgba(0, 0, 0, 0.171);
+  border-radius: 0.4rem;
+  margin: 10pt 0;
+}
+.payment-container .payment-block .payment-block-main .payment-main-submitted .status {
+  padding: 3pt 5pt;
+  font-weight: bold;
+  color: white;
+  border-radius: 0.8rem;
+}
+.payment-container .payment-block .payment-block-main .payment-main-submitted .price-card {
+  display: flex;
+  align-items: center;
+}
+.payment-container .payment-block .payment-block-main .payment-main-submitted .price-card .price {
+  font-weight: bold;
+  color: #bb3e03;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.payment-container .payment-block button {
+  border-radius: 0.8rem;
+  background-color: #001219;
+  color: #ececec;
+  border: none;
+  padding: 5pt;
+  font-size: 10pt;
+  margin: 10pt;
+}
+.payment-container .wallet-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 5pt 30pt;
+  font-size: 12pt;
+}
+.payment-container .wallet-block button {
+  border-radius: 0.8rem;
+  background-color: #001219;
+  color: #ececec;
+  border: none;
+  padding: 5pt;
+  font-size: 10pt;
+  margin: 10pt;
+}
+.payment-container .wallet-block .spin {
+  padding: 10px 75px;
+  background: #001219;
+  border: none;
+  border-radius: 0.8rem;
+  color: white;
+  cursor: not-allowed;
+}
+.payment-container .wallet-block .spinner {
+  border: 4px solid #94D2BD;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-left: 4px solid #3498db;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  animation: spin 1s linear infinite;
+  margin-top: -8px;
+  margin-left: -8px;
+  display: inline-block;
+  border-width: 2px;
+  margin-top: 5px;
+  cursor: not-allowed;
+}
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.payment-container .balance {
+  display: flex;
+  gap: 5pt;
+  padding: 5pt;
+  align-items: center;
+  font-size: 12pt;
+  justify-content: center;
+}
+.payment-container .balance span {
+  color: #BB3E03;
+  font-size: 12pt;
+}
+.payment-container .balance span .balance-icon {
+  margin-right: 3px;
+  font-size: 11pt;
+}
+.payment-container .alert {
+  color: #ff0000;
+}
+.payment-container .payment-thankyou {
+  font-size: 10pt;
+  font-weight: bold;
+  margin: 10pt;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.payment-container .payment-thankyou button {
+  background-color: #001219;
+  color: white;
+  border: none;
+  padding: 5pt 10pt;
+  border-radius: 0.8rem;
+  margin: 10pt;
+}
+
+.tripDetails-submit-main {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  background: rgba(148, 210, 189, 0.1647058824);
+  border-radius: 0.8rem;
+  padding: 5pt 15pt;
+  gap: 15pt;
+}
+.tripDetails-submit-main button {
+  border-radius: 0.8rem;
+  background-color: #001219;
+  color: #ececec;
+  border: none;
+  padding: 5pt;
+  font-size: 10pt;
+}
+.tripDetails-submit-main .alerted {
+  color: #ff0000;
+  font-size: 10px;
+}
+
+.alerted {
+  color: #ff0000;
+}
+
+.flightResults-nav-item-icon {
+  margin: 0;
+}
+
+.tripDetails-traveller-tabs {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 15px;
+  background-color: rgba(148, 210, 189, 0.1647058824);
+  border-radius: 0.8rem;
+  overflow: hidden;
+}
+.tripDetails-traveller-tabs .tripDetails-traveller-tab {
+  color: #001219;
+  padding: 8px 10px;
+  font-size: 10px;
+  font-weight: bold;
+  cursor: pointer;
+  width: 100%;
+  text-align: center;
+}
+.tripDetails-traveller-tabs .tripDetails-traveller-tab.tripDetails-traveller-tab-selected {
+  background-color: #108bbc;
+  color: white;
+}
+
+.tripDetails-approval {
+  height: 63vh;
+  width: 100%;
+  overflow-y: scroll;
+}
+.tripDetails-approval .tripDetails-approval-block {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  border-radius: 0.8rem;
+  margin: 10pt 0;
+}
+.tripDetails-approval .tripDetails-approval-block .loading-approvals {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15pt;
+}
+.tripDetails-approval .tripDetails-approval-block .role-trip-card {
+  display: flex;
+  flex-direction: column;
+  margin: 10pt;
+  padding: 10px;
+  border-radius: 0.8rem;
+  font-size: 10pt;
+}
+.tripDetails-approval .tripDetails-approval-block .role-trip-card .role-trip-card-header {
+  display: flex;
+  font-weight: bold;
+  text-align: center;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+}
+.tripDetails-approval .tripDetails-approval-block .role-trip-card .role-trip-list {
+  display: flex;
+  flex-direction: column;
+}
+.tripDetails-approval .tripDetails-approval-block .role-trip-card .role-trip-list .tripDetails-totalPrice-section-Desktop {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+.tripDetails-approval .tripDetails-approval-block .role-trip-card .role-trip-list .tripDetails-totalPrice-title-Desktop {
+  font-weight: bold;
+  color: #001219;
+}
+.tripDetails-approval .tripDetails-approval-block .role-trip-card .role-trip-list .tripDetails-totalPrice-price-Desktop {
+  font-weight: bold;
+  color: #BB3E03;
+}
+.tripDetails-approval .tripDetails-approval-block .role-trip-card .role-trip-list .role-trip-type {
+  margin-top: 10px;
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.tripDetails-approval .tripDetails-approval-block .role-trip-card .role-trip-list .role-trip-type .role-trip-hotel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  border: 1px solid black;
+  border-radius: 0.8rem;
+  color: black;
+  padding: 3px 10px;
+}
+.tripDetails-approval .tripDetails-approval-block .role-trip-card .role-trip-list .role-trip-status {
+  display: flex;
+  align-items: center;
+  font-size: 12pt;
+}
+.tripDetails-approval .tripDetails-approval-block .role-trip-card .role-trip-list .role-trip-status span {
+  font-size: 10pt;
+  padding: 5pt 8pt;
+  color: white;
+  border-radius: 0.8rem;
+  font-weight: bold;
+}
+.tripDetails-approval .tripDetails-approval-block .role-trip-card .role-trip-list .role-trip-status .orange {
+  background-color: #ffa500;
+}
+.tripDetails-approval .tripDetails-approval-block .role-trip-card .role-trip-list .role-trip-status .green {
+  background-color: #008000;
+}
+.tripDetails-approval .tripDetails-approval-block .role-trip-card .role-trip-date {
+  display: flex;
+}
+.tripDetails-approval .tripDetails-approval-block .role-trip-card .role-trip-date span {
+  margin: 0 5pt;
+}
+.tripDetails-approval .tripDetails-approval-block .role-trip-card .role-trip-date p {
+  color: #94D2BD;
+  margin: 0;
+}
+.tripDetails-approval .tripDetails-approval-block .role-trip-openDtls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 5px;
+  cursor: pointer;
+}
+.tripDetails-approval .tripDetails-approval-block .role-trip-openDtls.role-trip-openDtls-open .role-trip-openDtls-icon {
+  transform: rotate(180deg);
+  transition: 0.2s ease-in-out;
+}
+.tripDetails-approval .tripDetails-approval-block .role-trip-section {
+  margin: 10px;
+  padding: 10px;
+}
+.tripDetails-approval .tripDetails-approval-block .role-trip-section .role-review .role-review-hotels {
+  text-align: center;
+  border-radius: 0.8rem;
+}
+.tripDetails-approval .tripDetails-approval-block .role-trip-section .role-review .role-review-hotels .role-review-hotels-header {
+  font-size: 15pt;
+  font-weight: bolder;
+  margin: 20pt;
+}
+.tripDetails-approval .tripDetails-approval-block .role-trip-section .role-review .role-review-hotels .tripDetails-hotel-card {
+  box-shadow: 0.04rem 0.06rem 0.4rem rgba(0, 0, 0, 0.171);
+  padding: 5pt 0pt 5pt 5pt;
+  border-radius: 0.8rem;
+  margin-bottom: 10pt;
+}
+.tripDetails-approval .tripDetails-approval-block .role-trip-section .role-review .role-review-hotels .tripDetails-hotel-card .tripDetails-hotel-details {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10pt;
+  flex-direction: column;
+}
+.tripDetails-approval .tripDetails-approval-block .role-trip-section .role-review .role-review-hotels .tripDetails-hotel-card .tripDetails-hotel-details .tripDetails-hotel-name {
+  font-size: 10pt;
+  font-weight: bold;
+}
+.tripDetails-approval .tripDetails-approval-block .role-trip-section .role-review .role-review-hotels .tripDetails-hotel-card .tripDetails-hotel-details .tripDetails-hotel-people {
+  font-size: 10pt;
+}
+.tripDetails-approval .tripDetails-approval-block .role-trip-section .role-review .role-review-hotels .tripDetails-hotel-card .tripDetails-hotel-details .tripDetails-hotel-date {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: #94d2bd;
+  border-radius: 0.8rem 0rem 0rem 0.8rem;
+  padding: 5pt;
+  font-size: 10pt;
+}
+.tripDetails-approval .tripDetails-approval-block .role-trip-section .role-review .role-review-hotels .tripDetails-hotel-card .tripDetails-roomDtls-room {
+  background-color: whitesmoke;
+  padding: 10px;
+  border-radius: 0.8rem;
+  margin-bottom: 10px;
+}
+.tripDetails-approval .tripDetails-approval-block .role-trip-section .role-review .role-review-hotels .tripDetails-hotel-card .tripDetails-roomDtls-room .tripDetails-roomDtls-room-titleSection {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.tripDetails-approval .tripDetails-approval-block .role-trip-section .role-review .role-review-hotels .tripDetails-hotel-card .tripDetails-roomDtls-room .tripDetails-roomDtls-room-titleSection .tripDetails-roomDtls-room-type {
+  font-size: 10pt;
+  font-weight: bold;
+  color: #001219;
+}
+.tripDetails-approval .tripDetails-approval-block .role-trip-section .role-review .role-review-hotels .tripDetails-hotel-card .tripDetails-roomDtls-room .tripDetails-roomDtls-room-titleSection .tripDetails-roomDtls-room-price {
+  font-size: 10pt;
+  font-weight: bold;
+  color: #BB3E03;
+}
+.tripDetails-approval .tripDetails-approval-block .role-trip-section .role-review .role-review-hotels .tripDetails-hotel-card .tripDetails-roomDtls-room .tripDetails-roomDtls-room-titleSection .tripDetails-roomDtls-room-price .tripDetails-roomDtls-room-price-icon {
+  margin-right: 3px;
+}
+.tripDetails-approval .tripDetails-approval-block .role-trip-section .role-review .role-review-hotels .tripDetails-hotel-card .tripDetails-roomDtls-room .tripDetails-roomDtls-room-otherSection {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.tripDetails-approval .tripDetails-approval-block .role-trip-section .role-review .role-review-hotels .tripDetails-hotel-card .tripDetails-roomDtls-room .tripDetails-roomDtls-room-otherSection .tripDetails-roomDtls-room-meals {
+  font-size: 10pt;
+  font-weight: bold;
+  color: rgb(80, 80, 80);
+}
+.tripDetails-approval .tripDetails-approval-block .role-trip-section .role-review .role-review-hotels .tripDetails-hotel-card .tripDetails-roomDtls-room .tripDetails-roomDtls-room-otherSection .tripDetails-roomDtls-room-meals .tripDetails-roomDtls-room-meals-icon {
+  margin-right: 5px;
+  color: #001219;
+}
+.tripDetails-approval .tripDetails-approval-block .role-trip-section .role-review .role-review-hotels .tripDetails-hotel-card .tripDetails-roomDtls-room .tripDetails-roomDtls-room-otherSection .tripDetails-roomDtls-room-cancel {
+  font-size: 10pt;
+  font-weight: bold;
+  color: rgb(100, 100, 100);
+}
+.tripDetails-approval .tripDetails-approval-block .role-trip-section .role-review .role-review-hotels .tripDetails-hotel-card .tripDetails-roomDtls-room .tripDetails-roomDtls-room-otherSection .tripDetails-roomDtls-room-cancel .tripDetails-roomDtls-room-cancel-icon {
+  margin-right: 5px;
+  color: #001219;
+}
+.tripDetails-approval .tripDetails-approval-block .role-trip-section .role-review .role-review-hotels .tripDetails-hotel-card .tripDetails-total-price {
+  margin-right: 10px;
+  font-size: 12pt;
+  font-weight: bold;
+  color: #bb3e03;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.tripDetails-approval .tripDetails-approval-block .role-trip-section .role-review .role-review-hotels .role-travellers-hotel {
+  margin-bottom: 10pt;
+  border-radius: 0.8rem;
+  padding: 10pt;
+}
+.tripDetails-approval .tripDetails-approval-block .role-trip-section .role-review .role-review-hotels .role-travellers-hotel .role-traveller-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10pt;
+  padding: 0 10pt;
+}
+.tripDetails-approval .tripDetails-approval-block .role-trip-section .role-review .role-review-hotels .role-travellers-hotel .role-traveller-container .role-traveller-block {
+  border-radius: 8px;
+}
+.tripDetails-approval .tripDetails-approval-block .role-trip-section .role-review .role-review-hotels .role-travellers-hotel .role-traveller-container .role-traveller-block .role-traveller-header {
+  font-size: 12pt;
+  font-weight: bold;
+  margin-bottom: 10pt;
+}
+.tripDetails-approval .tripDetails-approval-block .role-trip-section .role-review .role-review-hotels .role-travellers-hotel .role-traveller-container .role-traveller-block .role-traveller-box {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5pt;
+  overflow: overlay;
+}
+.tripDetails-approval .tripDetails-approval-block .role-trip-section .role-review .role-review-hotels .role-travellers-hotel .role-traveller-container .role-traveller-block .role-traveller-box div {
+  display: flex;
+  text-align: left;
+  font-size: 10pt;
+}
+.tripDetails-approval .tripDetails-approval-block .role-trip-section .role-review .role-review-hotels .role-travellers-hotel .role-traveller-container .role-traveller-block .role-traveller-box div span {
+  font-weight: bold;
+  margin-left: 2pt;
+}
+.tripDetails-approval .tripDetails-approval-block .role-trip-section .role-review .role-review-flights {
+  text-align: center;
+  border-radius: 0.8rem;
+  margin: 10pt 0;
+}
+.tripDetails-approval .tripDetails-approval-block .role-trip-section .role-review .role-review-flights .role-review-flights-header {
+  font-size: 15pt;
+  font-weight: bolder;
+  margin: 20pt;
+}
+.tripDetails-approval .tripDetails-approval-block .role-trip-section .role-review .role-review-flights .tripDetails-flight-card {
+  box-shadow: 0.04rem 0.06rem 0.4rem rgba(0, 0, 0, 0.171);
+  padding: 5pt 0pt 5pt 5pt;
+  border-radius: 0.8rem;
+  margin-bottom: 10pt;
+}
+.tripDetails-approval .tripDetails-approval-block .role-trip-section .role-review .role-review-flights .tripDetails-flight-card .tripDetails-flight-airline-block {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 6px;
+}
+.tripDetails-approval .tripDetails-approval-block .role-trip-section .role-review .role-review-flights .tripDetails-flight-card .tripDetails-flight-airline-block .tripDetails-flight-airline {
+  font-size: 12pt;
+  font-weight: bold;
+  color: #001219;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.tripDetails-approval .tripDetails-approval-block .role-trip-section .role-review .role-review-flights .tripDetails-flight-card .tripDetails-flight-airline-block .tripDetails-flight-airline span {
+  font-size: 10pt;
+  color: rgb(121, 121, 121);
+}
+.tripDetails-approval .tripDetails-approval-block .role-trip-section .role-review .role-review-flights .tripDetails-flight-card .tripDetails-flight-airline-block .tripDetails-flight-airline .tripDetails-flight-logo {
+  margin: 10px 10px 10px 0px;
+}
+.tripDetails-approval .tripDetails-approval-block .role-trip-section .role-review .role-review-flights .tripDetails-flight-card .tripDetails-flight-airline-block .tripDetails-flight-airline .tripDetails-flight-logo span {
+  height: 25px;
+  width: 25px;
+  display: block;
+  background-position: 50%;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.tripDetails-approval .tripDetails-approval-block .role-trip-section .role-review .role-review-flights .tripDetails-flight-card .tripDetails-flight-airline-block .tripDetails-flight-airline .tripDetails-flight-logo span .tripDetails-flight-logo-icon {
+  height: 22px;
+}
+.tripDetails-approval .tripDetails-approval-block .role-trip-section .role-review .role-review-flights .tripDetails-flight-card .tripDetails-flight-airline-block .tripDetails-flight-depDate-block {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: #94D2BD;
+  border-radius: 0.8rem 0rem 0rem 0.8rem;
+  padding: 5pt;
+  font-size: 10pt;
+}
+.tripDetails-approval .tripDetails-approval-block .role-trip-section .role-review .role-review-flights .tripDetails-flight-card .tripDetails-flight-segment-section {
+  border-radius: 0.8rem;
+  margin-bottom: 15px;
+  background-color: rgb(245, 245, 245);
+}
+.tripDetails-approval .tripDetails-approval-block .role-trip-section .role-review .role-review-flights .tripDetails-flight-card .tripDetails-flight-segment-section .tripDetails-flight-arrDep {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 10pt 0 0;
+  padding: 10pt;
+}
+.tripDetails-approval .tripDetails-approval-block .role-trip-section .role-review .role-review-flights .tripDetails-flight-card .tripDetails-flight-segment-section .tripDetails-flight-arrDep .tripDetails-flight-dep .tripDetails-flight-depTime {
+  font-size: 12pt;
+  font-weight: bold;
+}
+.tripDetails-approval .tripDetails-approval-block .role-trip-section .role-review .role-review-flights .tripDetails-flight-card .tripDetails-flight-segment-section .tripDetails-flight-arrDep .tripDetails-flight-dep .tripDetails-flight-depCity {
+  font-size: 12pt;
+  font-weight: bold;
+  color: rgb(111, 111, 111);
+}
+.tripDetails-approval .tripDetails-approval-block .role-trip-section .role-review .role-review-flights .tripDetails-flight-card .tripDetails-flight-segment-section .tripDetails-flight-arrDep .tripDetails-flight-duration {
+  height: 60px;
+  width: 55%;
+}
+.tripDetails-approval .tripDetails-approval-block .role-trip-section .role-review .role-review-flights .tripDetails-flight-card .tripDetails-flight-segment-section .tripDetails-flight-arrDep .tripDetails-flight-duration .tripDetails-flight-duration-stopPts {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  padding-bottom: 5px;
+  border-bottom: 1px dashed rgb(150, 150, 150);
+  font-size: 8pt;
+  font-weight: bold;
+  color: rgb(160, 160, 160);
+  height: 30px;
+}
+.tripDetails-approval .tripDetails-approval-block .role-trip-section .role-review .role-review-flights .tripDetails-flight-card .tripDetails-flight-segment-section .tripDetails-flight-arrDep .tripDetails-flight-duration .tripDetails-flight-duration-stopPts .tripDetails-flight-duration-stopType {
+  font-size: 10pt;
+  color: rgb(80, 80, 80);
+  margin-right: 3px;
+  color: #94D2BD;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.tripDetails-approval .tripDetails-approval-block .role-trip-section .role-review .role-review-flights .tripDetails-flight-card .tripDetails-flight-segment-section .tripDetails-flight-arrDep .tripDetails-flight-duration .tripDetails-flight-duration-stopPts .tripDetails-flight-duration-stopType .tripDetails-flight-duration-stopType-icon {
+  margin-left: 5px;
+  color: rgb(80, 80, 80);
+  font-size: 9pt;
+}
+.tripDetails-approval .tripDetails-approval-block .role-trip-section .role-review .role-review-flights .tripDetails-flight-card .tripDetails-flight-segment-section .tripDetails-flight-arrDep .tripDetails-flight-duration .tripDetails-flight-duration-stopPts .tripDetails-flight-duration-stopPt {
+  margin-right: 3px;
+}
+.tripDetails-approval .tripDetails-approval-block .role-trip-section .role-review .role-review-flights .tripDetails-flight-card .tripDetails-flight-segment-section .tripDetails-flight-arrDep .tripDetails-flight-duration .tripDetails-flight-duration-time {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding-top: 2px;
+  font-size: 10pt;
+  font-weight: bold;
+  color: #001219;
+  height: 30px;
+}
+.tripDetails-approval .tripDetails-approval-block .role-trip-section .role-review .role-review-flights .tripDetails-flight-card .tripDetails-flight-segment-section .tripDetails-flight-arrDep .tripDetails-flight-arr-section {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+}
+.tripDetails-approval .tripDetails-approval-block .role-trip-section .role-review .role-review-flights .tripDetails-flight-card .tripDetails-flight-segment-section .tripDetails-flight-arrDep .tripDetails-flight-arr-section .tripDetails-flight-dep.tripDetails-flight-arr {
+  text-align: right;
+}
+.tripDetails-approval .tripDetails-approval-block .role-trip-section .role-review .role-review-flights .tripDetails-flight-card .tripDetails-flight-segment-section .tripDetails-flight-arrDep .tripDetails-flight-arr-section .tripDetails-flight-dep.tripDetails-flight-arr .tripDetails-flight-depTime {
+  font-size: 12pt;
+  font-weight: bold;
+}
+.tripDetails-approval .tripDetails-approval-block .role-trip-section .role-review .role-review-flights .tripDetails-flight-card .tripDetails-flight-segment-section .tripDetails-flight-arrDep .tripDetails-flight-arr-section .tripDetails-flight-dep.tripDetails-flight-arr .tripDetails-flight-depCity {
+  font-size: 12pt;
+  font-weight: bold;
+  color: rgb(111, 111, 111);
+}
+.tripDetails-approval .tripDetails-approval-block .role-trip-section .role-review .role-review-flights .tripDetails-flight-card .tripDetails-flight-segment-section .tripDetails-flight-arrDep .tripDetails-flight-arr-section .tripDetails-flight-depTime-afterDays {
+  font-size: 6pt;
+  font-weight: bold;
+  margin-left: 6px;
+  color: red;
+}
+.tripDetails-approval .tripDetails-approval-block .role-trip-section .role-review .role-review-flights .tripDetails-flight-card .tripDetails-flight-segment-section .tripDetails-flight-arrDep .tripDetails-flight-arr-section .tripDetails-flight-depTime-afterDays .tripDetails-flight-depTime-afterDays-num {
+  font-size: 9pt;
+}
+.tripDetails-approval .tripDetails-approval-block .role-trip-section .role-review .role-review-flights .tripDetails-flight-card .tripDetails-flight-flightCard-price {
+  margin-right: 10px;
+  font-size: 12pt;
+  font-weight: bold;
+  color: #BB3E03;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.tripDetails-approval .tripDetails-approval-block .role-trip-section .role-review .role-review-flights .tripDetails-flight-card .tripDetails-flight-flightCard-price .tripDetails-flight-flightCard-price-icon {
+  margin-right: 5px;
+}
+.tripDetails-approval .tripDetails-approval-block .role-trip-section .role-review .role-review-flights .role-travellers-flight {
+  box-shadow: 0.04rem 0.06rem 0.4rem rgba(0, 0, 0, 0.171);
+  border-radius: 0.8rem;
+  padding: 10pt;
+  margin-bottom: 10pt;
+}
+.tripDetails-approval .tripDetails-approval-block .role-trip-section .role-review .role-review-flights .role-travellers-flight .role-traveller-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10pt;
+  padding: 0 10pt;
+}
+.tripDetails-approval .tripDetails-approval-block .role-trip-section .role-review .role-review-flights .role-travellers-flight .role-traveller-container .role-traveller-block {
+  border-radius: 8px;
+}
+.tripDetails-approval .tripDetails-approval-block .role-trip-section .role-review .role-review-flights .role-travellers-flight .role-traveller-container .role-traveller-block .role-traveller-header {
+  font-size: 12pt;
+  font-weight: bold;
+  margin-bottom: 10pt;
+}
+.tripDetails-approval .tripDetails-approval-block .role-trip-section .role-review .role-review-flights .role-travellers-flight .role-traveller-container .role-traveller-block .role-traveller-box {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5pt;
+  overflow: overlay;
+}
+.tripDetails-approval .tripDetails-approval-block .role-trip-section .role-review .role-review-flights .role-travellers-flight .role-traveller-container .role-traveller-block .role-traveller-box div {
+  display: flex;
+  text-align: left;
+  font-size: 10pt;
+}
+.tripDetails-approval .tripDetails-approval-block .role-trip-section .role-review .role-review-flights .role-travellers-flight .role-traveller-container .role-traveller-block .role-traveller-box div span {
+  font-weight: bold;
+  margin-left: 2pt;
+}
+.tripDetails-approval .tripDetails-approval-block .role-trip-section .role-travellers {
+  text-align: center;
+  border-radius: 0.8rem;
+  margin: 10pt 0;
+}
+.tripDetails-approval .tripDetails-approval-block .role-trip-section .role-travellers .role-review-travellers-header {
+  font-size: 15pt;
+  font-weight: bolder;
+  margin: 20pt;
+}
+.tripDetails-approval .tripDetails-approval-block .role-trip-section .role-approve {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.tripDetails-approval .tripDetails-approval-block .role-trip-section .role-approve span {
+  font-size: 12pt;
+}
+.tripDetails-approval .tripDetails-approval-block .role-trip-section .role-approve button {
+  border: none;
+  background-color: #001219;
+  font-size: 12pt;
+  font-weight: bolder;
+  padding: 5pt 15pt;
+  color: white;
+  border-radius: 0.8rem;
+}
+.tripDetails-approval .tripDetails-approval-block .role-trip-section .role-close {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 5px;
+}
+.tripDetails-approval .tripDetails-approval-block .role-trip-section .role-close .close-icon {
+  cursor: pointer;
+}
+.tripDetails-approval .tripDetails-approval-manager {
+  box-shadow: 0.04rem 0.06rem 0.4rem rgba(0, 0, 0, 0.171);
+  padding: 10pt;
+  text-align: center;
+  border-radius: 0.8rem;
+  margin: 10pt 0;
+  width: auto;
+}
+.tripDetails-approval .tripDetails-approval-manager .tripDetails-approval-manager-header {
+  font-size: 15pt;
+  font-weight: bold;
+  margin-bottom: 10pt;
+}
+.tripDetails-approval .tripDetails-approval-manager .tripDetails-manager-block .tripDetails-manager-name {
+  border-radius: 0.8rem;
+  padding: 10pt;
+  font-size: 12px;
+}
+.tripDetails-approval .tripDetails-approval-manager .tripDetails-manager-block .tripDetails-manager-name span {
+  font-weight: bolder;
+  font-size: 12px;
+}
+.tripDetails-approval .tripDetails-approval-manager .tripDetails-manager-block .tripDetails-manager-request {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.8rem;
+}
+.tripDetails-approval .tripDetails-approval-manager .tripDetails-manager-block .tripDetails-manager-request span {
+  font-weight: bolder;
+  font-size: 12pt;
+}
+.tripDetails-approval .tripDetails-approval-manager .tripDetails-manager-block .tripDetails-manager-request .request-send-message span {
+  font-weight: normal;
+  font-size: 12pt;
+}
+.tripDetails-approval .tripDetails-approval-manager .tripDetails-manager-block .tripDetails-manager-request .request-send-message button {
+  border-radius: 0.8rem;
+  background-color: #001219;
+  color: #ececec;
+  border: none;
+  padding: 3pt 15pt;
+  font-size: 10pt;
+}
+.tripDetails-approval .tripDetails-approval-manager .tripDetails-manager-block .tripDetails-manager-request .request-send-message .spin {
+  padding: 10px 75px;
+  background: #001219;
+  border: none;
+  border-radius: 0.8rem;
+  color: white;
+  cursor: not-allowed;
+}
+.tripDetails-approval .tripDetails-approval-manager .tripDetails-manager-block .tripDetails-manager-request .request-send-message .spinner {
+  border: 4px solid #94D2BD;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-left: 4px solid #3498db;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  animation: spin 1s linear infinite;
+  margin-top: -8px;
+  margin-left: -8px;
+  display: inline-block;
+  border-width: 2px;
+  margin-top: 5px;
+  cursor: not-allowed;
+}
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.tripDetails-approval .tripDetails-approval-manager .tripDetails-manager-block .tripDetails-manager-request .request-status {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.tripDetails-approval .tripDetails-approval-manager .tripDetails-manager-block .tripDetails-manager-request .request-status div {
+  padding: 3pt;
+}
+.tripDetails-approval .tripDetails-approval-manager .tripDetails-manager-block .tripDetails-manager-request .request-status div span {
+  font-size: 10pt;
+  padding: 5pt 8pt;
+  margin: 0pt 10pt;
+  color: white;
+  border-radius: 0.8rem;
+  font-weight: bold;
+}
+.tripDetails-approval .tripDetails-approval-manager .tripDetails-manager-block .tripDetails-manager-request .request-status div .pending {
+  background-color: #ffa500;
+}
+.tripDetails-approval .tripDetails-approval-manager .tripDetails-manager-block .tripDetails-manager-request .request-status div .approve {
+  background-color: #008000;
+}
+.tripDetails-approval .tripDetails-approval-manager .tripDetails-manager-block .tripDetails-manager-request .request-message span {
+  font-weight: normal;
+  font-size: 12pt;
+}
+
+.tripDetails-status-block {
+  height: 80vh;
+  overflow-y: scroll;
+  width: 80%;
+  padding: 10pt;
+}
+.tripDetails-status-block .tripDetails-status-hotels {
+  text-align: center;
+  border-radius: 0.8rem;
+}
+.tripDetails-status-block .tripDetails-status-hotels .tripDetails-status-hotels-header {
+  font-size: 20pt;
+  font-weight: bolder;
+}
+.tripDetails-status-block .tripDetails-status-hotels .tripDetails-hotel-card {
+  box-shadow: 0.04rem 0.06rem 0.4rem rgba(0, 0, 0, 0.171);
+  padding: 5pt 0pt 5pt 5pt;
+  border-radius: 0.8rem;
+  margin-bottom: 10pt;
+}
+.tripDetails-status-block .tripDetails-status-hotels .tripDetails-hotel-card .tripDetails-hotel-details {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10pt;
+  flex-direction: column;
+}
+.tripDetails-status-block .tripDetails-status-hotels .tripDetails-hotel-card .tripDetails-hotel-details .tripDetails-hotel-name {
+  font-size: 13pt;
+  font-weight: bold;
+}
+.tripDetails-status-block .tripDetails-status-hotels .tripDetails-hotel-card .tripDetails-hotel-details .tripDetails-hotel-date {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: #94d2bd;
+  border-radius: 0.8rem 0rem 0rem 0.8rem;
+  padding: 5pt;
+}
+.tripDetails-status-block .tripDetails-status-hotels .tripDetails-hotel-card .tripDetails-roomDtls-room {
+  background-color: whitesmoke;
+  padding: 10px;
+  border-radius: 0.8rem;
+  margin-bottom: 10px;
+}
+.tripDetails-status-block .tripDetails-status-hotels .tripDetails-hotel-card .tripDetails-roomDtls-room .tripDetails-roomDtls-room-titleSection {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.tripDetails-status-block .tripDetails-status-hotels .tripDetails-hotel-card .tripDetails-roomDtls-room .tripDetails-roomDtls-room-titleSection .tripDetails-roomDtls-room-type {
+  font-size: 12pt;
+  font-weight: bold;
+  color: #001219;
+}
+.tripDetails-status-block .tripDetails-status-hotels .tripDetails-hotel-card .tripDetails-roomDtls-room .tripDetails-roomDtls-room-titleSection .tripDetails-roomDtls-room-price {
+  font-size: 8pt;
+  font-weight: bold;
+  color: #BB3E03;
+}
+.tripDetails-status-block .tripDetails-status-hotels .tripDetails-hotel-card .tripDetails-roomDtls-room .tripDetails-roomDtls-room-titleSection .tripDetails-roomDtls-room-price .tripDetails-roomDtls-room-price-icon {
+  margin-right: 3px;
+}
+.tripDetails-status-block .tripDetails-status-hotels .tripDetails-hotel-card .tripDetails-roomDtls-room .tripDetails-roomDtls-room-otherSection {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.tripDetails-status-block .tripDetails-status-hotels .tripDetails-hotel-card .tripDetails-roomDtls-room .tripDetails-roomDtls-room-otherSection .tripDetails-roomDtls-room-meals {
+  font-size: 10pt;
+  font-weight: bold;
+  color: rgb(80, 80, 80);
+}
+.tripDetails-status-block .tripDetails-status-hotels .tripDetails-hotel-card .tripDetails-roomDtls-room .tripDetails-roomDtls-room-otherSection .tripDetails-roomDtls-room-meals .tripDetails-roomDtls-room-meals-icon {
+  margin-right: 5px;
+  color: #001219;
+}
+.tripDetails-status-block .tripDetails-status-hotels .tripDetails-hotel-card .tripDetails-roomDtls-room .tripDetails-roomDtls-room-otherSection .tripDetails-roomDtls-room-cancel {
+  font-size: 10pt;
+  font-weight: bold;
+  color: rgb(100, 100, 100);
+}
+.tripDetails-status-block .tripDetails-status-hotels .tripDetails-hotel-card .tripDetails-roomDtls-room .tripDetails-roomDtls-room-otherSection .tripDetails-roomDtls-room-cancel .tripDetails-roomDtls-room-cancel-icon {
+  margin-right: 5px;
+  color: #001219;
+}
+.tripDetails-status-block .tripDetails-status-flights {
+  text-align: center;
+  border-radius: 0.8rem;
+  margin: 10pt 0;
+}
+.tripDetails-status-block .tripDetails-status-flights .tripDetails-status-flights-header {
+  font-size: 20pt;
+  font-weight: bolder;
+}
+.tripDetails-status-block .tripDetails-status-flights .tripDetails-flight-card {
+  box-shadow: 0.04rem 0.06rem 0.4rem rgba(0, 0, 0, 0.171);
+  padding: 5pt 0pt 5pt 5pt;
+  border-radius: 0.8rem;
+  margin-bottom: 10pt;
+}
+.tripDetails-status-block .tripDetails-status-flights .tripDetails-flight-card .tripDetails-flight-airline-block {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 6px;
+}
+.tripDetails-status-block .tripDetails-status-flights .tripDetails-flight-card .tripDetails-flight-airline-block .tripDetails-flight-airline {
+  font-size: 12pt;
+  font-weight: bold;
+  color: #001219;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.tripDetails-status-block .tripDetails-status-flights .tripDetails-flight-card .tripDetails-flight-airline-block .tripDetails-flight-airline span {
+  font-size: 8pt;
+  color: rgb(121, 121, 121);
+}
+.tripDetails-status-block .tripDetails-status-flights .tripDetails-flight-card .tripDetails-flight-airline-block .tripDetails-flight-airline .tripDetails-flight-logo {
+  margin: 10px 10px 10px 0px;
+}
+.tripDetails-status-block .tripDetails-status-flights .tripDetails-flight-card .tripDetails-flight-airline-block .tripDetails-flight-airline .tripDetails-flight-logo span {
+  height: 25px;
+  width: 25px;
+  display: block;
+  background-position: 50%;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.tripDetails-status-block .tripDetails-status-flights .tripDetails-flight-card .tripDetails-flight-airline-block .tripDetails-flight-airline .tripDetails-flight-logo span .tripDetails-flight-logo-icon {
+  height: 22px;
+}
+.tripDetails-status-block .tripDetails-status-flights .tripDetails-flight-card .tripDetails-flight-airline-block .tripDetails-flight-depDate-block {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: #94D2BD;
+  border-radius: 0.8rem 0rem 0rem 0.8rem;
+  padding: 5pt;
+}
+.tripDetails-status-block .tripDetails-status-flights .tripDetails-flight-card .tripDetails-flight-segment-section {
+  border-radius: 0.8rem;
+  margin-bottom: 15px;
+  background-color: rgb(245, 245, 245);
+}
+.tripDetails-status-block .tripDetails-status-flights .tripDetails-flight-card .tripDetails-flight-segment-section .tripDetails-flight-arrDep {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 10pt 0 0;
+  padding: 10pt;
+}
+.tripDetails-status-block .tripDetails-status-flights .tripDetails-flight-card .tripDetails-flight-segment-section .tripDetails-flight-arrDep .tripDetails-flight-dep .tripDetails-flight-depTime {
+  font-size: 18pt;
+  font-weight: bold;
+}
+.tripDetails-status-block .tripDetails-status-flights .tripDetails-flight-card .tripDetails-flight-segment-section .tripDetails-flight-arrDep .tripDetails-flight-dep .tripDetails-flight-depCity {
+  font-size: 13pt;
+  font-weight: bold;
+  color: rgb(111, 111, 111);
+}
+.tripDetails-status-block .tripDetails-status-flights .tripDetails-flight-card .tripDetails-flight-segment-section .tripDetails-flight-arrDep .tripDetails-flight-duration {
+  height: 60px;
+  width: 55%;
+}
+.tripDetails-status-block .tripDetails-status-flights .tripDetails-flight-card .tripDetails-flight-segment-section .tripDetails-flight-arrDep .tripDetails-flight-duration .tripDetails-flight-duration-stopPts {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  padding-bottom: 5px;
+  border-bottom: 1px dashed rgb(150, 150, 150);
+  font-size: 8pt;
+  font-weight: bold;
+  color: rgb(160, 160, 160);
+  height: 30px;
+}
+.tripDetails-status-block .tripDetails-status-flights .tripDetails-flight-card .tripDetails-flight-segment-section .tripDetails-flight-arrDep .tripDetails-flight-duration .tripDetails-flight-duration-stopPts .tripDetails-flight-duration-stopType {
+  font-size: 10pt;
+  color: rgb(80, 80, 80);
+  margin-right: 3px;
+  color: #94D2BD;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.tripDetails-status-block .tripDetails-status-flights .tripDetails-flight-card .tripDetails-flight-segment-section .tripDetails-flight-arrDep .tripDetails-flight-duration .tripDetails-flight-duration-stopPts .tripDetails-flight-duration-stopType .tripDetails-flight-duration-stopType-icon {
+  margin-left: 5px;
+  color: rgb(80, 80, 80);
+  font-size: 9pt;
+}
+.tripDetails-status-block .tripDetails-status-flights .tripDetails-flight-card .tripDetails-flight-segment-section .tripDetails-flight-arrDep .tripDetails-flight-duration .tripDetails-flight-duration-stopPts .tripDetails-flight-duration-stopPt {
+  margin-right: 3px;
+}
+.tripDetails-status-block .tripDetails-status-flights .tripDetails-flight-card .tripDetails-flight-segment-section .tripDetails-flight-arrDep .tripDetails-flight-duration .tripDetails-flight-duration-time {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding-top: 2px;
+  font-size: 12pt;
+  font-weight: bold;
+  color: #001219;
+  height: 30px;
+}
+.tripDetails-status-block .tripDetails-status-flights .tripDetails-flight-card .tripDetails-flight-segment-section .tripDetails-flight-arrDep .tripDetails-flight-arr-section {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+}
+.tripDetails-status-block .tripDetails-status-flights .tripDetails-flight-card .tripDetails-flight-segment-section .tripDetails-flight-arrDep .tripDetails-flight-arr-section .tripDetails-flight-dep.tripDetails-flight-arr {
+  text-align: right;
+}
+.tripDetails-status-block .tripDetails-status-flights .tripDetails-flight-card .tripDetails-flight-segment-section .tripDetails-flight-arrDep .tripDetails-flight-arr-section .tripDetails-flight-dep.tripDetails-flight-arr .tripDetails-flight-depTime {
+  font-size: 18pt;
+  font-weight: bold;
+}
+.tripDetails-status-block .tripDetails-status-flights .tripDetails-flight-card .tripDetails-flight-segment-section .tripDetails-flight-arrDep .tripDetails-flight-arr-section .tripDetails-flight-dep.tripDetails-flight-arr .tripDetails-flight-depCity {
+  font-size: 13pt;
+  font-weight: bold;
+  color: rgb(111, 111, 111);
+}
+.tripDetails-status-block .tripDetails-status-flights .tripDetails-flight-card .tripDetails-flight-segment-section .tripDetails-flight-arrDep .tripDetails-flight-arr-section .tripDetails-flight-depTime-afterDays {
+  font-size: 6pt;
+  font-weight: bold;
+  margin-left: 6px;
+  color: red;
+}
+.tripDetails-status-block .tripDetails-status-flights .tripDetails-flight-card .tripDetails-flight-segment-section .tripDetails-flight-arrDep .tripDetails-flight-arr-section .tripDetails-flight-depTime-afterDays .tripDetails-flight-depTime-afterDays-num {
+  font-size: 9pt;
+}
+
+.approval {
+  display: flex;
+}
+
+.approval-tabs {
+  margin: 3pt;
+  display: flex;
+}
+.approval-tabs .approval-tab-block {
+  display: flex;
+  flex-direction: column;
+  height: 65vh;
+  width: 18vw;
+}
+
+.tripDetails-trip-details-flight {
+  cursor: pointer;
+  border-top: 1px solid #001219;
+}
+.tripDetails-trip-details-flight .tripDetails-trip-city {
+  display: flex;
+  flex-direction: column;
+  padding: 3pt;
+  font-size: 10pt;
+}
+.tripDetails-trip-details-flight.active {
+  background-color: rgba(0, 18, 25, 0.35);
+  color: white;
+}
+
+.tripDetails-header-status {
+  padding: 10pt;
+  border-radius: 0.8rem;
+  box-shadow: 0.04rem 0.06rem 0.4rem rgba(0, 0, 0, 0.171);
+  font-size: 12pt;
+  margin: 10pt 0;
+  font-weight: bold;
+  width: 100%;
+}
+.tripDetails-header-status .tripsPage-main-status {
+  display: flex;
+  justify-content: space-between;
+  margin: 5pt;
+}
+.tripDetails-header-status .tripsPage-main-status div {
+  font-size: 10pt;
+}
+.tripDetails-header-status .tripsPage-main-status span {
+  font-size: 10pt;
+  padding: 3pt 5pt;
+  font-weight: bold;
+  color: white;
+  border-radius: 0.8rem;
+}
+
+.recheck-rates {
+  position: relative;
+}
+.recheck-rates .recheck-bg {
+  position: absolute;
+  background: #001219;
+  height: 18vh;
+  width: 100%;
+  opacity: 0.9;
+  border-radius: 0.8rem;
+}
+.recheck-rates .recheck-content {
+  position: absolute;
+  height: 18vh;
+  width: 90vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.recheck-rates .recheck-content button {
+  border-radius: 0.8rem;
+  background-color: #ececec;
+  color: #001219;
+  border: none;
+  padding: 10px;
+}
+
+.recheck-submit {
+  display: flex;
+  flex-direction: column;
+}
+.recheck-submit .recheck-submit-header {
+  font-size: 15pt;
+  font-weight: bolder;
+  text-align: center;
+}
+.recheck-submit .recheck-submit-content {
+  margin: 10pt 0;
+  font-size: 12pt;
+  font-weight: bold;
+}
+.recheck-submit .recheck-submit-items .recheck-submit-item-header {
+  font-size: 12pt;
+  font-weight: bold;
+}
+
+@media screen and (width >= 700px) {
+  .tripDetails-main {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+  }
+  .tripDetails-main-block {
+    width: 70vw;
+  }
+  .recheck-rates {
+    position: relative;
+  }
+  .recheck-rates .recheck-bg {
+    position: absolute;
+    background: #001219;
+    height: 82px;
+    width: 100%;
+    opacity: 0.9;
+  }
+  .recheck-rates .recheck-content {
+    position: absolute;
+    height: 82px;
+    width: 54vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+  }
+  .tripDetails-header {
+    margin: 10pt 10pt 10pt 40pt;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .tripDetails-header .tripDetails-header-name {
+    width: 60%;
+  }
+  .hotel-card-status {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 5pt 10pt;
+    flex-direction: row;
+    align-items: center;
+    padding-bottom: 10px;
+  }
+  .tripDetails-header-status {
+    padding: 10pt;
+    border-radius: 0.8rem;
+    box-shadow: 0.04rem 0.06rem 0.4rem rgba(0, 0, 0, 0.171);
+    font-size: 12pt;
+    font-weight: bold;
+    width: 32vw;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .tripDetails-header-status .tripsPage-main-status {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+  }
+  .tripDetails-header-status .tripsPage-main-status div {
+    font-size: 12pt;
+  }
+  .tripDetails-header-status .tripsPage-main-status span {
+    font-size: 10pt;
+    padding: 3pt 5pt;
+    font-weight: bold;
+    color: white;
+    border-radius: 0.8rem;
+  }
+  .approval-tabs {
+    margin: 3pt;
+    display: flex;
+    height: 65vh;
+    overflow-y: scroll;
+  }
+  .approval-tabs .approval-tab-block {
+    display: flex;
+    width: 10vw;
+  }
+  .tripDetails-box {
+    padding: 10pt 10pt 10pt 40pt;
+  }
+  .tripDetails-box .tripDetails-hotel-header {
+    font-size: 18pt;
+    font-weight: bold;
+    margin: 10pt 0;
+    width: 140px;
+  }
+  .tripDetails-box .hotel-card-total {
+    padding-top: 15px;
+    width: 90%;
+  }
+  .tripDetails-box .hotel-card-total .hotel-card .hotel-card-img {
+    width: 10vw;
+    height: 10vw;
+  }
+  .tripDetails-box .hotel-card-total .hotel-card .hotel-card-details {
+    width: 47vw;
+  }
+  .tripDetails-box .hotel-card-total .hotel-card .hotel-card-details .hotel-card-header {
+    flex-direction: row;
+  }
+  .tripDetails-totalPrice-Mobile {
+    display: none;
+  }
+  .tripDetails-totalPrice-Desktop {
+    display: flex;
+    flex-direction: column;
+    padding: 10px 15px;
+    border-radius: 0.8rem;
+    box-shadow: 0.04rem 0.06rem 0.4rem rgba(0, 0, 0, 0.171);
+    height: -moz-fit-content;
+    height: fit-content;
+    margin: 75px 20px 0 0;
+  }
+  .tripDetails-totalPrice-Desktop .tripDetails-totalPrice-section-Desktop {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-bottom: 1px dashed rgb(200, 200, 200);
+  }
+  .tripDetails-totalPrice-Desktop .tripDetails-totalPrice-title-Desktop {
+    font-size: 13pt;
+    font-weight: bold;
+    color: #001219;
+  }
+  .tripDetails-totalPrice-Desktop .tripDetails-totalPrice-price-Desktop {
+    font-size: 15pt;
+    font-weight: bold;
+    color: #BB3E03;
+  }
+  .tripDetails-totalPrice-Desktop .tripDetails-totalPrice-price-Desktop .tripDetails-totalPrice-price-icon {
+    margin-right: 5px;
+  }
+  .tripDetails-totalPrice-Desktop .tripDetails-totalPrice-submit-Desktop {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0px 20px 0px;
+  }
+  .tripDetails-totalPrice-Desktop .tripDetails-totalPrice-submit-Desktop button {
+    border-radius: 0.8rem;
+    background-color: #001219;
+    color: #ececec;
+    border: none;
+    padding: 10px;
+  }
+  .tripDetails-traveller-container {
+    height: 63vh;
+  }
+  .tripDetails-traveller-container .tripDetails-traveller-sidebar {
+    width: 30%;
+    height: 57vh;
+    border-right: 1px solid #001219;
+    overflow-y: scroll;
+  }
+  .tripDetails-traveller-container .tripDetails-traveller-sidebar .tripDetails-traveller-main {
+    flex-direction: column;
+    gap: 0pt;
+    width: 100%;
+    overflow: hidden;
+  }
+  .tripDetails-traveller-container .tripDetails-traveller-sidebar .tripDetails-traveller-main .tripDetails-submit {
+    margin: 10px 0px 20px 0px;
+    width: 10vw;
+  }
+  .tripDetails-traveller-container .tripDetails-traveller-sidebar .tripDetails-traveller-main .tripDetails-trip-details-hotel {
+    border-bottom: 1px solid #001219;
+    cursor: pointer;
+  }
+  .tripDetails-traveller-container .tripDetails-traveller-sidebar .tripDetails-traveller-main .tripDetails-trip-details-hotel .tripDetails-trip-city {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    gap: 10px;
+    font-size: 10pt;
+  }
+  .tripDetails-traveller-container .tripDetails-traveller-sidebar .tripDetails-traveller-main .tripDetails-trip-details-flight {
+    width: 100%;
+    border-bottom: 1px solid #001219;
+    cursor: pointer;
+  }
+  .tripDetails-traveller-container .tripDetails-traveller-sidebar .tripDetails-traveller-main .tripDetails-trip-details-flight .tripDetails-trip-city {
+    flex-direction: row;
+    gap: 6px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-size: 10pt;
+  }
+  .tripDetails-traveller-container .tripDetails-traveller-block {
+    width: 70%;
+  }
+  .tripDetails-traveller-container .tripDetails-traveller-block .tripDetails-traveller-box .company {
+    font-size: 12pt;
+  }
+  .tripDetails-traveller-container .tripDetails-traveller-block .tripDetails-traveller-box .tripDetails-traveller-details {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10pt;
+  }
+  .tripDetails-traveller-container .tripDetails-traveller-block .tripDetails-traveller-box .tripDetails-traveller-details .active {
+    padding: 2pt;
+    border: 1px solid rgba(148, 210, 189, 0.1647058824);
+  }
+  .tripDetails-traveller-container .tripDetails-traveller-block .tripDetails-traveller-box .tripDetails-traveller-details input {
+    width: 20vw;
+  }
+  .tripDetails-traveller-container .tripDetails-traveller-block .tripDetails-traveller-box .tripDetails-traveller-details .file-input {
+    box-shadow: 0.04rem 0.06rem 0.4rem rgba(0, 0, 0, 0.171);
+    display: flex;
+    flex-direction: row;
+    width: 20vw;
+    align-items: center;
+    justify-content: center;
+    padding: 5pt 3pt;
+    border-radius: 0.8rem;
+  }
+  .tripDetails-traveller-container .tripDetails-traveller-block .tripDetails-traveller-box .tripDetails-traveller-details .file-input span {
+    width: 8vw;
+    font-size: 10pt;
+  }
+  .tripDetails-traveller-container .tripDetails-traveller-block .tripDetails-traveller-box .tripDetails-traveller-details .file-input input {
+    box-shadow: none;
+  }
+  .tripDetails-traveller-container .tripDetails-traveller-block .tripDetails-traveller-box .tripDetails-traveller-details .fileType-input-size {
+    cursor: pointer;
+    font-size: 14pt;
+    text-decoration: underline;
+    color: rgb(91, 100, 255);
+  }
+  .tripDetails-traveller-container .tripDetails-traveller-block .tripDetails-traveller-box .tripDetails-company-details {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10pt;
+  }
+  .tripDetails-traveller-container .tripDetails-traveller-block .tripDetails-traveller-box .tripDetails-company-details div {
+    font-size: 10pt;
+    width: 20vw;
+  }
+  .tripDetails-traveller-container .tripDetails-traveller-block .tripDetails-traveller-box .tripDetails-company-details div span {
+    padding: 5pt;
+    font-size: 10pt;
+    font-weight: 800;
+  }
+  .tripDetails-approval {
+    -ms-overflow-style: none;
+    height: 65vh;
+    width: 50vw;
+  }
+  .tripDetails-approval .tripDetails-approval-block {
+    margin: 10pt;
+  }
+  .tripDetails-approval .tripDetails-approval-block .loading-approvals {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15pt;
+  }
+  .tripDetails-approval .tripDetails-approval-block .role-trip-card .role-trip-card-header {
+    flex-direction: row;
+  }
+  .tripDetails-approval .tripDetails-approval-block .role-trip-section .role-review .role-review-hotels .tripDetails-hotel-card .tripDetails-hotel-details {
+    flex-direction: row;
+  }
+  .tripDetails-approval .tripDetails-approval-block .role-trip-section .role-review .role-review-hotels .role-travellers-hotel .role-traveller-container .role-traveller-block .role-traveller-box {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2.5pt;
+  }
+  .tripDetails-approval .tripDetails-approval-block .role-trip-section .role-review .role-review-hotels .role-travellers-hotel .role-trip-city {
+    margin: 10pt;
+  }
+  .tripDetails-approval .tripDetails-approval-block .role-trip-section .role-review .role-review-flights .role-travellers-flight .role-traveller-container .role-traveller-block {
+    border-radius: 8px;
+  }
+  .tripDetails-approval .tripDetails-approval-block .role-trip-section .role-review .role-review-flights .role-travellers-flight .role-traveller-container .role-traveller-block .role-traveller-box {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2.5pt;
+  }
+  .tripDetails-approval .tripDetails-approval-block .role-trip-section .role-review .role-review-flights .role-travellers-flight .role-trip-city {
+    margin: 10pt;
+  }
+  .tripDetails-approval .tripDetails-approval-manager {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    margin: 10pt;
+  }
+  .tripDetails-approval .tripDetails-approval-manager ::-webkit-scrollbar {
+    display: none;
+  }
+  .tripDetails-status-block .tripDetails-status-hotels .tripDetails-hotel-card .tripDetails-hotel-details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10pt;
+    flex-direction: row;
+  }
+  .booking-popup .tripDetails-traveller-tabs .tripDetails-traveller-tabs {
+    font-size: 12pt;
+  }
+}/*# sourceMappingURL=TripDetails.css.map */

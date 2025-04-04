@@ -1,0 +1,1183 @@
+@import "../../CommonStyles/CommonColors.scss";
+@import "../../CommonStyles/CommonStyles.scss";
+
+.role-container {
+  display: block;
+  padding: 15pt;
+  .role-header {
+    font-size: 23pt;
+    text-align: center;
+    font-weight: bolder;
+  }
+  .role-block {
+    display: flex;
+    flex-direction: column;
+
+    .role-type {
+      .role-type-header {
+        font-size: 18pt;
+        font-weight: bold;
+        margin: 5pt;
+      }
+      .role-type-block {
+        display: flex;
+        flex-direction: column;
+        .role-type-add {
+          margin: 0 15pt;
+          button {
+            padding: 5pt;
+            background: $primary;
+            border: none;
+            border-radius: 0.8rem;
+            color: white;
+            &:hover {
+              cursor: pointer;
+            }
+          }
+        }
+        .role-type-feilds {
+          .role-feilds {
+            display: grid;
+            padding: 5pt;
+            align-items: center;
+            input {
+              padding: 5pt;
+              border: 1px solid #000000;
+              border-radius: 0.6rem;
+              &:focus {
+                border: none;
+                border-bottom: 1px solid #000000;
+              }
+            }
+          }
+          .role-submit {
+            button {
+              padding: 5pt 10pt;
+              background: $primary;
+              border: none;
+              border-radius: 0.8rem;
+              color: white;
+              &:hover {
+                cursor: pointer;
+              }
+            }
+          }
+        }
+        .role-type-approval {
+          margin: 10pt;
+          .role-approval {
+            margin: 10pt;
+            display: flex;
+            padding: 10pt;
+            border-radius: 0.8rem;
+            justify-content: space-between;
+            align-items: center;
+            border: 1px dotted $primary;
+            background-color: $highlightLite;
+            button {
+              padding: 5pt 10pt;
+              background: $primary;
+              border: none;
+              border-radius: 0.8rem;
+              color: white;
+              &:hover {
+                cursor: pointer;
+              }
+            }
+          }
+        }
+      }
+      .role-type-approval {
+        margin: 10pt;
+        .role-approval {
+          margin: 10pt;
+          display: flex;
+          padding: 10pt;
+          border-radius: 0.8rem;
+          justify-content: space-between;
+          align-items: center;
+          border: 1px dotted $primary;
+          background-color: $highlightLite;
+          flex-wrap: wrap;
+        }
+      }
+    }
+    .role-trip-approval {
+      .role-trip-approval-header {
+        font-size: 18pt;
+        font-weight: bold;
+        margin: 5pt;
+      }
+      .role-trip-approval-tabs {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 10pt;
+        background-color: $highlightLite;
+        border: 1px solid $primaryLite;
+        border-radius: 0.8rem;
+        overflow: hidden;
+        .approval-tab {
+          color: $primary;
+          padding: 8px 10px;
+          font-size: 12pt;
+          font-weight: bold;
+          cursor: pointer;
+          width: 100%;
+          text-align: center;
+        }
+        .approval-tab.approval-tab-selected {
+          background-color: $primaryLite;
+          color: #ffff;
+        }
+      }
+      .role-trip-approval-block {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+
+        .loading-approvals {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          padding: 15pt;
+        }
+        .role-card {
+          box-shadow: $shadow1;
+          border-radius: 0.8rem;
+          margin-bottom: 10pt;
+        }
+        .role-trip-card {
+          display: flex;
+          flex-direction: column;
+          margin: 10pt 0;
+          padding: 10px;
+          border-radius: 0.8rem;
+          .role-trip-card-header {
+            display: flex;
+            font-size: 20px;
+            text-align: center;
+            font-weight: bold;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+          }
+          .role-trip-list {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-direction: column;
+            .tripDetails-totalPrice-section-Desktop {
+              display: flex;
+              justify-content: space-between;
+              padding: 10px;
+            }
+            .tripDetails-totalPrice-title-Desktop {
+              font-size: 10pt;
+              font-weight: bold;
+              color: $primary;
+            }
+            .tripDetails-totalPrice-price-Desktop {
+              font-size: 10pt;
+              font-weight: bold;
+              color: $secondary;
+            }
+            .role-trip-type {
+              margin: 10px 0px;
+              display: flex;
+              gap: 15px;
+              .role-trip-hotel {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                color: $primary;
+                border-radius: 0.8rem;
+                background-color: #f5f5f5;
+                padding: 5px 10px;
+              }
+            }
+            .role-trip-status {
+              display: flex;
+              align-items: center;
+              font-size: 12pt;
+              span {
+                font-size: 10pt;
+                padding: 5pt 8pt;
+                color: #ffff;
+                border-radius: 0.8rem;
+                font-weight: bold;
+              }
+              .orange {
+                background-color: #ffa500;
+              }
+              .green {
+                background-color: #008000;
+              }
+            }
+          }
+          span {
+            font-size: 15px;
+          }
+          .role-trip-date {
+            display: flex;
+            font-size: 12pt;
+            span {
+              font-size: 10pt;
+              margin: 0 5pt;
+            }
+            p {
+              color: $highlight;
+              font-size: 10pt;
+              margin: 0;
+            }
+          }
+        }
+        .role-trip-openDtls {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          margin-bottom: 5px;
+          cursor: pointer;
+          button {
+            border: none;
+            background-color: $primary;
+            font-size: 12pt;
+            font-weight: bolder;
+            padding: 5pt 15pt;
+            color: #ffff;
+            border-radius: 0.8rem;
+          }
+        }
+        .role-trip-openDtls.role-trip-openDtls-open {
+          .role-trip-openDtls-icon {
+            transform: rotate(180deg);
+            transition: 0.2s ease-in-out;
+          }
+        }
+      }
+    }
+  }
+}
+
+.role-trip-section {
+  margin: 10px;
+  padding: 10px;
+  height: 80vh;
+  width: 100%;
+  overflow: scroll;
+  .role-review {
+    .role-review-hotels {
+      text-align: center;
+      border-radius: 0.8rem;
+      .role-review-hotels-header {
+        font-size: 20pt;
+        font-weight: bolder;
+      }
+      .role-hotel-card {
+        box-shadow: $shadow1;
+        padding: 5pt 0pt 5pt 5pt;
+        border-radius: 0.8rem;
+        margin-bottom: 10pt;
+        .role-hotel-details {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          margin-bottom: 10pt;
+          .role-hotel-name {
+            font-size: 12pt;
+            font-weight: bold;
+          }
+          .role-hotel-date {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            background-color: #94d2bd;
+            border-radius: 0.8rem 0rem 0rem 0.8rem;
+            padding: 5pt;
+            font-size: 10pt;
+          }
+          .role-hotel-people {
+            font-size: 10pt;
+          }
+        }
+        .role-roomDtls-room {
+          background-color: whitesmoke;
+          padding: 10px;
+          border-radius: 0.8rem;
+          margin-bottom: 10px;
+
+          .role-roomDtls-room-titleSection {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 10px;
+            .role-roomDtls-room-type {
+              font-size: 12pt;
+              font-weight: bold;
+              color: $primary;
+            }
+            .role-roomDtls-room-price {
+              font-size: 8pt;
+              font-weight: bold;
+              color: $secondary;
+
+              .role-roomDtls-room-price-icon {
+                margin-right: 3px;
+              }
+            }
+          }
+          .role-roomDtls-room-otherSection {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+
+            .role-roomDtls-room-meals {
+              font-size: 10pt;
+              font-weight: bold;
+              color: rgb(80, 80, 80);
+
+              .role-roomDtls-room-meals-icon {
+                margin-right: 5px;
+                color: $primary;
+              }
+            }
+            .role-roomDtls-room-cancel {
+              font-size: 10pt;
+              font-weight: bold;
+              color: rgb(100, 100, 100);
+              .role-roomDtls-room-cancel-icon {
+                margin-right: 5px;
+                color: $primary;
+              }
+            }
+          }
+        }
+      }
+    }
+    .role-review-flights {
+      text-align: center;
+      border-radius: 0.8rem;
+      .role-review-flights-header {
+        font-size: 20pt;
+        font-weight: bolder;
+      }
+      .role-flight-card {
+        box-shadow: $shadow1;
+        padding: 5pt 0pt 5pt 5pt;
+        border-radius: 0.8rem;
+        margin-bottom: 10pt;
+        .role-flight-airline-block {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          margin-bottom: 6px;
+          .role-flight-airline {
+            font-size: 12pt;
+            font-weight: bold;
+            color: $primary;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            span {
+              font-size: 8pt;
+              color: rgb(121, 121, 121);
+            }
+            .role-flight-logo {
+              margin: 10px 10px 10px 0px;
+              span {
+                height: 25px;
+                width: 25px;
+                display: block;
+                background-position: 50%;
+                background-size: contain;
+                background-repeat: no-repeat;
+                .role-flight-logo-icon {
+                  height: 22px;
+                }
+              }
+            }
+          }
+          .role-flight-depDate-block {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            background-color: $highlight;
+            border-radius: 0.8rem 0rem 0rem 0.8rem;
+            padding: 5pt;
+          }
+        }
+        .role-flight-segment-section {
+          border-radius: 0.8rem;
+          margin-bottom: 15px;
+          background-color: rgb(245, 245, 245);
+          .role-flight-arrDep {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: 0 10pt 0 0;
+            padding: 10pt;
+            .role-flight-dep {
+              .role-flight-depTime {
+                font-size: 12pt;
+                font-weight: bold;
+              }
+              .role-flight-depCity {
+                font-size: 12pt;
+                font-weight: bold;
+                color: rgb(111, 111, 111);
+              }
+            }
+            .role-flight-duration {
+              height: 60px;
+              width: 55%;
+              .role-flight-duration-stopPts {
+                display: flex;
+                justify-content: center;
+                align-items: flex-end;
+                padding-bottom: 5px;
+                border-bottom: 1px dashed rgb(150, 150, 150);
+                font-size: 8pt;
+                font-weight: bold;
+                color: rgb(160, 160, 160);
+                height: 30px;
+                .role-flight-duration-stopType {
+                  font-size: 10pt;
+                  color: rgb(80, 80, 80);
+                  margin-right: 3px;
+                  color: $highlight;
+                  display: flex;
+                  justify-content: center;
+                  align-items: center;
+                  cursor: pointer;
+
+                  .role-flight-duration-stopType-icon {
+                    margin-left: 5px;
+                    color: rgb(80, 80, 80);
+                    font-size: 9pt;
+                  }
+                }
+                .role-flight-duration-stopPt {
+                  margin-right: 3px;
+                }
+              }
+              .role-flight-duration-time {
+                display: flex;
+                justify-content: center;
+                align-items: flex-start;
+                padding-top: 2px;
+                font-size: 10pt;
+                font-weight: bold;
+                color: $primary;
+                height: 30px;
+              }
+            }
+            .role-flight-arr-section {
+              display: flex;
+              justify-content: flex-end;
+              align-items: flex-start;
+              .role-flight-dep.role-flight-arr {
+                text-align: right;
+                .role-flight-depTime {
+                  font-size: 12pt;
+                  font-weight: bold;
+                }
+                .role-flight-depCity {
+                  font-size: 12pt;
+                  font-weight: bold;
+                  color: rgb(111, 111, 111);
+                }
+              }
+              .role-flight-depTime-afterDays {
+                font-size: 6pt;
+                font-weight: bold;
+                margin-left: 6px;
+                color: red;
+                .role-flight-depTime-afterDays-num {
+                  font-size: 9pt;
+                }
+              }
+            }
+          }
+        }
+        .role-flight-segment-price {
+          margin-right: 10px;
+          font-size: 14pt;
+          font-weight: bold;
+          color: $secondary;
+          display: flex;
+          justify-content: flex-end;
+          align-items: center;
+
+          .role-flight-segment-price-icon {
+            margin-right: 5px;
+          }
+        }
+      }
+    }
+  }
+  .role-travellers-flight {
+    // box-shadow: $shadow1;
+    border-radius: 0.8rem;
+    padding: 10pt;
+    margin-bottom: 10pt;
+    .role-traveller-container {
+      display: flex;
+      flex-direction: column;
+      gap: 10pt;
+      padding: 0 10pt;
+      .role-traveller-block {
+        border-radius: 8px;
+        .role-traveller-header {
+          font-size: 12pt;
+          font-weight: bold;
+          margin-bottom: 10pt;
+        }
+        .role-traveller-box {
+          display: flex;
+          flex-direction: column;
+          gap: 2.5pt;
+          overflow: overlay;
+        }
+        .role-traveller-box div {
+          display: flex;
+          text-align: left;
+          font-size: 10pt;
+        }
+        .role-traveller-box div span {
+          font-weight: bold;
+          margin-left: 2pt;
+        }
+      }
+    }
+  }
+  .role-travellers-hotel {
+    // box-shadow: $shadow1;
+    margin-bottom: 10pt;
+    border-radius: 0.8rem;
+    padding: 10pt;
+    .role-traveller-container {
+      display: flex;
+      flex-direction: column;
+      gap: 10pt;
+      padding: 0 10pt;
+      .role-traveller-block {
+        border-radius: 8px;
+        .role-traveller-header {
+          font-size: 12pt;
+          font-weight: bold;
+          margin-bottom: 10pt;
+        }
+        .role-traveller-box {
+          display: flex;
+          flex-direction: column;
+          gap: 2.5pt;
+          overflow: overlay;
+        }
+
+        .role-traveller-box div {
+          display: flex;
+          text-align: left;
+          font-size: 10pt;
+        }
+        .role-traveller-box div span {
+          font-weight: bold;
+          margin-left: 2pt;
+        }
+      }
+    }
+  }
+  .role-approve {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    span {
+      font-size: 12pt;
+    }
+    button {
+      border: none;
+      background-color: $primary;
+      font-size: 12pt;
+      font-weight: bolder;
+      padding: 5pt 15pt;
+      color: #ffff;
+      border-radius: 0.8rem;
+    }
+    .spin {
+      padding: 10px 75px;
+      background: $primary;
+      border: none;
+      border-radius: 0.8rem;
+      color: white;
+      cursor: not-allowed;
+    }
+    .spinner {
+      border: 4px solid $highlight;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-left: 4px solid #3498db;
+      border-radius: 50%;
+      width: 20px;
+      height: 20px;
+      animation: spin 1s linear infinite;
+      margin-top: -8px;
+      margin-left: -8px;
+      display: inline-block;
+      border-width: 2px;
+      margin-top: 5px;
+      cursor: not-allowed;
+    }
+    @keyframes spin {
+      0% {
+        transform: rotate(0deg);
+      }
+      100% {
+        transform: rotate(360deg);
+      }
+    }
+  }
+  .role-close {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5px;
+    .close-icon {
+      cursor: pointer;
+    }
+  }
+}
+.role-trip-section2 {
+  margin: 10px;
+  padding: 10px;
+  height: 80vh;
+  width: 100%;
+ 
+  .role-review {
+    .role-review-hotels {
+      text-align: center;
+      border-radius: 0.8rem;
+      .role-review-hotels-header {
+        font-size: 20pt;
+        font-weight: bolder;
+      }
+      .role-hotel-card {
+        box-shadow: $shadow1;
+        padding: 5pt 0pt 5pt 5pt;
+        border-radius: 0.8rem;
+        margin-bottom: 10pt;
+        .role-hotel-details {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          margin-bottom: 10pt;
+          .role-hotel-name {
+            font-size: 12pt;
+            font-weight: bold;
+          }
+          .role-hotel-date {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            background-color: #94d2bd;
+            border-radius: 0.8rem 0rem 0rem 0.8rem;
+            padding: 5pt;
+            font-size: 10pt;
+          }
+          .role-hotel-people {
+            font-size: 10pt;
+          }
+        }
+        .role-roomDtls-room {
+          background-color: whitesmoke;
+          padding: 10px;
+          border-radius: 0.8rem;
+          margin-bottom: 10px;
+
+          .role-roomDtls-room-titleSection {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 10px;
+            .role-roomDtls-room-type {
+              font-size: 12pt;
+              font-weight: bold;
+              color: $primary;
+            }
+            .role-roomDtls-room-price {
+              font-size: 8pt;
+              font-weight: bold;
+              color: $secondary;
+
+              .role-roomDtls-room-price-icon {
+                margin-right: 3px;
+              }
+            }
+          }
+          .role-roomDtls-room-otherSection {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+
+            .role-roomDtls-room-meals {
+              font-size: 10pt;
+              font-weight: bold;
+              color: rgb(80, 80, 80);
+
+              .role-roomDtls-room-meals-icon {
+                margin-right: 5px;
+                color: $primary;
+              }
+            }
+            .role-roomDtls-room-cancel {
+              font-size: 10pt;
+              font-weight: bold;
+              color: rgb(100, 100, 100);
+              .role-roomDtls-room-cancel-icon {
+                margin-right: 5px;
+                color: $primary;
+              }
+            }
+          }
+        }
+      }
+    }
+    .role-review-flights {
+      text-align: center;
+      border-radius: 0.8rem;
+      .role-review-flights-header {
+        font-size: 20pt;
+        font-weight: bolder;
+      }
+      .role-flight-card {
+        box-shadow: $shadow1;
+        padding: 5pt 0pt 5pt 5pt;
+        border-radius: 0.8rem;
+        margin-bottom: 10pt;
+        .role-flight-airline-block {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          margin-bottom: 6px;
+          .role-flight-airline {
+            font-size: 12pt;
+            font-weight: bold;
+            color: $primary;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            span {
+              font-size: 8pt;
+              color: rgb(121, 121, 121);
+            }
+            .role-flight-logo {
+              margin: 10px 10px 10px 0px;
+              span {
+                height: 25px;
+                width: 25px;
+                display: block;
+                background-position: 50%;
+                background-size: contain;
+                background-repeat: no-repeat;
+                .role-flight-logo-icon {
+                  height: 22px;
+                }
+              }
+            }
+          }
+          .role-flight-depDate-block {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            background-color: $highlight;
+            border-radius: 0.8rem 0rem 0rem 0.8rem;
+            padding: 5pt;
+          }
+        }
+        .role-flight-segment-section {
+          border-radius: 0.8rem;
+          margin-bottom: 15px;
+          background-color: rgb(245, 245, 245);
+          .role-flight-arrDep {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: 0 10pt 0 0;
+            padding: 10pt;
+            .role-flight-dep {
+              .role-flight-depTime {
+                font-size: 12pt;
+                font-weight: bold;
+              }
+              .role-flight-depCity {
+                font-size: 12pt;
+                font-weight: bold;
+                color: rgb(111, 111, 111);
+              }
+            }
+            .role-flight-duration {
+              height: 60px;
+              width: 55%;
+              .role-flight-duration-stopPts {
+                display: flex;
+                justify-content: center;
+                align-items: flex-end;
+                padding-bottom: 5px;
+                border-bottom: 1px dashed rgb(150, 150, 150);
+                font-size: 8pt;
+                font-weight: bold;
+                color: rgb(160, 160, 160);
+                height: 30px;
+                .role-flight-duration-stopType {
+                  font-size: 10pt;
+                  color: rgb(80, 80, 80);
+                  margin-right: 3px;
+                  color: $highlight;
+                  display: flex;
+                  justify-content: center;
+                  align-items: center;
+                  cursor: pointer;
+
+                  .role-flight-duration-stopType-icon {
+                    margin-left: 5px;
+                    color: rgb(80, 80, 80);
+                    font-size: 9pt;
+                  }
+                }
+                .role-flight-duration-stopPt {
+                  margin-right: 3px;
+                }
+              }
+              .role-flight-duration-time {
+                display: flex;
+                justify-content: center;
+                align-items: flex-start;
+                padding-top: 2px;
+                font-size: 10pt;
+                font-weight: bold;
+                color: $primary;
+                height: 30px;
+              }
+            }
+            .role-flight-arr-section {
+              display: flex;
+              justify-content: flex-end;
+              align-items: flex-start;
+              .role-flight-dep.role-flight-arr {
+                text-align: right;
+                .role-flight-depTime {
+                  font-size: 12pt;
+                  font-weight: bold;
+                }
+                .role-flight-depCity {
+                  font-size: 12pt;
+                  font-weight: bold;
+                  color: rgb(111, 111, 111);
+                }
+              }
+              .role-flight-depTime-afterDays {
+                font-size: 6pt;
+                font-weight: bold;
+                margin-left: 6px;
+                color: red;
+                .role-flight-depTime-afterDays-num {
+                  font-size: 9pt;
+                }
+              }
+            }
+          }
+        }
+        .role-flight-segment-price {
+          margin-right: 10px;
+          font-size: 14pt;
+          font-weight: bold;
+          color: $secondary;
+          display: flex;
+          justify-content: flex-end;
+          align-items: center;
+
+          .role-flight-segment-price-icon {
+            margin-right: 5px;
+          }
+        }
+      }
+    }
+  }
+  .role-travellers-flight {
+    // box-shadow: $shadow1;
+    border-radius: 0.8rem;
+    padding: 10pt;
+    margin-bottom: 10pt;
+    .role-traveller-container {
+      display: flex;
+      flex-direction: column;
+      gap: 10pt;
+      padding: 0 10pt;
+      .role-traveller-block {
+        border-radius: 8px;
+        .role-traveller-header {
+          font-size: 12pt;
+          font-weight: bold;
+          margin-bottom: 10pt;
+        }
+        .role-traveller-box {
+          display: flex;
+          flex-direction: column;
+          gap: 2.5pt;
+          overflow: overlay;
+        }
+        .role-traveller-box div {
+          display: flex;
+          text-align: left;
+          font-size: 10pt;
+        }
+        .role-traveller-box div span {
+          font-weight: bold;
+          margin-left: 2pt;
+        }
+      }
+    }
+  }
+  .role-travellers-hotel {
+    // box-shadow: $shadow1;
+    margin-bottom: 10pt;
+    border-radius: 0.8rem;
+    padding: 10pt;
+    .role-traveller-container {
+      display: flex;
+      flex-direction: column;
+      gap: 10pt;
+      padding: 0 10pt;
+      .role-traveller-block {
+        border-radius: 8px;
+        .role-traveller-header {
+          font-size: 12pt;
+          font-weight: bold;
+          margin-bottom: 10pt;
+        }
+        .role-traveller-box {
+          display: flex;
+          flex-direction: column;
+          gap: 2.5pt;
+          overflow: overlay;
+        }
+
+        .role-traveller-box div {
+          display: flex;
+          text-align: left;
+          font-size: 10pt;
+        }
+        .role-traveller-box div span {
+          font-weight: bold;
+          margin-left: 2pt;
+        }
+      }
+    }
+  }
+  .role-approve {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    span {
+      font-size: 12pt;
+    }
+    button {
+      border: none;
+      background-color: $primary;
+      font-size: 12pt;
+      font-weight: bolder;
+      padding: 5pt 15pt;
+      color: #ffff;
+      border-radius: 0.8rem;
+    }
+    .spin {
+      padding: 10px 75px;
+      background: $primary;
+      border: none;
+      border-radius: 0.8rem;
+      color: white;
+      cursor: not-allowed;
+    }
+    .spinner {
+      border: 4px solid $highlight;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-left: 4px solid #3498db;
+      border-radius: 50%;
+      width: 20px;
+      height: 20px;
+      animation: spin 1s linear infinite;
+      margin-top: -8px;
+      margin-left: -8px;
+      display: inline-block;
+      border-width: 2px;
+      margin-top: 5px;
+      cursor: not-allowed;
+    }
+    @keyframes spin {
+      0% {
+        transform: rotate(0deg);
+      }
+      100% {
+        transform: rotate(360deg);
+      }
+    }
+  }
+  .role-close {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5px;
+    .close-icon {
+      cursor: pointer;
+    }
+  }
+}
+
+@media screen and (width >= 700px) {
+  .tripsPage-pagination {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    button {
+      margin: 0 5px;
+      padding: 5px 10px;
+      border: 1px solid #ccc;
+      background-color: #fff;
+      cursor: pointer;
+    }
+
+    button.active {
+      background-color: #007bff;
+      color: #fff;
+      border-color: #007bff;
+    }
+  }
+  .role-type-feilds {
+    .role-feilds {
+      width: 50%;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      padding: 5pt;
+      align-items: center;
+    }
+  }
+  .role-travellers-flight {
+    .role-traveller-container {
+      .role-traveller-block {
+        border-radius: 8px;
+        .role-traveller-box {
+          display: grid !important;
+          grid-template-columns: 1fr 1fr;
+          gap: 2.5pt;
+        }
+      }
+    }
+    .role-trip-city {
+      margin: 10pt;
+    }
+  }
+  .role-travellers-hotel {
+    .role-traveller-container {
+      .role-traveller-block {
+        .role-traveller-box {
+          display: grid !important;
+          grid-template-columns: 1fr 1fr;
+          gap: 2.5pt;
+        }
+      }
+    }
+    .role-trip-city {
+      margin: 10pt;
+    }
+  }
+  .role-block {
+    .role-trip-approval {
+      .role-trip-approval-block {
+        .role-trip-card {
+          .role-trip-card-header {
+            flex-direction: row !important;
+          }
+          .role-trip-list {
+            flex-direction: row !important;
+          }
+        }
+        .role-trip-section {
+          height: 80vh;
+          overflow: scroll;
+          .role-review {
+            .role-review-hotels {
+              padding: 10pt;
+              text-align: center;
+              border-radius: 0.8rem;
+            }
+            .role-review-flights {
+              padding: 10pt;
+              margin: 10pt 0;
+              .role-flight-card {
+                margin: 10pt;
+              }
+            }
+          }
+          .role-travellers {
+            padding: 10pt;
+            text-align: center;
+            border-radius: 0.8rem;
+            margin: 10pt 0;
+            .role-review-travellers-header {
+              font-size: 20pt;
+              font-weight: bolder;
+            }
+            .role-travellers-flight {
+              .role-traveller-container {
+                .role-traveller-block {
+                  border-radius: 8px;
+                  .role-traveller-box {
+                    display: grid;
+                    grid-template-columns: 1fr 1fr;
+                    gap: 2.5pt;
+                  }
+                }
+              }
+              .role-trip-city {
+                margin: 10pt;
+              }
+            }
+            .role-travellers-hotel {
+              margin: 10pt;
+              .role-traveller-container {
+                gap: 20px;
+                .role-traveller-block {
+                  border: 1px solid $highlight;
+                  padding: 10pt;
+                  .role-traveller-box {
+                    display: grid;
+                    grid-template-columns: 1fr 1fr;
+                    gap: 10pt;
+                  }
+
+                  .role-traveller-box div {
+                    margin-bottom: 10px;
+                    display: flex;
+                  }
+
+                  .role-traveller-box div .file {
+                    cursor: pointer;
+                  }
+
+                  .role-traveller-box div .file:hover {
+                    text-decoration: underline;
+                  }
+
+                  .role-traveller-box div span {
+                    font-weight: bold;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

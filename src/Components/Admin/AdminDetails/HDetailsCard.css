@@ -1,0 +1,90 @@
+.ravi {
+  border: 1px solid black;
+}
+.hcard-img {
+  width: 8vw;
+  height: 8vw;
+  border-radius: 0.4rem;
+  overflow: hidden;
+  margin-right: 10px;
+}
+.hcard-img img {
+  -o-object-fit: cover;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+.hcard-total {
+  box-shadow: 0.04rem 0.06rem 0.4rem rgba(0, 0, 0, 0.171);
+  border-radius: 0.8rem;
+  padding-top: 15px;
+  margin: 10pt 0;
+}
+.hcard {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 15px;
+  border-radius: 0.8rem;
+  padding-left: 10px;
+}
+.room_Card {
+  background-color: whitesmoke;
+  padding: 10px;
+  border-radius: 0.8rem;
+  margin-bottom: 10px;
+}
+.room_Title {
+  font-size: 12pt;
+  font-weight: bold;
+  color: #001219;
+}
+.room_sub_Titles {
+  font-size: 10pt;
+  font-weight: bold;
+  color: rgb(80, 80, 80);
+}
+.hotelInfo_roomDtls {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.hotelInfo_Price {
+  font-size: 12pt;
+  font-weight: bold;
+  color: #bb3e03;
+}
+.hotelInfo_OtherSection {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.hotelInfo_Icon {
+  margin-right: 5px;
+  color: #001219;
+}
+.hotelInfo_Inclusions {
+  margin-top: 10px;
+  font-size: 10pt;
+  font-weight: bold;
+  color: #001219;
+}
+.room_Card_Main {
+  padding: 10px;
+}
+.flightResults-price {
+  font-weight: bold;
+  color: #bb3e03;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 10px;
+  font-size: 20px;
+}
+.star {
+  margin-right: 2px;
+  color: gold;
+}

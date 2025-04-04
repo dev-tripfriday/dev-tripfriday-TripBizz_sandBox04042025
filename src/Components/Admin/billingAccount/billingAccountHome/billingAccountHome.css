@@ -1,0 +1,120 @@
+.main-block {
+  display: flex;
+  flex-direction: row;
+  height: 100vh;
+}
+.primary-block {
+  /* background-color: lightblue; */
+  /* width: 20vw; */
+  /* margin-left: 100px; */
+}
+
+.secondary-block {
+  display: flex;
+  /* background-color: lightcoral; */
+  flex-grow: 1;
+  /* border: 2px solid black; */
+  align-items: center;
+  /* justify-content: center; */
+  padding-top: 8vh;
+  flex-direction: column;
+}
+.header {
+  box-shadow: 0.04rem 0.06rem 0.4rem rgba(0, 0, 0, 0.17);
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 90%;
+  border-radius: 10px;
+}
+.header-title {
+  font-size: 15pt;
+  font-weight: 700;
+}
+.createUser {
+  background: black;
+  color: white;
+  border: none;
+  border-radius: 0.8rem;
+  padding: 10pt;
+  margin-top: 15px;
+  /* align-self: flex-end; */
+  margin-left: 80%;
+}
+.form-main-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 25px;
+}
+.input-main-container {
+  /* border:1px solid black; */
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.input-title {
+  display: flex;
+  flex: 1;
+  font-size: 20px;
+  flex-shrink: 2;
+}
+.input-container {
+  border: 1px solid black;
+  display: flex;
+  flex: 1;
+  width: 300px;
+  flex-shrink: 5;
+  height: 40px;
+  border-radius: 10px;
+  padding: 0px 10px 0px 10px;
+}
+.form-title {
+  font-size: 30px;
+  font-weight: 700;
+  text-align: center;
+}
+.error-message {
+  font-size: 12px;
+  color: red;
+  margin-top: 5px;
+}
+.submit-btn-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.submit-btn {
+  background: black;
+  color: white;
+  border: none;
+  border-radius: 0.8rem;
+  padding: 8pt;
+  margin-top: 10px;
+}
+.success-message {
+  font-size: 15px;
+  color: green;
+  margin-top: 5px;
+  font-weight: 600;
+}
+.companies-data-container {
+  margin-top: 30px;
+}
+.companies-data-items {
+  margin: 10px;
+  box-shadow: 0.04rem 0.06rem 0.4rem rgba(0, 0, 0, 0.17);
+  padding: 18px;
+  width: 80vw;
+  border-radius: 0.8rem;
+  margin-top: 20px;
+}
+.companies-data-items p {
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  max-width: 100%;
+}

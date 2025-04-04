@@ -1,0 +1,249 @@
+@import "../../CommonStyles/CommonColors.scss";
+@import "../../CommonStyles/CommonStyles.scss";
+
+.busMain-block {
+ width: 100%;
+  box-shadow: $shadow1;
+  padding: 10pt 0 3pt 10pt;
+  border-radius: 0.8rem;
+  margin-top: 20px;
+  .busMain-block-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    .busMain-bus-travel {
+      display: flex;
+    align-items: center;
+    gap: 5px;
+      .busMain-bus-travel-name {
+        font-size: 12pt;
+        font-weight: bolder;
+      }
+    }
+    .busMain-bus-Timings {
+      display: flex;
+      align-items: center;
+      gap: 10pt;
+      .busMain-Timing {
+        font-size: 8pt;
+        span {
+          font-size: 9pt;
+          font-weight: 500;
+        }
+      }
+      .busMain-dur {
+        align-items: flex-end;
+        // border-bottom: 1px dashed #969696;
+        color: #a0a0a0;
+        display: flex;
+        font-size: 8pt;
+        font-weight: 700;
+        justify-content: center;
+        // padding-bottom: 5px;
+      }
+    }
+    .busMain-bus-Fare {
+      align-items: center;
+      color: #bb3e03;
+      display: flex;
+      font-size: 10pt;
+      font-weight: 700;
+      margin-right: 10px;
+      .busMain-bus-Fare-icon {
+        margin-right: 5px;
+      }
+    }
+  }
+  .busMain-bus-type {
+    font-size: 7pt;
+  }
+  .busMain-block-bottom {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    margin-top: 5pt;
+    .busMain-tracking {
+      display: flex;
+      align-items: center;
+      font-size: 10pt;
+      gap: 10pt;
+      .busMain-details-btn {
+        font-size: 10pt;
+        text-decoration: underline;
+        color: #e19604;
+        cursor: pointer;
+      }
+    }
+    .busMain-submit {
+      display: flex;
+      justify-content: end;
+      button {
+        padding: 5pt 10pt;
+        background-color: $primary;
+        color: #fff;
+        border-radius: 0.8rem;
+        border: none;
+        font-size: 10pt;
+      }
+    }
+  }
+}
+
+.bus-popup-header {
+  font-size: 15pt;
+  font-weight: bolder;
+}
+
+.cab-header-price {
+  align-items: center;
+  color: #bb3e03;
+  display: flex;
+  font-size: 10pt;
+  font-weight: 700;
+  justify-content: flex-end;
+}
+
+.busCancel-popup-tabs {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 10px;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+  border-bottom: 1.5px solid rgb(80, 80, 80);
+  font-size: 12pt;
+  font-weight: bold;
+}
+.busCancel-popup-tab {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.busCancel-popup-rules {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 10px;
+}
+.busCancel-popup-rule {
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 11pt;
+}
+.busCancel-popup-rulesSection {
+  margin-bottom: 10px;
+  border-bottom: 1.5px dashed rgb(120, 120, 120);
+}
+
+@media screen and (width >= 700px) {
+  .busMain-block {
+    width: 90%;
+     box-shadow: $shadow1;
+     padding: 10pt 0 3pt 10pt;
+     border-radius: 0.8rem;
+     margin-top: 20px;
+     .busMain-block-top {
+       display: flex;
+       justify-content: space-between;
+       align-items: center;
+       flex-direction: column;
+       .busMain-bus-travel {
+         display: flex;
+       align-items: center;
+       gap: 5px;
+         .busMain-bus-travel-name {
+           font-size: 12pt;
+           font-weight: bolder;
+         }
+       }
+       .busMain-bus-Timings {
+         display: flex;
+         align-items: center;
+         gap: 10pt;
+         .busMain-Timing {
+           font-size: 10pt;
+           span {
+             font-size: 12pt;
+             font-weight: 500;
+           }
+         }
+         .busMain-dur {
+           align-items: flex-end;
+           border-bottom: 1px dashed #969696;
+           color: #a0a0a0;
+           display: flex;
+           font-size: 8pt;
+           font-weight: 700;
+           justify-content: center;
+           padding-bottom: 5px;
+         }
+       }
+       .busMain-bus-Fare {
+         align-items: center;
+         color: #bb3e03;
+         display: flex;
+         font-size: 14pt;
+         font-weight: 700;
+         margin-right: 10px;
+         .busMain-bus-Fare-icon {
+           margin-right: 5px;
+         }
+       }
+     }
+     .busMain-bus-type {
+       font-size: 10pt;
+     }
+     .busMain-block-bottom {
+       display: flex;
+       justify-content: space-between;
+       flex-direction: column;
+       margin-top: 5pt;
+       .busMain-tracking {
+         display: flex;
+         align-items: center;
+         font-size: 10pt;
+         gap: 10pt;
+         .busMain-details-btn {
+           font-size: 10pt;
+           text-decoration: underline;
+           color: #e19604;
+           cursor: pointer;
+         }
+       }
+       .busMain-submit {
+         display: flex;
+         justify-content: end;
+         button {
+           padding: 5pt 10pt;
+           background-color: $primary;
+           color: #fff;
+           border-radius: 0.8rem;
+           border: none;
+           font-size: 10pt;
+         }
+       }
+     }
+   }
+  .busMain-block-top {
+    flex-direction: row !important;
+  }
+  .busMain-block-bottom {
+    flex-direction: row !important;
+  }
+  .busMain-submit {
+    justify-content: flex-start;
+  }
+  .seperate {
+    height: 50%;
+  }
+  .cab-header-price {
+    align-items: center;
+    color: #bb3e03;
+    display: flex;
+    font-size: 14pt;
+    font-weight: 700;
+    justify-content: flex-end;
+  }
+  
+}

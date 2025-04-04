@@ -1,0 +1,169 @@
+@import "../../CommonStyles/CommonColors.scss";
+@import "../../CommonStyles/CommonStyles.scss";
+
+.loginPage-block {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+  .loginPage-container {
+    box-shadow: $shadow1;
+    padding: 20px 40px;
+    border-radius: 0.8rem;
+    .loginPage-header {
+      font-size: 30px;
+      font-weight: 1000;
+      text-align: center;
+    }
+    .loginPage-body {
+      display: flex;
+      flex-direction: column;
+      .loginPage-type {
+        margin: 10px;
+        .loginPage-type-input {
+          padding: 10px 0px;
+          position: relative;
+         
+          input {
+            padding: 5px 10px 5px 30px;
+            border: none;
+            border-bottom: 1px solid #000000;
+          }
+          input:focus {
+            border: none;
+            border-bottom: 1px solid #000000;
+          }
+          span {
+            position: absolute;
+            top: 15px;
+            left: 10px;
+          }
+        }
+        .error-message {
+          font-size: 12px;
+          color: red;
+        }
+      }
+      .loginPage-forgotPassword {
+        display: flex;
+        align-items: end;
+        justify-content: end;
+        font-size: 12px;
+      }
+      .loginPage-submit {
+        display: flex;
+        justify-content: center;
+        margin: 10px;
+        .login {
+          padding: 10px 75px;
+          background: $primary;
+          border: none;
+          border-radius: 0.8rem;
+          color: white;
+        }
+        .spin {
+          padding: 10px 75px;
+          background: $primary;
+          border: none;
+          border-radius: 0.8rem;
+          color: white;
+          cursor: not-allowed;
+        }
+        .spinner {
+          border: 4px solid $highlight;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          border-left: 4px solid #3498db;
+          border-radius: 50%;
+          width: 20px;
+          height: 20px;
+          animation: spin 1s linear infinite;
+          margin-top: -8px;
+          margin-left: -8px;
+          display: inline-block;
+          border-width: 2px;
+          margin-top: 5px;
+          cursor: not-allowed;
+        }
+        @keyframes spin {
+          0% {
+            transform: rotate(0deg);
+          }
+          100% {
+            transform: rotate(360deg);
+          }
+        }
+        &.loading {
+          cursor: not-allowed;
+          opacity: 0.7;
+        }
+      }
+      .loginPage-methods {
+        font-size: 15px;
+        text-align: center;
+        margin: 5px;
+        .loginPage-methods-type {
+          margin: 10px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          .facebook {
+            background-color: #1877f2;
+            border-radius: 100%;
+            padding: 10px 15px;
+            margin: 10px 5px;
+          }
+          .google {
+            border-radius: 100%;
+            background-color: #df4a32;
+            padding: 10px 15px;
+            margin: 10px 5px;
+          }
+          .twitter {
+            background-color: #55acee;
+            border-radius: 100%;
+          }
+        }
+      }
+      .loginPage-switch {
+        font-size: 12px;
+        text-align: center;
+        span {
+          text-decoration: underline;
+          cursor: pointer;
+          color: #000000;
+        }
+      }
+    }
+  }
+}
+
+.alert-text {
+  font-size: 12pt;
+  position: fixed;
+  right: 0;
+  top: 0;
+  margin: 20px 35px;
+  border-radius: 0.4rem;
+  padding: 10px;
+  background-color: $primary;
+  color: #f5f5f5;
+
+  .alert-bar {
+    background-color: #7546c0;
+    height: 5px;
+    animation: progressBar 5s linear alternate;
+    margin-top: 3px;
+    overflow: hidden;
+  }
+  @keyframes progressBar {
+    0% {
+      width: 100%;
+    }
+    100% {
+      width: 0%;
+    }
+  }
+}

@@ -1,0 +1,74 @@
+.flightsetting-main-block {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  flex-wrap: wrap;
+  min-height: 100vh;
+  padding-top: 50px;
+  width: 80%;
+}
+.flightsetting-main-block .flightsetting-main-tabs {
+  display: grid;
+  margin: 0 10vw;
+  gap: 10px;
+  border-radius: 0.8rem;
+  box-shadow: 0.04rem 0.06rem 0.4rem rgba(0, 0, 0, 0.17);
+  overflow: hidden;
+}
+.flightsetting-main-block .flightsetting-main-tabs .flightsetting-main-tabs-list {
+  cursor: pointer;
+  font-weight: 700;
+  padding: 15px 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.1s ease-in;
+  text-align: center;
+  height: 100%;
+  font-size: 10pt;
+}
+.flightsetting-main-block .flightsetting-main-tabs .flightsetting-main-tabs-list-active {
+  background: #94D2BD;
+  color: #fff;
+}
+.flightsetting-main-block .flightsetting-main-content {
+  margin: 15px;
+  width: 80%;
+  background-color: #fff;
+  border-radius: 0.8rem;
+  box-shadow: 0.04rem 0.06rem 0.4rem rgba(0, 0, 0, 0.171);
+  padding: 20px;
+  margin: auto;
+}
+.flightsetting-main-block .flightsetting-main-content .flightsetting-main-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.flightsetting-main-block .flightsetting-main-content .flightsetting-main-box .flightsetting-main-header {
+  font-size: 17pt;
+  font-weight: bolder;
+  margin: 10px 5px;
+}
+.flightsetting-main-block .flightsetting-main-content .flightsetting-main-box .flightsetting-main-input {
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.flightsetting-main-block .flightsetting-main-content .flightsetting-main-box .flightsetting-main-input input {
+  padding: 10px;
+  border: 1px solid #3498db;
+  border-radius: 0.8rem;
+  margin: 1rem;
+}
+.flightsetting-main-block .flightsetting-main-content .flightsetting-main-box .flightsetting-main-input button {
+  padding: 0.5rem 2rem;
+  background-color: #001219;
+  border-radius: 0.8rem;
+  color: #fff;
+  border: none;
+}/*# sourceMappingURL=FlightSetting.css.map */

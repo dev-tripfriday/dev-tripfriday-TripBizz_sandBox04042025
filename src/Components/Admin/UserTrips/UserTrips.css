@@ -1,0 +1,62 @@
+.scale-loader {
+  margin: 40vw;
+}
+
+.admin-header-back {
+  padding: 5px;
+  margin: 10px;
+}
+.admin-header-back .admin-header-back-icon {
+  cursor: pointer;
+}
+
+.admin-trips-container {
+  width: 83%;
+}
+.admin-trips-container .admin-trips-header {
+  box-shadow: 0.04rem 0.06rem 0.4rem rgba(0, 0, 0, 0.171);
+  margin: 20pt;
+  padding: 10pt;
+  border-radius: 0.8rem;
+  display: flex;
+  justify-content: space-between;
+}
+.admin-trips-container .admin-trips-header .header-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.admin-trips-container .admin-trips-header .header-details span {
+  font-size: 10.5pt;
+  font-weight: bolder;
+}
+.admin-trips-container .admin-trips-header .header-details span span {
+  color: #94D2BD;
+}
+.admin-trips-container .admin-trips-header .header-details .trip-name {
+  font-size: 20pt;
+  font-weight: 900;
+}
+.admin-trips-container .admin-trips-header .header-price {
+  display: flex;
+  flex-direction: column;
+  padding: 10px 15px;
+}
+.admin-trips-container .admin-trips-header .header-price .header-price-section {
+  display: flex;
+  margin-bottom: 10px;
+  padding: 10px;
+}
+.admin-trips-container .admin-trips-header .header-price .header-price-title {
+  font-size: 13pt;
+  font-weight: bold;
+  color: #001219;
+}
+.admin-trips-container .admin-trips-header .header-price .header-price-main {
+  font-size: 15pt;
+  font-weight: bold;
+  color: #BB3E03;
+}
+.admin-trips-container .admin-trips-header .header-price .header-price-main .header-price-main-icon {
+  margin-right: 2px;
+}/*# sourceMappingURL=UserTrips.css.map */

@@ -1,0 +1,589 @@
+.busBook-block {
+  padding: 15px 15px 100px 15px;
+  margin-bottom: 10vh;
+  width: 100%;
+}
+.busBook-block .busBook-boardingPoints .busBook-boardingPoints-header {
+  margin-bottom: 30px;
+  margin-right: 85px;
+  color: #001219;
+  font-size: 16pt;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+.busBook-block .busBook-boardingPoints .busBook-boardingPoints-block {
+  background-color: #f5f5f5;
+  border-radius: 0.8rem;
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+.busBook-block .busBook-boardingPoints .busBook-boardingPoints-block .busBook-boardingPoint-type {
+  width: auto;
+  padding: 0 10pt;
+}
+.busBook-block .busBook-boardingPoints .busBook-boardingPoints-block .busBook-boardingPoint-type .busBook-boardingPoint-type-header {
+  color: #001219;
+  font-size: 12pt;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+.busBook-block .busBook-boardingPoints .busBook-boardingPoints-block .busBook-boardingPoint-type .busBook-boardingPoint-type-block select {
+  background-color: #ddd;
+  border: none;
+  border-radius: 0.8rem;
+  font-size: 12pt;
+  font-weight: 700;
+  margin-bottom: 10px;
+  padding: 15px 20px;
+  width: 84vw;
+}
+.busBook-block .busInfo-header {
+  margin-bottom: 20px;
+}
+.busBook-block .busInfo-header .busInfo-header-back .busInfo-header-back-icon {
+  font-size: 14pt;
+  color: #001219;
+  cursor: pointer;
+}
+.busBook-block .busBook-seatLayout {
+  margin-top: 10pt;
+}
+.busBook-block .busBook-seatLayout .busBook-seatLayout-header {
+  margin-bottom: 30px;
+  margin-right: 85px;
+  color: #001219;
+  font-size: 16pt;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+.busBook-block .busBook-seatLayout .busBook-seatLayout-block .upper-block {
+  background-color: #f5f5f5;
+  border-radius: 0.8rem;
+  margin: 15px;
+  padding: 15pt;
+  display: grid;
+  grid-template-columns: 1fr;
+  align-items: center;
+  width: 40vw;
+  padding-top: 20px;
+}
+.busBook-block .busBook-seatLayout .busBook-seatLayout-block .upper-block .upper-block-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.busBook-block .busBook-seatLayout .busBook-seatLayout-block .upper-block .upper-block-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5pt;
+  height: 400px;
+}
+
+.seat-tp {
+  display: flex;
+  gap: 7pt;
+  justify-content: flex-end;
+}
+.seat-tp div {
+  cursor: pointer;
+  display: inline-block;
+  background-size: 350px 500px;
+  font-size: 0;
+}
+.seat-tp .sleeper {
+  width: 29px;
+  height: 77px;
+}
+.seat-tp .sleeper.lseat {
+  background-position: -180px -136px;
+}
+.seat-tp .sleeper.bseat {
+  background-position: -99px -135px;
+}
+.seat-tp .sleeper.nbseat {
+  background-position: -99px -135px;
+}
+.seat-tp .sleeper.selseat {
+  background-position: -11px -418px;
+}
+.seat-tp .seater {
+  height: 26px;
+  width: 26px;
+}
+.seat-tp .seater.lseat {
+  background-position: -14px -91px;
+}
+.seat-tp .seater.bseat {
+  background-position: -64px -91px;
+}
+.seat-tp .seater.nbseat {
+  background-position: -148px -89px;
+}
+.seat-tp .seater.selseat {
+  background-position: -127px -381px;
+}
+
+.outerseat {
+  border: 1px solid #e0e0e0;
+  width: 100%;
+  float: left;
+  min-height: 188px;
+}
+
+.busSeatlft {
+  width: 30px;
+  float: left;
+  margin: 10px 0px 10px 20px;
+}
+
+.busSeatlft .upper {
+  width: 15px;
+  height: 60px;
+  cursor: default;
+  position: relative;
+  background-position: -69px -83px;
+}
+
+.nseat,
+.snseat,
+.bseat,
+.rseat,
+.sseat,
+.srseat,
+.hseat,
+.bhseat,
+.rhseat,
+.shseat,
+.srhseat,
+.vseat,
+.bvseat,
+.rvseat,
+.svseat,
+.srvseat,
+.lower,
+.upper {
+  background: url(https://bus.travelboutiqueonline.com/Images/transparent-backgro-seatlayout.gif) no-repeat left top;
+}
+
+.busSeatrgt {
+  width: 300px;
+  float: left;
+  margin-left: 15px;
+}
+
+.busSeat {
+  height: 50px;
+  padding: 10px;
+  margin-bottom: 10px;
+  float: left;
+  width: 90%;
+  height: 100px;
+}
+
+.seatcontainer {
+  clear: both;
+  height: 104px;
+  z-index: 2;
+  zoom: 1;
+  word-spacing: normal;
+  position: relative;
+}
+
+.clearfix {
+  zoom: 1;
+}
+
+.clearfix:before,
+.clearfix:after {
+  content: "";
+  display: table;
+}
+
+.hseat {
+  width: 40px;
+  background-position: -40px 0;
+  z-index: 2;
+}
+
+.bhseat {
+  background-position: -40px -40px;
+  cursor: default;
+  width: 40px;
+  z-index: 2;
+}
+
+.nseat,
+.snseat,
+.bseat,
+.rseat,
+.sseat,
+.srseat,
+.hseat,
+.bhseat,
+.rhseat,
+.shseat,
+.srhseat,
+.vseat,
+.bvseat,
+.rvseat,
+.svseat,
+.srvseat,
+.lower,
+.upper {
+  float: left;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  cursor: pointer;
+}
+
+vseat {
+  background-position: -124px 0;
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+.clr {
+  clear: both;
+}
+
+.outerlowerseat {
+  border: 1px solid #e0e0e0;
+  width: 100%;
+  margin-top: 10px;
+  float: left;
+  min-height: 160px;
+}
+
+.busSeatlft {
+  width: 30px;
+  float: left;
+  margin: 10px 0px 10px 20px;
+}
+
+.busSeatlft .lower {
+  background-position: -38px -83px;
+}
+
+.busSeatlft .lower {
+  width: 15px;
+  height: 60px;
+  cursor: default;
+  position: relative;
+}
+
+.nseat,
+.snseat,
+.bseat,
+.rseat,
+.sseat,
+.srseat,
+.hseat,
+.bhseat,
+.rhseat,
+.shseat,
+.srhseat,
+.vseat,
+.bvseat,
+.rvseat,
+.svseat,
+.srvseat,
+.lower,
+.upper {
+  background: url(https://bus.travelboutiqueonline.com/Images/transparent-backgro-seatlayout.gif) no-repeat left top;
+}
+
+.busSeatrgt {
+  width: 300px;
+  float: left;
+  margin-left: 15px;
+}
+
+.seatcontainer {
+  clear: both;
+  height: 104px;
+  z-index: 2;
+  zoom: 1;
+  word-spacing: normal;
+  position: relative;
+}
+
+.clearfix {
+  zoom: 1;
+}
+
+.clearfix:before,
+.clearfix:after {
+  content: "";
+  display: table;
+}
+
+.bseat {
+  background-position: 0px -40px;
+  cursor: default;
+}
+
+.busBook-fare-Mobile {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  box-shadow: 0.04rem 0.06rem 0.4rem rgba(0, 0, 0, 0.171);
+  background-color: white;
+  padding: 10px 15px 15px 15px;
+}
+.busBook-fare-Mobile .bus-fare-box {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+.busBook-fare-Mobile .bus-fare-section {
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+  border-bottom: 1.5px solid rgb(150, 150, 150);
+}
+.busBook-fare-Mobile .bus-fare-openDtls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 5px;
+}
+.busBook-fare-Mobile .bus-fare-openDtls.bus-fare-openDtls-open .bus-fare-openDtls-icon {
+  transform: rotate(180deg);
+  transition: 0.2s ease-in-out;
+}
+.busBook-fare-Mobile .bus-fare-fareItem {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  margin-bottom: 5px;
+}
+.busBook-fare-Mobile .bus-fare-fareItem-section {
+  margin-bottom: 10px;
+}
+.busBook-fare-Mobile .bus-fare-fareItem-title {
+  text-align: left;
+  font-size: 12pt;
+  font-weight: bold;
+  color: rgb(80, 80, 80);
+}
+.busBook-fare-Mobile .bus-fare-fareItem-title .bus-fare-fareItem-title-icon {
+  margin: 0 10px;
+  font-size: 10pt;
+}
+.busBook-fare-Mobile .bus-fare-fareItem-value {
+  text-align: right;
+  font-size: 13pt;
+  font-weight: bold;
+  color: #94D2BD;
+}
+.busBook-fare-Mobile .bus-fare-totalFare {
+  display: grid;
+  grid-template-columns: 3fr 2fr;
+  margin-top: 5px;
+}
+.busBook-fare-Mobile .bus-fare-totalFare-title {
+  text-align: left;
+  font-size: 14pt;
+  font-weight: bold;
+  color: #001219;
+}
+.busBook-fare-Mobile .bus-fare-totalFare-value {
+  text-align: right;
+  font-size: 15pt;
+  font-weight: bold;
+  color: #BB3E03;
+}
+.busBook-fare-Mobile .bus-fare-fareItem.bus-fare-fareItem-flightFare {
+  margin-bottom: 6px;
+  padding-bottom: 6px;
+  border-bottom: 1px dashed rgb(200, 200, 200);
+}
+.busBook-fare-Mobile .bus-fare-submit {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+.busBook-fare-Mobile .bus-fare-submit button {
+  background-color: #001219;
+  border: none;
+  border-radius: 0.8rem;
+  color: #fff;
+  font-size: 10pt;
+  font-weight: bolder;
+  padding: 10px;
+}
+
+.busBook-fare-desktop {
+  display: none;
+}
+
+@media screen and (width >= 700px) {
+  .busBook-seatLayout {
+    margin-top: 10pt;
+    margin-right: 85px;
+  }
+  .busBook-seatLayout .busBook-seatLayout-header {
+    margin-bottom: 30px;
+    margin-right: 85px;
+    color: #001219;
+    font-size: 16pt;
+    font-weight: 700;
+    margin-bottom: 10px;
+  }
+  .busBook-seatLayout .busBook-seatLayout-block .upper-block {
+    background-color: #f5f5f5;
+    border-radius: 0.8rem;
+    margin: 15px;
+    padding: 15pt;
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    width: 15vw !important;
+    padding-top: 20px;
+  }
+  .busBook-seatLayout .busBook-seatLayout-block .upper-block .upper-block-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .busBook-seatLayout .busBook-seatLayout-block .upper-block .upper-block-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5pt;
+    height: 400px;
+  }
+  .busBook-block {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    padding: 20px 50px;
+  }
+  .busBook-fare-Mobile {
+    display: none;
+  }
+  .busBook-fare-desktop {
+    width: 100%;
+    height: -moz-fit-content;
+    height: fit-content;
+    box-shadow: 0.04rem 0.06rem 0.4rem rgba(0, 0, 0, 0.171);
+    background-color: white;
+    padding: 12px 12px;
+    display: block;
+    margin-top: 55px;
+    border-radius: 0.8rem;
+  }
+  .bus-fare-totalFare {
+    padding: 0px 10px;
+  }
+  .bus-fare-fareItem {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    margin-bottom: 5px;
+  }
+  .bus-fare-fareItem-section {
+    margin-bottom: 10px;
+  }
+  .bus-fare-fareItem-title {
+    text-align: left;
+    font-size: 12pt;
+    font-weight: bold;
+    color: rgb(80, 80, 80);
+  }
+  .bus-fare-fareItem-title .bus-fare-fareItem-title-icon {
+    margin: 0 10px;
+    font-size: 10pt;
+  }
+  .bus-fare-fareItem-value {
+    text-align: right;
+    font-size: 13pt;
+    font-weight: bold;
+    color: #94D2BD;
+  }
+  .bus-fare-totalFare {
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    margin-top: 5px;
+  }
+  .bus-fare-totalFare-title {
+    text-align: left;
+    font-size: 14pt;
+    font-weight: bold;
+    color: #001219;
+  }
+  .bus-fare-fareItem.bus-fare-fareItem-flightFare {
+    margin-bottom: 6px;
+    padding-bottom: 6px;
+    border-bottom: 1px dashed rgb(200, 200, 200);
+  }
+  .bus-fare-totalFare-value {
+    text-align: right;
+    font-size: 15pt;
+    font-weight: bold;
+    color: #BB3E03;
+  }
+  .bus-fare-submit {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+  }
+  .bus-fare-submit .bus-fare-existing {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+  }
+  .bus-fare-submit .bus-fare-existing div {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+  .bus-fare-submit .bus-fare-existing div button {
+    padding: 5px;
+    background-color: #001219;
+    color: #fff;
+    border-radius: 0.8rem;
+    border: none;
+  }
+  .bus-fare-submit button {
+    padding: 10px;
+    background-color: #001219;
+    color: #fff;
+    border-radius: 0.8rem;
+    border: none;
+    font-size: 14pt;
+  }
+  .bus-submitTrip {
+    margin: 5px;
+  }
+  .bus-submitTrip button {
+    padding: 10px;
+    background-color: #001219;
+    color: #fff;
+    border-radius: 0.8rem;
+    border: none;
+  }
+  .bus-fare-section-desktop {
+    padding: 20px 10px;
+    border-bottom: 1.5px solid rgb(150, 150, 150);
+    border: none;
+    display: block;
+    border-radius: 0.8rem;
+  }
+  .busBook-boardingPoints {
+    margin-right: 85px;
+  }
+  .busBook-boardingPoint-type-block select {
+    width: 28vw !important;
+  }
+  .busBook-boardingPoints-block {
+    flex-direction: row !important;
+  }
+  .busBook-boardingPoint-type {
+    width: 50% !important;
+  }
+}/*# sourceMappingURL=BusInfo.css.map */

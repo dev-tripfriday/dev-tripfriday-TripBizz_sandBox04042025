@@ -1,0 +1,121 @@
+@import "../../CommonStyles/CommonColors.scss";
+@import "../../CommonStyles/CommonStyles.scss";
+
+.userProfile-container {
+  padding: 5pt;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  .userProfile-header {
+    font-size: 25pt;
+    font-weight: bolder;
+    text-align: center;
+  }
+  .userProfile-body {
+    display: flex;
+    flex-direction: column;
+    width: 75vw;
+    .userProfile-edit {
+      display: flex;
+      justify-content: end;
+      button {
+        background: none;
+        border: 1px solid $primary;
+        font-size: 14pt;
+        border-radius: 0.8rem;
+        font-weight: bold;
+        padding: 5pt 10pt;
+      }
+    }
+    .userProfile-header-details {
+      font-size: 15pt;
+      font-weight: bold;
+      margin: 5pt;
+    }
+    .userProfile-data {
+      display: flex;
+      gap: 10pt;
+      flex-direction: column;
+      justify-content: space-between;
+      margin: 10px;
+      .userProfile-data-section-email {
+        display: flex;
+      }
+      .userProfile-data-section {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+        .userProfile-type-input {
+          padding: 10px 0px;
+          position: relative;
+          input {
+            border: none;
+            box-shadow: 0.04rem 0.06rem 0.4rem rgba(0, 0, 0, 0.171);
+            border-radius: 0.5rem;
+            padding: 5pt 10pt;
+            font-size: 10pt;
+          }
+          span {
+            position: absolute;
+            top: 15px;
+            left: 10px;
+          }
+          .countryCode {
+            width: 3vw;
+            padding: 5px;
+            margin-right: 5pt;
+          }
+        }
+        .userProfile-type-link {
+          padding: 10px 0px;
+          position: relative;
+          span {
+            cursor: pointer;
+            text-decoration: underline;
+            color: blue;
+          }
+        }
+      }
+
+      .userProfile-documents {
+        .userProfile-type-input {
+          input {
+            width: 17vw;
+            padding: 5pt;
+          }
+        }
+      }
+    }
+    .userProfile-submit {
+      display: flex;
+      justify-content: end;
+      margin: 10px;
+      .userProfile-submit-btns {
+        display: flex;
+        gap: 10pt;
+        button {
+          padding: 5pt;
+          background: $primary;
+          border: none;
+          border-radius: 0.8rem;
+          color: white;
+          &:hover {
+            cursor: pointer;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (width >= 700px) {
+  .userProfile-data {
+    display: grid !important;
+    grid-template-columns: 1fr 1fr;
+    .userProfile-data-section {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+}

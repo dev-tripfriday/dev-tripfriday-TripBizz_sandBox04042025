@@ -1,0 +1,189 @@
+@import "../../CommonStyles/CommonColors.scss";
+@import "../../CommonStyles/CommonStyles.scss";
+
+.adminPage-block {
+  // position: relative;
+  display: flex;
+}
+
+// .adminPage-sideNav-block {
+ 
+//   height: 100vh;
+//   width: 20vw;
+//   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+//   display: flex;
+//   flex-direction: column;
+//   z-index: 1010;
+//   background-color: #fff;
+//   .adminPage-sideNav-logo {
+//     // font-size: 35pt;
+//     // font-weight: bold;
+//     // text-align: center;
+//     // margin-bottom: 10px;
+//     // padding: 15px;
+//   }
+//   .adminPage-sideNav-content {
+//     display: flex;
+//     align-items: center;
+//     justify-content: center;
+//     flex-direction: column;
+//     background-color: #f5f5f5;
+//     padding: 10px;
+//     .adminPage-sideNav-links {
+//       display: flex;
+//       flex-direction: column;
+//       width: 85%;
+//       padding: 10px;
+//       width: 100%;
+//       gap: 10px;
+//       span {
+//         color: $highlight;
+//         font-size: 14pt;
+//         font-weight: 700;
+//         border-bottom: 1.5px solid #e4e4e4;
+//         padding: 5px;
+//         .adminPage-sideNav-icon {
+//           padding: 0px 10px;
+//           font-size: 15pt;
+//         }
+//       }
+//     }
+//   }
+// }
+
+.adminPage-main-block {
+  // position: relative;
+  // margin-left: 20vw;
+  min-height: 100vh;
+  padding-top: 50px;
+  width: 84%;
+  .adminPage-main-header {
+    background-color: #fff;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+    z-index: 1001;
+    .adminPage-main-topHeader {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      padding: 10px 0;
+      .adminPage-main-search {
+        display: flex;
+        flex-direction: row;
+        .adminPage-main-input {
+          position: relative;
+          margin: 10px 0px;
+          input {
+            border-top-left-radius: 0.8rem;
+            border-bottom-left-radius: 0.8rem;
+            padding: 5px 10px 5px 30px;
+            width: 12vw;
+          }
+          .adminPage-main-input-icon {
+            position: absolute;
+            top: 10px;
+            left: 6px;
+          }
+        }
+        .adminPage-main-button {
+          padding: 10px 0px;
+          button {
+            padding: 7px 10px;
+            background-color: $primary;
+            border-top-right-radius: 0.8rem;
+            border-bottom-right-radius: 0.8rem;
+            color: #fff;
+            border: none;
+          }
+        }
+      }
+      .adminPage-main-notifications {
+        margin: 15px 30px;
+        .adminPage-main-notifications-icon {
+          font-size: 20pt;
+        }
+      }
+      .adminPage-main-logout {
+        padding: 10px;
+        button {
+          padding: 12px 30px;
+          background-color: $primary;
+          border-radius: 0.8rem;
+          color: #fff;
+          border: none;
+        }
+      }
+    }
+    .adminPage-main-tabs {
+      display: flex;
+      align-items: center;
+      grid-template-columns: repeat(2, 1fr);
+      margin-right: 14vw;
+      gap: 10px;
+      border-radius: 0.8rem;
+      box-shadow: 0.04rem 0.06rem 0.4rem rgba(0, 0, 0, 0.17);
+      overflow: hidden;
+      .adminPage-main-tabs-list {
+        cursor: pointer;
+        font-weight: 700;
+        padding: 15px 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: 0.1s ease-in;
+        text-align: center;
+        height: 100%;
+        font-size: 10pt;
+      }
+      .adminPage-main-tabs-list-active {
+        background: $highlight;
+        color: #fff;
+      }
+    }
+  }
+  .adminPage-main-content {
+    height: 92vh;
+    overflow: scroll;
+    padding-top: 20vh;
+    padding-left: 75px;
+    .adminPage-main-content-header {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      width: 65vw;
+      margin-left: 20px;
+      .adminPage-main-header-names-email {
+        padding: 0px 50px;
+      }
+    }
+    .adminPage-main-content-items {
+      margin-top: 10px;
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 20px;
+      width: 70vw;
+      padding: 15px 10px;
+      border-radius: 0.8rem;
+      box-shadow: 0.04rem 0.06rem 0.4rem rgba(0, 0, 0, 0.17);
+      overflow: hidden;
+      margin-bottom: 10px;
+      border: 1.5px solid rgba(80, 80, 80, 0.534);
+      cursor: pointer;
+      .adminPage-main-content-item-name {
+        padding: 0px 8px;
+        color: $highlight;
+      }
+      .adminPage-main-content-item-sdate {
+        padding: 0px 13px;
+      }
+      .adminPage-main-content-item-num {
+        padding: 0px 30px;
+      }
+    }
+  }
+}

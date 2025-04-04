@@ -1,0 +1,93 @@
+@import "../../CommonStyles/CommonColors.scss";
+@import "../../CommonStyles/CommonStyles.scss";
+
+.signUpPage-block {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+  .signUpPage-container {
+    box-shadow: $shadow1;
+    padding: 20px 40px;
+    border-radius: 0.8rem;
+    .signUpPage-header {
+      font-size: 30px;
+      font-weight: 1000;
+      text-align: center;
+    }
+    .signUpPage-body {
+      display: flex;
+      flex-direction: column;
+      .signUpPage-type {
+        margin: 10px;
+        .error-message {
+          font-size: 12px;
+          color: red;
+        }
+        .signUpPage-type-input {
+          padding: 10px 0px;
+          position: relative;
+          input {
+            padding: 5px 10px 5px 30px;
+            border: none;
+            border-bottom: 1px solid #000000;
+            &:focus {
+              border: none;
+              border-bottom: 1px solid #000000;
+            }
+          }
+          span {
+            position: absolute;
+            top: 15px;
+            left: 10px;
+          }
+        }
+      }
+      .signUpPage-submit {
+        display: flex;
+        justify-content: center;
+        margin: 10px;
+        button {
+          padding: 10px 75px;
+          background: $primary;
+          border: none;
+          border-radius: 0.8rem;
+          color: white;
+          &:hover {
+            cursor: pointer;
+          }
+        }
+      }
+      .signUpPage-methods {
+        font-size: 15px;
+        text-align: center;
+        margin: 5px;
+        .signUpPage-methods-type {
+          margin: 10px;
+          span {
+            padding: 10px 15px;
+            margin: 10px 5px;
+          }
+          .facebook {
+            background-color: #1877f2;
+            border-radius: 100%;
+          }
+          .google {
+            border-radius: 100%;
+            background-color: #df4a32;
+          }
+        }
+      }
+      .signUpPage-switch {
+        font-size: 12px;
+        text-align: center;
+        span {
+          text-decoration: underline;
+          cursor: pointer;
+          color: #000000;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,184 @@
+.cab-container {
+  box-shadow: 0.04rem 0.06rem 0.4rem rgba(0, 0, 0, 0.171);
+  width: 90%;
+  padding: 10pt 0 3pt 10pt;
+  margin: 10pt 0;
+  border-radius: 0.8rem;
+}
+.cab-container .cab-card {
+  display: flex;
+  gap: 10pt;
+  margin: 10pt 0;
+}
+.cab-container .cab-card .cab-img img {
+  width: 5vw;
+  height: 5vw;
+}
+.cab-container .cab-card .cab-card-details {
+  width: 100%;
+}
+.cab-container .cab-card .cab-card-details .cab-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.cab-container .cab-card .cab-card-details .cab-header .cab-header-name {
+  display: flex;
+}
+.cab-container .cab-card .cab-card-details .cab-header .cab-header-name span {
+  font-weight: bold;
+  font-size: 12pt;
+  margin-right: 5px;
+}
+.cab-container .cab-card .cab-card-details .cab-header .cab-header-date {
+  font-size: 10pt;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: #94d2bd;
+  border-radius: 0.8rem 0rem 0rem 0.8rem;
+  padding: 5pt;
+}
+.cab-container .cab-card .cab-card-details .cab-body {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 10pt;
+}
+.cab-container .cab-card .cab-card-details .cab-body .cab-header-price {
+  margin-right: 10px;
+  font-size: 12pt;
+  font-weight: bold;
+  color: #BB3E03;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-direction: column;
+}
+.cab-container .cab-card .cab-card-details .cab-body .cab-header-price .cab-header-price-icon {
+  margin-right: 5px;
+  font-size: 10pt;
+}
+.cab-container .cab-card .cab-card-details .cab-body .cab-header-price .cab-header-price-icon-add {
+  font-size: 6pt;
+  margin-right: 5px;
+}
+.cab-container .cab-card .cab-card-details .cab-body span {
+  font-size: 12pt;
+}
+.cab-container .cab-card .cab-card-details .cab-body .cab-header-service {
+  font-size: 8pt;
+}
+.cab-container .cab-card .cab-card-details .cab-body button {
+  padding: 5pt 10pt;
+  background-color: #001219;
+  border-radius: 0.8rem;
+  color: #fff;
+  border: none;
+}
+.cab-container .seperate {
+  border-bottom: 1px dotted #001219;
+}
+.cab-container .timestamp {
+  padding: 3pt 10pt;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  font-size: 10pt;
+  gap: 10pt;
+}
+.cab-container .timestamp .cab-header-price {
+  margin-right: 10px;
+  font-size: 12pt;
+  font-weight: bold;
+  color: #BB3E03;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.cab-container .timestamp .cab-header-price .cab-header-price-icon {
+  margin-right: 5px;
+  font-size: 10pt;
+}
+.cab-container .hotel-card-admin-details-upload {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-items: center;
+  align-items: center;
+}
+.cab-container .hotel-card-admin-details-upload .upload-icon {
+  cursor: pointer;
+}
+.cab-container .hotel-card-admin-details {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+  align-items: center;
+  margin: 10pt 0;
+}
+.cab-container .hotel-card-admin-details .hotel-card-upload {
+  cursor: pointer;
+  border: 1px solid #001219;
+  box-shadow: 0.04rem 0.06rem 0.4rem rgba(0, 0, 0, 0.171);
+  padding: 5px 10px;
+  border-radius: 0.8rem;
+  text-align: center;
+}
+.cab-container .hotel-card-admin-details .request-status {
+  font-size: 10pt;
+  display: flex;
+  flex-direction: column;
+  font-weight: bold;
+}
+.cab-container .hotel-card-admin-details .request-status span {
+  font-size: 8pt;
+  padding: 3pt 5pt;
+  font-weight: bold;
+  color: white;
+  border-radius: 0.8rem;
+  text-align: center;
+}
+
+@media screen and (width <= 700px) {
+  .cab-container {
+    width: 100%;
+  }
+  .cab-container .timestamp {
+    flex-direction: row;
+    font-size: 8pt;
+  }
+  .cab-container .timestamp .cab-header-price {
+    font-size: 10pt;
+  }
+  .cab-container .cab-card {
+    gap: 5pt;
+  }
+  .cab-container .cab-card .cab-card-details .cab-header div {
+    font-size: 9pt;
+  }
+  .cab-container .cab-card .cab-card-details .cab-header .cab-header-name {
+    font-size: 9pt;
+  }
+  .cab-container .cab-card .cab-card-details .cab-header .cab-header-name span {
+    font-size: 9pt;
+  }
+  .cab-container .cab-card .cab-card-details .cab-header .cab-header-date {
+    font-size: 7pt;
+    font-weight: 500;
+    padding-right: 0;
+  }
+  .cab-container .cab-card .cab-body {
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  .cab-container .cab-card .cab-body span {
+    font-size: 9pt !important;
+  }
+  .cab-container .cab-card .cab-img img {
+    width: 15vw;
+    height: 15vw;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+}/*# sourceMappingURL=Cab.css.map */

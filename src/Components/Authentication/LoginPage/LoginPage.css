@@ -1,0 +1,164 @@
+.loginPage-block {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+}
+.loginPage-block .loginPage-container {
+  box-shadow: 0.04rem 0.06rem 0.4rem rgba(0, 0, 0, 0.171);
+  padding: 20px 40px;
+  border-radius: 0.8rem;
+}
+.loginPage-block .loginPage-container .loginPage-header {
+  font-size: 30px;
+  font-weight: 1000;
+  text-align: center;
+}
+.loginPage-block .loginPage-container .loginPage-body {
+  display: flex;
+  flex-direction: column;
+}
+.loginPage-block .loginPage-container .loginPage-body .loginPage-type {
+  margin: 10px;
+}
+.loginPage-block .loginPage-container .loginPage-body .loginPage-type .loginPage-type-input {
+  padding: 10px 0px;
+  position: relative;
+}
+.loginPage-block .loginPage-container .loginPage-body .loginPage-type .loginPage-type-input input {
+  padding: 5px 10px 5px 30px;
+  border: none;
+  border-bottom: 1px solid #000000;
+}
+.loginPage-block .loginPage-container .loginPage-body .loginPage-type .loginPage-type-input input:focus {
+  border: none;
+  border-bottom: 1px solid #000000;
+}
+.loginPage-block .loginPage-container .loginPage-body .loginPage-type .loginPage-type-input span {
+  position: absolute;
+  top: 15px;
+  left: 10px;
+}
+.loginPage-block .loginPage-container .loginPage-body .loginPage-type .error-message {
+  font-size: 12px;
+  color: red;
+}
+.loginPage-block .loginPage-container .loginPage-body .loginPage-forgotPassword {
+  display: flex;
+  align-items: end;
+  justify-content: end;
+  font-size: 12px;
+}
+.loginPage-block .loginPage-container .loginPage-body .loginPage-submit {
+  display: flex;
+  justify-content: center;
+  margin: 10px;
+}
+.loginPage-block .loginPage-container .loginPage-body .loginPage-submit .login {
+  padding: 10px 75px;
+  background: #001219;
+  border: none;
+  border-radius: 0.8rem;
+  color: white;
+}
+.loginPage-block .loginPage-container .loginPage-body .loginPage-submit .spin {
+  padding: 10px 75px;
+  background: #001219;
+  border: none;
+  border-radius: 0.8rem;
+  color: white;
+  cursor: not-allowed;
+}
+.loginPage-block .loginPage-container .loginPage-body .loginPage-submit .spinner {
+  border: 4px solid #94D2BD;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-left: 4px solid #3498db;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  animation: spin 1s linear infinite;
+  margin-top: -8px;
+  margin-left: -8px;
+  display: inline-block;
+  border-width: 2px;
+  margin-top: 5px;
+  cursor: not-allowed;
+}
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.loginPage-block .loginPage-container .loginPage-body .loginPage-submit.loading {
+  cursor: not-allowed;
+  opacity: 0.7;
+}
+.loginPage-block .loginPage-container .loginPage-body .loginPage-methods {
+  font-size: 15px;
+  text-align: center;
+  margin: 5px;
+}
+.loginPage-block .loginPage-container .loginPage-body .loginPage-methods .loginPage-methods-type {
+  margin: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.loginPage-block .loginPage-container .loginPage-body .loginPage-methods .loginPage-methods-type .facebook {
+  background-color: #1877f2;
+  border-radius: 100%;
+  padding: 10px 15px;
+  margin: 10px 5px;
+}
+.loginPage-block .loginPage-container .loginPage-body .loginPage-methods .loginPage-methods-type .google {
+  border-radius: 100%;
+  background-color: #df4a32;
+  padding: 10px 15px;
+  margin: 10px 5px;
+}
+.loginPage-block .loginPage-container .loginPage-body .loginPage-methods .loginPage-methods-type .twitter {
+  background-color: #55acee;
+  border-radius: 100%;
+}
+.loginPage-block .loginPage-container .loginPage-body .loginPage-switch {
+  font-size: 12px;
+  text-align: center;
+}
+.loginPage-block .loginPage-container .loginPage-body .loginPage-switch span {
+  text-decoration: underline;
+  cursor: pointer;
+  color: #000000;
+}
+
+.alert-text {
+  font-size: 12pt;
+  position: fixed;
+  right: 0;
+  top: 0;
+  margin: 20px 35px;
+  border-radius: 0.4rem;
+  padding: 10px;
+  background-color: #001219;
+  color: #f5f5f5;
+}
+.alert-text .alert-bar {
+  background-color: #7546c0;
+  height: 5px;
+  animation: progressBar 5s linear alternate;
+  margin-top: 3px;
+  overflow: hidden;
+}
+@keyframes progressBar {
+  0% {
+    width: 100%;
+  }
+  100% {
+    width: 0%;
+  }
+}/*# sourceMappingURL=LoginPage.css.map */

@@ -1,0 +1,1111 @@
+.role-container {
+  display: block;
+  padding: 15pt;
+}
+.role-container .role-header {
+  font-size: 23pt;
+  text-align: center;
+  font-weight: bolder;
+}
+.role-container .role-block {
+  display: flex;
+  flex-direction: column;
+}
+.role-container .role-block .role-type .role-type-header {
+  font-size: 18pt;
+  font-weight: bold;
+  margin: 5pt;
+}
+.role-container .role-block .role-type .role-type-block {
+  display: flex;
+  flex-direction: column;
+}
+.role-container .role-block .role-type .role-type-block .role-type-add {
+  margin: 0 15pt;
+}
+.role-container .role-block .role-type .role-type-block .role-type-add button {
+  padding: 5pt;
+  background: #001219;
+  border: none;
+  border-radius: 0.8rem;
+  color: white;
+}
+.role-container .role-block .role-type .role-type-block .role-type-add button:hover {
+  cursor: pointer;
+}
+.role-container .role-block .role-type .role-type-block .role-type-feilds .role-feilds {
+  display: grid;
+  padding: 5pt;
+  align-items: center;
+}
+.role-container .role-block .role-type .role-type-block .role-type-feilds .role-feilds input {
+  padding: 5pt;
+  border: 1px solid #000000;
+  border-radius: 0.6rem;
+}
+.role-container .role-block .role-type .role-type-block .role-type-feilds .role-feilds input:focus {
+  border: none;
+  border-bottom: 1px solid #000000;
+}
+.role-container .role-block .role-type .role-type-block .role-type-feilds .role-submit button {
+  padding: 5pt 10pt;
+  background: #001219;
+  border: none;
+  border-radius: 0.8rem;
+  color: white;
+}
+.role-container .role-block .role-type .role-type-block .role-type-feilds .role-submit button:hover {
+  cursor: pointer;
+}
+.role-container .role-block .role-type .role-type-block .role-type-approval {
+  margin: 10pt;
+}
+.role-container .role-block .role-type .role-type-block .role-type-approval .role-approval {
+  margin: 10pt;
+  display: flex;
+  padding: 10pt;
+  border-radius: 0.8rem;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px dotted #001219;
+  background-color: rgba(148, 210, 189, 0.1647058824);
+}
+.role-container .role-block .role-type .role-type-block .role-type-approval .role-approval button {
+  padding: 5pt 10pt;
+  background: #001219;
+  border: none;
+  border-radius: 0.8rem;
+  color: white;
+}
+.role-container .role-block .role-type .role-type-block .role-type-approval .role-approval button:hover {
+  cursor: pointer;
+}
+.role-container .role-block .role-type .role-type-approval {
+  margin: 10pt;
+}
+.role-container .role-block .role-type .role-type-approval .role-approval {
+  margin: 10pt;
+  display: flex;
+  padding: 10pt;
+  border-radius: 0.8rem;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px dotted #001219;
+  background-color: rgba(148, 210, 189, 0.1647058824);
+  flex-wrap: wrap;
+}
+.role-container .role-block .role-trip-approval .role-trip-approval-header {
+  font-size: 18pt;
+  font-weight: bold;
+  margin: 5pt;
+}
+.role-container .role-block .role-trip-approval .role-trip-approval-tabs {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10pt;
+  background-color: rgba(148, 210, 189, 0.1647058824);
+  border: 1px solid #108bbc;
+  border-radius: 0.8rem;
+  overflow: hidden;
+}
+.role-container .role-block .role-trip-approval .role-trip-approval-tabs .approval-tab {
+  color: #001219;
+  padding: 8px 10px;
+  font-size: 12pt;
+  font-weight: bold;
+  cursor: pointer;
+  width: 100%;
+  text-align: center;
+}
+.role-container .role-block .role-trip-approval .role-trip-approval-tabs .approval-tab.approval-tab-selected {
+  background-color: #108bbc;
+  color: white;
+}
+.role-container .role-block .role-trip-approval .role-trip-approval-block {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.role-container .role-block .role-trip-approval .role-trip-approval-block .loading-approvals {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15pt;
+}
+.role-container .role-block .role-trip-approval .role-trip-approval-block .role-card {
+  box-shadow: 0.04rem 0.06rem 0.4rem rgba(0, 0, 0, 0.171);
+  border-radius: 0.8rem;
+  margin-bottom: 10pt;
+}
+.role-container .role-block .role-trip-approval .role-trip-approval-block .role-trip-card {
+  display: flex;
+  flex-direction: column;
+  margin: 10pt 0;
+  padding: 10px;
+  border-radius: 0.8rem;
+}
+.role-container .role-block .role-trip-approval .role-trip-approval-block .role-trip-card .role-trip-card-header {
+  display: flex;
+  font-size: 20px;
+  text-align: center;
+  font-weight: bold;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+.role-container .role-block .role-trip-approval .role-trip-approval-block .role-trip-card .role-trip-list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+}
+.role-container .role-block .role-trip-approval .role-trip-approval-block .role-trip-card .role-trip-list .tripDetails-totalPrice-section-Desktop {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+.role-container .role-block .role-trip-approval .role-trip-approval-block .role-trip-card .role-trip-list .tripDetails-totalPrice-title-Desktop {
+  font-size: 10pt;
+  font-weight: bold;
+  color: #001219;
+}
+.role-container .role-block .role-trip-approval .role-trip-approval-block .role-trip-card .role-trip-list .tripDetails-totalPrice-price-Desktop {
+  font-size: 10pt;
+  font-weight: bold;
+  color: #BB3E03;
+}
+.role-container .role-block .role-trip-approval .role-trip-approval-block .role-trip-card .role-trip-list .role-trip-type {
+  margin: 10px 0px;
+  display: flex;
+  gap: 15px;
+}
+.role-container .role-block .role-trip-approval .role-trip-approval-block .role-trip-card .role-trip-list .role-trip-type .role-trip-hotel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #001219;
+  border-radius: 0.8rem;
+  background-color: #f5f5f5;
+  padding: 5px 10px;
+}
+.role-container .role-block .role-trip-approval .role-trip-approval-block .role-trip-card .role-trip-list .role-trip-status {
+  display: flex;
+  align-items: center;
+  font-size: 12pt;
+}
+.role-container .role-block .role-trip-approval .role-trip-approval-block .role-trip-card .role-trip-list .role-trip-status span {
+  font-size: 10pt;
+  padding: 5pt 8pt;
+  color: white;
+  border-radius: 0.8rem;
+  font-weight: bold;
+}
+.role-container .role-block .role-trip-approval .role-trip-approval-block .role-trip-card .role-trip-list .role-trip-status .orange {
+  background-color: #ffa500;
+}
+.role-container .role-block .role-trip-approval .role-trip-approval-block .role-trip-card .role-trip-list .role-trip-status .green {
+  background-color: #008000;
+}
+.role-container .role-block .role-trip-approval .role-trip-approval-block .role-trip-card span {
+  font-size: 15px;
+}
+.role-container .role-block .role-trip-approval .role-trip-approval-block .role-trip-card .role-trip-date {
+  display: flex;
+  font-size: 12pt;
+}
+.role-container .role-block .role-trip-approval .role-trip-approval-block .role-trip-card .role-trip-date span {
+  font-size: 10pt;
+  margin: 0 5pt;
+}
+.role-container .role-block .role-trip-approval .role-trip-approval-block .role-trip-card .role-trip-date p {
+  color: #94D2BD;
+  font-size: 10pt;
+  margin: 0;
+}
+.role-container .role-block .role-trip-approval .role-trip-approval-block .role-trip-openDtls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 5px;
+  cursor: pointer;
+}
+.role-container .role-block .role-trip-approval .role-trip-approval-block .role-trip-openDtls button {
+  border: none;
+  background-color: #001219;
+  font-size: 12pt;
+  font-weight: bolder;
+  padding: 5pt 15pt;
+  color: white;
+  border-radius: 0.8rem;
+}
+.role-container .role-block .role-trip-approval .role-trip-approval-block .role-trip-openDtls.role-trip-openDtls-open .role-trip-openDtls-icon {
+  transform: rotate(180deg);
+  transition: 0.2s ease-in-out;
+}
+
+.role-trip-section {
+  margin: 10px;
+  padding: 10px;
+  height: 80vh;
+  width: 100%;
+  overflow: scroll;
+}
+.role-trip-section .role-review .role-review-hotels {
+  text-align: center;
+  border-radius: 0.8rem;
+}
+.role-trip-section .role-review .role-review-hotels .role-review-hotels-header {
+  font-size: 20pt;
+  font-weight: bolder;
+}
+.role-trip-section .role-review .role-review-hotels .role-hotel-card {
+  box-shadow: 0.04rem 0.06rem 0.4rem rgba(0, 0, 0, 0.171);
+  padding: 5pt 0pt 5pt 5pt;
+  border-radius: 0.8rem;
+  margin-bottom: 10pt;
+}
+.role-trip-section .role-review .role-review-hotels .role-hotel-card .role-hotel-details {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10pt;
+}
+.role-trip-section .role-review .role-review-hotels .role-hotel-card .role-hotel-details .role-hotel-name {
+  font-size: 12pt;
+  font-weight: bold;
+}
+.role-trip-section .role-review .role-review-hotels .role-hotel-card .role-hotel-details .role-hotel-date {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: #94d2bd;
+  border-radius: 0.8rem 0rem 0rem 0.8rem;
+  padding: 5pt;
+  font-size: 10pt;
+}
+.role-trip-section .role-review .role-review-hotels .role-hotel-card .role-hotel-details .role-hotel-people {
+  font-size: 10pt;
+}
+.role-trip-section .role-review .role-review-hotels .role-hotel-card .role-roomDtls-room {
+  background-color: whitesmoke;
+  padding: 10px;
+  border-radius: 0.8rem;
+  margin-bottom: 10px;
+}
+.role-trip-section .role-review .role-review-hotels .role-hotel-card .role-roomDtls-room .role-roomDtls-room-titleSection {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.role-trip-section .role-review .role-review-hotels .role-hotel-card .role-roomDtls-room .role-roomDtls-room-titleSection .role-roomDtls-room-type {
+  font-size: 12pt;
+  font-weight: bold;
+  color: #001219;
+}
+.role-trip-section .role-review .role-review-hotels .role-hotel-card .role-roomDtls-room .role-roomDtls-room-titleSection .role-roomDtls-room-price {
+  font-size: 8pt;
+  font-weight: bold;
+  color: #BB3E03;
+}
+.role-trip-section .role-review .role-review-hotels .role-hotel-card .role-roomDtls-room .role-roomDtls-room-titleSection .role-roomDtls-room-price .role-roomDtls-room-price-icon {
+  margin-right: 3px;
+}
+.role-trip-section .role-review .role-review-hotels .role-hotel-card .role-roomDtls-room .role-roomDtls-room-otherSection {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.role-trip-section .role-review .role-review-hotels .role-hotel-card .role-roomDtls-room .role-roomDtls-room-otherSection .role-roomDtls-room-meals {
+  font-size: 10pt;
+  font-weight: bold;
+  color: rgb(80, 80, 80);
+}
+.role-trip-section .role-review .role-review-hotels .role-hotel-card .role-roomDtls-room .role-roomDtls-room-otherSection .role-roomDtls-room-meals .role-roomDtls-room-meals-icon {
+  margin-right: 5px;
+  color: #001219;
+}
+.role-trip-section .role-review .role-review-hotels .role-hotel-card .role-roomDtls-room .role-roomDtls-room-otherSection .role-roomDtls-room-cancel {
+  font-size: 10pt;
+  font-weight: bold;
+  color: rgb(100, 100, 100);
+}
+.role-trip-section .role-review .role-review-hotels .role-hotel-card .role-roomDtls-room .role-roomDtls-room-otherSection .role-roomDtls-room-cancel .role-roomDtls-room-cancel-icon {
+  margin-right: 5px;
+  color: #001219;
+}
+.role-trip-section .role-review .role-review-flights {
+  text-align: center;
+  border-radius: 0.8rem;
+}
+.role-trip-section .role-review .role-review-flights .role-review-flights-header {
+  font-size: 20pt;
+  font-weight: bolder;
+}
+.role-trip-section .role-review .role-review-flights .role-flight-card {
+  box-shadow: 0.04rem 0.06rem 0.4rem rgba(0, 0, 0, 0.171);
+  padding: 5pt 0pt 5pt 5pt;
+  border-radius: 0.8rem;
+  margin-bottom: 10pt;
+}
+.role-trip-section .role-review .role-review-flights .role-flight-card .role-flight-airline-block {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 6px;
+}
+.role-trip-section .role-review .role-review-flights .role-flight-card .role-flight-airline-block .role-flight-airline {
+  font-size: 12pt;
+  font-weight: bold;
+  color: #001219;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.role-trip-section .role-review .role-review-flights .role-flight-card .role-flight-airline-block .role-flight-airline span {
+  font-size: 8pt;
+  color: rgb(121, 121, 121);
+}
+.role-trip-section .role-review .role-review-flights .role-flight-card .role-flight-airline-block .role-flight-airline .role-flight-logo {
+  margin: 10px 10px 10px 0px;
+}
+.role-trip-section .role-review .role-review-flights .role-flight-card .role-flight-airline-block .role-flight-airline .role-flight-logo span {
+  height: 25px;
+  width: 25px;
+  display: block;
+  background-position: 50%;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.role-trip-section .role-review .role-review-flights .role-flight-card .role-flight-airline-block .role-flight-airline .role-flight-logo span .role-flight-logo-icon {
+  height: 22px;
+}
+.role-trip-section .role-review .role-review-flights .role-flight-card .role-flight-airline-block .role-flight-depDate-block {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: #94D2BD;
+  border-radius: 0.8rem 0rem 0rem 0.8rem;
+  padding: 5pt;
+}
+.role-trip-section .role-review .role-review-flights .role-flight-card .role-flight-segment-section {
+  border-radius: 0.8rem;
+  margin-bottom: 15px;
+  background-color: rgb(245, 245, 245);
+}
+.role-trip-section .role-review .role-review-flights .role-flight-card .role-flight-segment-section .role-flight-arrDep {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 10pt 0 0;
+  padding: 10pt;
+}
+.role-trip-section .role-review .role-review-flights .role-flight-card .role-flight-segment-section .role-flight-arrDep .role-flight-dep .role-flight-depTime {
+  font-size: 12pt;
+  font-weight: bold;
+}
+.role-trip-section .role-review .role-review-flights .role-flight-card .role-flight-segment-section .role-flight-arrDep .role-flight-dep .role-flight-depCity {
+  font-size: 12pt;
+  font-weight: bold;
+  color: rgb(111, 111, 111);
+}
+.role-trip-section .role-review .role-review-flights .role-flight-card .role-flight-segment-section .role-flight-arrDep .role-flight-duration {
+  height: 60px;
+  width: 55%;
+}
+.role-trip-section .role-review .role-review-flights .role-flight-card .role-flight-segment-section .role-flight-arrDep .role-flight-duration .role-flight-duration-stopPts {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  padding-bottom: 5px;
+  border-bottom: 1px dashed rgb(150, 150, 150);
+  font-size: 8pt;
+  font-weight: bold;
+  color: rgb(160, 160, 160);
+  height: 30px;
+}
+.role-trip-section .role-review .role-review-flights .role-flight-card .role-flight-segment-section .role-flight-arrDep .role-flight-duration .role-flight-duration-stopPts .role-flight-duration-stopType {
+  font-size: 10pt;
+  color: rgb(80, 80, 80);
+  margin-right: 3px;
+  color: #94D2BD;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.role-trip-section .role-review .role-review-flights .role-flight-card .role-flight-segment-section .role-flight-arrDep .role-flight-duration .role-flight-duration-stopPts .role-flight-duration-stopType .role-flight-duration-stopType-icon {
+  margin-left: 5px;
+  color: rgb(80, 80, 80);
+  font-size: 9pt;
+}
+.role-trip-section .role-review .role-review-flights .role-flight-card .role-flight-segment-section .role-flight-arrDep .role-flight-duration .role-flight-duration-stopPts .role-flight-duration-stopPt {
+  margin-right: 3px;
+}
+.role-trip-section .role-review .role-review-flights .role-flight-card .role-flight-segment-section .role-flight-arrDep .role-flight-duration .role-flight-duration-time {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding-top: 2px;
+  font-size: 10pt;
+  font-weight: bold;
+  color: #001219;
+  height: 30px;
+}
+.role-trip-section .role-review .role-review-flights .role-flight-card .role-flight-segment-section .role-flight-arrDep .role-flight-arr-section {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+}
+.role-trip-section .role-review .role-review-flights .role-flight-card .role-flight-segment-section .role-flight-arrDep .role-flight-arr-section .role-flight-dep.role-flight-arr {
+  text-align: right;
+}
+.role-trip-section .role-review .role-review-flights .role-flight-card .role-flight-segment-section .role-flight-arrDep .role-flight-arr-section .role-flight-dep.role-flight-arr .role-flight-depTime {
+  font-size: 12pt;
+  font-weight: bold;
+}
+.role-trip-section .role-review .role-review-flights .role-flight-card .role-flight-segment-section .role-flight-arrDep .role-flight-arr-section .role-flight-dep.role-flight-arr .role-flight-depCity {
+  font-size: 12pt;
+  font-weight: bold;
+  color: rgb(111, 111, 111);
+}
+.role-trip-section .role-review .role-review-flights .role-flight-card .role-flight-segment-section .role-flight-arrDep .role-flight-arr-section .role-flight-depTime-afterDays {
+  font-size: 6pt;
+  font-weight: bold;
+  margin-left: 6px;
+  color: red;
+}
+.role-trip-section .role-review .role-review-flights .role-flight-card .role-flight-segment-section .role-flight-arrDep .role-flight-arr-section .role-flight-depTime-afterDays .role-flight-depTime-afterDays-num {
+  font-size: 9pt;
+}
+.role-trip-section .role-review .role-review-flights .role-flight-card .role-flight-segment-price {
+  margin-right: 10px;
+  font-size: 14pt;
+  font-weight: bold;
+  color: #BB3E03;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.role-trip-section .role-review .role-review-flights .role-flight-card .role-flight-segment-price .role-flight-segment-price-icon {
+  margin-right: 5px;
+}
+.role-trip-section .role-travellers-flight {
+  border-radius: 0.8rem;
+  padding: 10pt;
+  margin-bottom: 10pt;
+}
+.role-trip-section .role-travellers-flight .role-traveller-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10pt;
+  padding: 0 10pt;
+}
+.role-trip-section .role-travellers-flight .role-traveller-container .role-traveller-block {
+  border-radius: 8px;
+}
+.role-trip-section .role-travellers-flight .role-traveller-container .role-traveller-block .role-traveller-header {
+  font-size: 12pt;
+  font-weight: bold;
+  margin-bottom: 10pt;
+}
+.role-trip-section .role-travellers-flight .role-traveller-container .role-traveller-block .role-traveller-box {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5pt;
+  overflow: overlay;
+}
+.role-trip-section .role-travellers-flight .role-traveller-container .role-traveller-block .role-traveller-box div {
+  display: flex;
+  text-align: left;
+  font-size: 10pt;
+}
+.role-trip-section .role-travellers-flight .role-traveller-container .role-traveller-block .role-traveller-box div span {
+  font-weight: bold;
+  margin-left: 2pt;
+}
+.role-trip-section .role-travellers-hotel {
+  margin-bottom: 10pt;
+  border-radius: 0.8rem;
+  padding: 10pt;
+}
+.role-trip-section .role-travellers-hotel .role-traveller-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10pt;
+  padding: 0 10pt;
+}
+.role-trip-section .role-travellers-hotel .role-traveller-container .role-traveller-block {
+  border-radius: 8px;
+}
+.role-trip-section .role-travellers-hotel .role-traveller-container .role-traveller-block .role-traveller-header {
+  font-size: 12pt;
+  font-weight: bold;
+  margin-bottom: 10pt;
+}
+.role-trip-section .role-travellers-hotel .role-traveller-container .role-traveller-block .role-traveller-box {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5pt;
+  overflow: overlay;
+}
+.role-trip-section .role-travellers-hotel .role-traveller-container .role-traveller-block .role-traveller-box div {
+  display: flex;
+  text-align: left;
+  font-size: 10pt;
+}
+.role-trip-section .role-travellers-hotel .role-traveller-container .role-traveller-block .role-traveller-box div span {
+  font-weight: bold;
+  margin-left: 2pt;
+}
+.role-trip-section .role-approve {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.role-trip-section .role-approve span {
+  font-size: 12pt;
+}
+.role-trip-section .role-approve button {
+  border: none;
+  background-color: #001219;
+  font-size: 12pt;
+  font-weight: bolder;
+  padding: 5pt 15pt;
+  color: white;
+  border-radius: 0.8rem;
+}
+.role-trip-section .role-approve .spin {
+  padding: 10px 75px;
+  background: #001219;
+  border: none;
+  border-radius: 0.8rem;
+  color: white;
+  cursor: not-allowed;
+}
+.role-trip-section .role-approve .spinner {
+  border: 4px solid #94D2BD;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-left: 4px solid #3498db;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  animation: spin 1s linear infinite;
+  margin-top: -8px;
+  margin-left: -8px;
+  display: inline-block;
+  border-width: 2px;
+  margin-top: 5px;
+  cursor: not-allowed;
+}
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.role-trip-section .role-close {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 5px;
+}
+.role-trip-section .role-close .close-icon {
+  cursor: pointer;
+}
+
+.role-trip-section2 {
+  margin: 10px;
+  padding: 10px;
+  height: 80vh;
+  width: 100%;
+}
+.role-trip-section2 .role-review .role-review-hotels {
+  text-align: center;
+  border-radius: 0.8rem;
+}
+.role-trip-section2 .role-review .role-review-hotels .role-review-hotels-header {
+  font-size: 20pt;
+  font-weight: bolder;
+}
+.role-trip-section2 .role-review .role-review-hotels .role-hotel-card {
+  box-shadow: 0.04rem 0.06rem 0.4rem rgba(0, 0, 0, 0.171);
+  padding: 5pt 0pt 5pt 5pt;
+  border-radius: 0.8rem;
+  margin-bottom: 10pt;
+}
+.role-trip-section2 .role-review .role-review-hotels .role-hotel-card .role-hotel-details {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10pt;
+}
+.role-trip-section2 .role-review .role-review-hotels .role-hotel-card .role-hotel-details .role-hotel-name {
+  font-size: 12pt;
+  font-weight: bold;
+}
+.role-trip-section2 .role-review .role-review-hotels .role-hotel-card .role-hotel-details .role-hotel-date {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: #94d2bd;
+  border-radius: 0.8rem 0rem 0rem 0.8rem;
+  padding: 5pt;
+  font-size: 10pt;
+}
+.role-trip-section2 .role-review .role-review-hotels .role-hotel-card .role-hotel-details .role-hotel-people {
+  font-size: 10pt;
+}
+.role-trip-section2 .role-review .role-review-hotels .role-hotel-card .role-roomDtls-room {
+  background-color: whitesmoke;
+  padding: 10px;
+  border-radius: 0.8rem;
+  margin-bottom: 10px;
+}
+.role-trip-section2 .role-review .role-review-hotels .role-hotel-card .role-roomDtls-room .role-roomDtls-room-titleSection {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.role-trip-section2 .role-review .role-review-hotels .role-hotel-card .role-roomDtls-room .role-roomDtls-room-titleSection .role-roomDtls-room-type {
+  font-size: 12pt;
+  font-weight: bold;
+  color: #001219;
+}
+.role-trip-section2 .role-review .role-review-hotels .role-hotel-card .role-roomDtls-room .role-roomDtls-room-titleSection .role-roomDtls-room-price {
+  font-size: 8pt;
+  font-weight: bold;
+  color: #BB3E03;
+}
+.role-trip-section2 .role-review .role-review-hotels .role-hotel-card .role-roomDtls-room .role-roomDtls-room-titleSection .role-roomDtls-room-price .role-roomDtls-room-price-icon {
+  margin-right: 3px;
+}
+.role-trip-section2 .role-review .role-review-hotels .role-hotel-card .role-roomDtls-room .role-roomDtls-room-otherSection {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.role-trip-section2 .role-review .role-review-hotels .role-hotel-card .role-roomDtls-room .role-roomDtls-room-otherSection .role-roomDtls-room-meals {
+  font-size: 10pt;
+  font-weight: bold;
+  color: rgb(80, 80, 80);
+}
+.role-trip-section2 .role-review .role-review-hotels .role-hotel-card .role-roomDtls-room .role-roomDtls-room-otherSection .role-roomDtls-room-meals .role-roomDtls-room-meals-icon {
+  margin-right: 5px;
+  color: #001219;
+}
+.role-trip-section2 .role-review .role-review-hotels .role-hotel-card .role-roomDtls-room .role-roomDtls-room-otherSection .role-roomDtls-room-cancel {
+  font-size: 10pt;
+  font-weight: bold;
+  color: rgb(100, 100, 100);
+}
+.role-trip-section2 .role-review .role-review-hotels .role-hotel-card .role-roomDtls-room .role-roomDtls-room-otherSection .role-roomDtls-room-cancel .role-roomDtls-room-cancel-icon {
+  margin-right: 5px;
+  color: #001219;
+}
+.role-trip-section2 .role-review .role-review-flights {
+  text-align: center;
+  border-radius: 0.8rem;
+}
+.role-trip-section2 .role-review .role-review-flights .role-review-flights-header {
+  font-size: 20pt;
+  font-weight: bolder;
+}
+.role-trip-section2 .role-review .role-review-flights .role-flight-card {
+  box-shadow: 0.04rem 0.06rem 0.4rem rgba(0, 0, 0, 0.171);
+  padding: 5pt 0pt 5pt 5pt;
+  border-radius: 0.8rem;
+  margin-bottom: 10pt;
+}
+.role-trip-section2 .role-review .role-review-flights .role-flight-card .role-flight-airline-block {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 6px;
+}
+.role-trip-section2 .role-review .role-review-flights .role-flight-card .role-flight-airline-block .role-flight-airline {
+  font-size: 12pt;
+  font-weight: bold;
+  color: #001219;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.role-trip-section2 .role-review .role-review-flights .role-flight-card .role-flight-airline-block .role-flight-airline span {
+  font-size: 8pt;
+  color: rgb(121, 121, 121);
+}
+.role-trip-section2 .role-review .role-review-flights .role-flight-card .role-flight-airline-block .role-flight-airline .role-flight-logo {
+  margin: 10px 10px 10px 0px;
+}
+.role-trip-section2 .role-review .role-review-flights .role-flight-card .role-flight-airline-block .role-flight-airline .role-flight-logo span {
+  height: 25px;
+  width: 25px;
+  display: block;
+  background-position: 50%;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.role-trip-section2 .role-review .role-review-flights .role-flight-card .role-flight-airline-block .role-flight-airline .role-flight-logo span .role-flight-logo-icon {
+  height: 22px;
+}
+.role-trip-section2 .role-review .role-review-flights .role-flight-card .role-flight-airline-block .role-flight-depDate-block {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: #94D2BD;
+  border-radius: 0.8rem 0rem 0rem 0.8rem;
+  padding: 5pt;
+}
+.role-trip-section2 .role-review .role-review-flights .role-flight-card .role-flight-segment-section {
+  border-radius: 0.8rem;
+  margin-bottom: 15px;
+  background-color: rgb(245, 245, 245);
+}
+.role-trip-section2 .role-review .role-review-flights .role-flight-card .role-flight-segment-section .role-flight-arrDep {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 10pt 0 0;
+  padding: 10pt;
+}
+.role-trip-section2 .role-review .role-review-flights .role-flight-card .role-flight-segment-section .role-flight-arrDep .role-flight-dep .role-flight-depTime {
+  font-size: 12pt;
+  font-weight: bold;
+}
+.role-trip-section2 .role-review .role-review-flights .role-flight-card .role-flight-segment-section .role-flight-arrDep .role-flight-dep .role-flight-depCity {
+  font-size: 12pt;
+  font-weight: bold;
+  color: rgb(111, 111, 111);
+}
+.role-trip-section2 .role-review .role-review-flights .role-flight-card .role-flight-segment-section .role-flight-arrDep .role-flight-duration {
+  height: 60px;
+  width: 55%;
+}
+.role-trip-section2 .role-review .role-review-flights .role-flight-card .role-flight-segment-section .role-flight-arrDep .role-flight-duration .role-flight-duration-stopPts {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  padding-bottom: 5px;
+  border-bottom: 1px dashed rgb(150, 150, 150);
+  font-size: 8pt;
+  font-weight: bold;
+  color: rgb(160, 160, 160);
+  height: 30px;
+}
+.role-trip-section2 .role-review .role-review-flights .role-flight-card .role-flight-segment-section .role-flight-arrDep .role-flight-duration .role-flight-duration-stopPts .role-flight-duration-stopType {
+  font-size: 10pt;
+  color: rgb(80, 80, 80);
+  margin-right: 3px;
+  color: #94D2BD;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.role-trip-section2 .role-review .role-review-flights .role-flight-card .role-flight-segment-section .role-flight-arrDep .role-flight-duration .role-flight-duration-stopPts .role-flight-duration-stopType .role-flight-duration-stopType-icon {
+  margin-left: 5px;
+  color: rgb(80, 80, 80);
+  font-size: 9pt;
+}
+.role-trip-section2 .role-review .role-review-flights .role-flight-card .role-flight-segment-section .role-flight-arrDep .role-flight-duration .role-flight-duration-stopPts .role-flight-duration-stopPt {
+  margin-right: 3px;
+}
+.role-trip-section2 .role-review .role-review-flights .role-flight-card .role-flight-segment-section .role-flight-arrDep .role-flight-duration .role-flight-duration-time {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding-top: 2px;
+  font-size: 10pt;
+  font-weight: bold;
+  color: #001219;
+  height: 30px;
+}
+.role-trip-section2 .role-review .role-review-flights .role-flight-card .role-flight-segment-section .role-flight-arrDep .role-flight-arr-section {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+}
+.role-trip-section2 .role-review .role-review-flights .role-flight-card .role-flight-segment-section .role-flight-arrDep .role-flight-arr-section .role-flight-dep.role-flight-arr {
+  text-align: right;
+}
+.role-trip-section2 .role-review .role-review-flights .role-flight-card .role-flight-segment-section .role-flight-arrDep .role-flight-arr-section .role-flight-dep.role-flight-arr .role-flight-depTime {
+  font-size: 12pt;
+  font-weight: bold;
+}
+.role-trip-section2 .role-review .role-review-flights .role-flight-card .role-flight-segment-section .role-flight-arrDep .role-flight-arr-section .role-flight-dep.role-flight-arr .role-flight-depCity {
+  font-size: 12pt;
+  font-weight: bold;
+  color: rgb(111, 111, 111);
+}
+.role-trip-section2 .role-review .role-review-flights .role-flight-card .role-flight-segment-section .role-flight-arrDep .role-flight-arr-section .role-flight-depTime-afterDays {
+  font-size: 6pt;
+  font-weight: bold;
+  margin-left: 6px;
+  color: red;
+}
+.role-trip-section2 .role-review .role-review-flights .role-flight-card .role-flight-segment-section .role-flight-arrDep .role-flight-arr-section .role-flight-depTime-afterDays .role-flight-depTime-afterDays-num {
+  font-size: 9pt;
+}
+.role-trip-section2 .role-review .role-review-flights .role-flight-card .role-flight-segment-price {
+  margin-right: 10px;
+  font-size: 14pt;
+  font-weight: bold;
+  color: #BB3E03;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.role-trip-section2 .role-review .role-review-flights .role-flight-card .role-flight-segment-price .role-flight-segment-price-icon {
+  margin-right: 5px;
+}
+.role-trip-section2 .role-travellers-flight {
+  border-radius: 0.8rem;
+  padding: 10pt;
+  margin-bottom: 10pt;
+}
+.role-trip-section2 .role-travellers-flight .role-traveller-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10pt;
+  padding: 0 10pt;
+}
+.role-trip-section2 .role-travellers-flight .role-traveller-container .role-traveller-block {
+  border-radius: 8px;
+}
+.role-trip-section2 .role-travellers-flight .role-traveller-container .role-traveller-block .role-traveller-header {
+  font-size: 12pt;
+  font-weight: bold;
+  margin-bottom: 10pt;
+}
+.role-trip-section2 .role-travellers-flight .role-traveller-container .role-traveller-block .role-traveller-box {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5pt;
+  overflow: overlay;
+}
+.role-trip-section2 .role-travellers-flight .role-traveller-container .role-traveller-block .role-traveller-box div {
+  display: flex;
+  text-align: left;
+  font-size: 10pt;
+}
+.role-trip-section2 .role-travellers-flight .role-traveller-container .role-traveller-block .role-traveller-box div span {
+  font-weight: bold;
+  margin-left: 2pt;
+}
+.role-trip-section2 .role-travellers-hotel {
+  margin-bottom: 10pt;
+  border-radius: 0.8rem;
+  padding: 10pt;
+}
+.role-trip-section2 .role-travellers-hotel .role-traveller-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10pt;
+  padding: 0 10pt;
+}
+.role-trip-section2 .role-travellers-hotel .role-traveller-container .role-traveller-block {
+  border-radius: 8px;
+}
+.role-trip-section2 .role-travellers-hotel .role-traveller-container .role-traveller-block .role-traveller-header {
+  font-size: 12pt;
+  font-weight: bold;
+  margin-bottom: 10pt;
+}
+.role-trip-section2 .role-travellers-hotel .role-traveller-container .role-traveller-block .role-traveller-box {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5pt;
+  overflow: overlay;
+}
+.role-trip-section2 .role-travellers-hotel .role-traveller-container .role-traveller-block .role-traveller-box div {
+  display: flex;
+  text-align: left;
+  font-size: 10pt;
+}
+.role-trip-section2 .role-travellers-hotel .role-traveller-container .role-traveller-block .role-traveller-box div span {
+  font-weight: bold;
+  margin-left: 2pt;
+}
+.role-trip-section2 .role-approve {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.role-trip-section2 .role-approve span {
+  font-size: 12pt;
+}
+.role-trip-section2 .role-approve button {
+  border: none;
+  background-color: #001219;
+  font-size: 12pt;
+  font-weight: bolder;
+  padding: 5pt 15pt;
+  color: white;
+  border-radius: 0.8rem;
+}
+.role-trip-section2 .role-approve .spin {
+  padding: 10px 75px;
+  background: #001219;
+  border: none;
+  border-radius: 0.8rem;
+  color: white;
+  cursor: not-allowed;
+}
+.role-trip-section2 .role-approve .spinner {
+  border: 4px solid #94D2BD;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-left: 4px solid #3498db;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  animation: spin 1s linear infinite;
+  margin-top: -8px;
+  margin-left: -8px;
+  display: inline-block;
+  border-width: 2px;
+  margin-top: 5px;
+  cursor: not-allowed;
+}
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.role-trip-section2 .role-close {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 5px;
+}
+.role-trip-section2 .role-close .close-icon {
+  cursor: pointer;
+}
+
+@media screen and (width >= 700px) {
+  .tripsPage-pagination {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .tripsPage-pagination button {
+    margin: 0 5px;
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    cursor: pointer;
+  }
+  .tripsPage-pagination button.active {
+    background-color: #007bff;
+    color: #fff;
+    border-color: #007bff;
+  }
+  .role-type-feilds .role-feilds {
+    width: 50%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 5pt;
+    align-items: center;
+  }
+  .role-travellers-flight .role-traveller-container .role-traveller-block {
+    border-radius: 8px;
+  }
+  .role-travellers-flight .role-traveller-container .role-traveller-block .role-traveller-box {
+    display: grid !important;
+    grid-template-columns: 1fr 1fr;
+    gap: 2.5pt;
+  }
+  .role-travellers-flight .role-trip-city {
+    margin: 10pt;
+  }
+  .role-travellers-hotel .role-traveller-container .role-traveller-block .role-traveller-box {
+    display: grid !important;
+    grid-template-columns: 1fr 1fr;
+    gap: 2.5pt;
+  }
+  .role-travellers-hotel .role-trip-city {
+    margin: 10pt;
+  }
+  .role-block .role-trip-approval .role-trip-approval-block .role-trip-card .role-trip-card-header {
+    flex-direction: row !important;
+  }
+  .role-block .role-trip-approval .role-trip-approval-block .role-trip-card .role-trip-list {
+    flex-direction: row !important;
+  }
+  .role-block .role-trip-approval .role-trip-approval-block .role-trip-section {
+    height: 80vh;
+    overflow: scroll;
+  }
+  .role-block .role-trip-approval .role-trip-approval-block .role-trip-section .role-review .role-review-hotels {
+    padding: 10pt;
+    text-align: center;
+    border-radius: 0.8rem;
+  }
+  .role-block .role-trip-approval .role-trip-approval-block .role-trip-section .role-review .role-review-flights {
+    padding: 10pt;
+    margin: 10pt 0;
+  }
+  .role-block .role-trip-approval .role-trip-approval-block .role-trip-section .role-review .role-review-flights .role-flight-card {
+    margin: 10pt;
+  }
+  .role-block .role-trip-approval .role-trip-approval-block .role-trip-section .role-travellers {
+    padding: 10pt;
+    text-align: center;
+    border-radius: 0.8rem;
+    margin: 10pt 0;
+  }
+  .role-block .role-trip-approval .role-trip-approval-block .role-trip-section .role-travellers .role-review-travellers-header {
+    font-size: 20pt;
+    font-weight: bolder;
+  }
+  .role-block .role-trip-approval .role-trip-approval-block .role-trip-section .role-travellers .role-travellers-flight .role-traveller-container .role-traveller-block {
+    border-radius: 8px;
+  }
+  .role-block .role-trip-approval .role-trip-approval-block .role-trip-section .role-travellers .role-travellers-flight .role-traveller-container .role-traveller-block .role-traveller-box {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2.5pt;
+  }
+  .role-block .role-trip-approval .role-trip-approval-block .role-trip-section .role-travellers .role-travellers-flight .role-trip-city {
+    margin: 10pt;
+  }
+  .role-block .role-trip-approval .role-trip-approval-block .role-trip-section .role-travellers .role-travellers-hotel {
+    margin: 10pt;
+  }
+  .role-block .role-trip-approval .role-trip-approval-block .role-trip-section .role-travellers .role-travellers-hotel .role-traveller-container {
+    gap: 20px;
+  }
+  .role-block .role-trip-approval .role-trip-approval-block .role-trip-section .role-travellers .role-travellers-hotel .role-traveller-container .role-traveller-block {
+    border: 1px solid #94D2BD;
+    padding: 10pt;
+  }
+  .role-block .role-trip-approval .role-trip-approval-block .role-trip-section .role-travellers .role-travellers-hotel .role-traveller-container .role-traveller-block .role-traveller-box {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10pt;
+  }
+  .role-block .role-trip-approval .role-trip-approval-block .role-trip-section .role-travellers .role-travellers-hotel .role-traveller-container .role-traveller-block .role-traveller-box div {
+    margin-bottom: 10px;
+    display: flex;
+  }
+  .role-block .role-trip-approval .role-trip-approval-block .role-trip-section .role-travellers .role-travellers-hotel .role-traveller-container .role-traveller-block .role-traveller-box div .file {
+    cursor: pointer;
+  }
+  .role-block .role-trip-approval .role-trip-approval-block .role-trip-section .role-travellers .role-travellers-hotel .role-traveller-container .role-traveller-block .role-traveller-box div .file:hover {
+    text-decoration: underline;
+  }
+  .role-block .role-trip-approval .role-trip-approval-block .role-trip-section .role-travellers .role-travellers-hotel .role-traveller-container .role-traveller-block .role-traveller-box div span {
+    font-weight: bold;
+  }
+}/*# sourceMappingURL=Role.css.map */

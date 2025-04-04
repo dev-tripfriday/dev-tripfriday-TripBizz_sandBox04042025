@@ -1,0 +1,90 @@
+.signUpPage-block {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+}
+.signUpPage-block .signUpPage-container {
+  box-shadow: 0.04rem 0.06rem 0.4rem rgba(0, 0, 0, 0.171);
+  padding: 20px 40px;
+  border-radius: 0.8rem;
+}
+.signUpPage-block .signUpPage-container .signUpPage-header {
+  font-size: 30px;
+  font-weight: 1000;
+  text-align: center;
+}
+.signUpPage-block .signUpPage-container .signUpPage-body {
+  display: flex;
+  flex-direction: column;
+}
+.signUpPage-block .signUpPage-container .signUpPage-body .signUpPage-type {
+  margin: 10px;
+}
+.signUpPage-block .signUpPage-container .signUpPage-body .signUpPage-type .error-message {
+  font-size: 12px;
+  color: red;
+}
+.signUpPage-block .signUpPage-container .signUpPage-body .signUpPage-type .signUpPage-type-input {
+  padding: 10px 0px;
+  position: relative;
+}
+.signUpPage-block .signUpPage-container .signUpPage-body .signUpPage-type .signUpPage-type-input input {
+  padding: 5px 10px 5px 30px;
+  border: none;
+  border-bottom: 1px solid #000000;
+}
+.signUpPage-block .signUpPage-container .signUpPage-body .signUpPage-type .signUpPage-type-input input:focus {
+  border: none;
+  border-bottom: 1px solid #000000;
+}
+.signUpPage-block .signUpPage-container .signUpPage-body .signUpPage-type .signUpPage-type-input span {
+  position: absolute;
+  top: 15px;
+  left: 10px;
+}
+.signUpPage-block .signUpPage-container .signUpPage-body .signUpPage-submit {
+  display: flex;
+  justify-content: center;
+  margin: 10px;
+}
+.signUpPage-block .signUpPage-container .signUpPage-body .signUpPage-submit button {
+  padding: 10px 75px;
+  background: #001219;
+  border: none;
+  border-radius: 0.8rem;
+  color: white;
+}
+.signUpPage-block .signUpPage-container .signUpPage-body .signUpPage-submit button:hover {
+  cursor: pointer;
+}
+.signUpPage-block .signUpPage-container .signUpPage-body .signUpPage-methods {
+  font-size: 15px;
+  text-align: center;
+  margin: 5px;
+}
+.signUpPage-block .signUpPage-container .signUpPage-body .signUpPage-methods .signUpPage-methods-type {
+  margin: 10px;
+}
+.signUpPage-block .signUpPage-container .signUpPage-body .signUpPage-methods .signUpPage-methods-type span {
+  padding: 10px 15px;
+  margin: 10px 5px;
+}
+.signUpPage-block .signUpPage-container .signUpPage-body .signUpPage-methods .signUpPage-methods-type .facebook {
+  background-color: #1877f2;
+  border-radius: 100%;
+}
+.signUpPage-block .signUpPage-container .signUpPage-body .signUpPage-methods .signUpPage-methods-type .google {
+  border-radius: 100%;
+  background-color: #df4a32;
+}
+.signUpPage-block .signUpPage-container .signUpPage-body .signUpPage-switch {
+  font-size: 12px;
+  text-align: center;
+}
+.signUpPage-block .signUpPage-container .signUpPage-body .signUpPage-switch span {
+  text-decoration: underline;
+  cursor: pointer;
+  color: #000000;
+}/*# sourceMappingURL=SignUpPage.css.map */

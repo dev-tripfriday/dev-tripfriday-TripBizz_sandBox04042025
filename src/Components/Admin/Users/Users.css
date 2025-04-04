@@ -1,0 +1,179 @@
+.signUpPage-container {
+  padding: 5pt 20pt;
+  border-radius: 0.8rem;
+  height: 80vh;
+  overflow: hidden;
+}
+.signUpPage-container .signUpPage-header {
+  font-size: 30px;
+  font-weight: 1000;
+  text-align: center;
+}
+.signUpPage-container .signUpPage-body {
+  height: 70vh;
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+}
+.signUpPage-container .signUpPage-body .signUpPage-header-details {
+  font-size: 15pt;
+  font-weight: bold;
+  margin: 5pt;
+}
+.signUpPage-container .signUpPage-body .signUpPage-type {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10pt;
+  justify-content: space-between;
+  margin: 10px;
+}
+.signUpPage-container .signUpPage-body .signUpPage-type .error-message {
+  font-size: 12px;
+  color: red;
+}
+.signUpPage-container .signUpPage-body .signUpPage-type .signUpPage-type-input {
+  padding: 10px 0px;
+  position: relative;
+}
+.signUpPage-container .signUpPage-body .signUpPage-type .signUpPage-type-input input {
+  padding: 5px 10px 5px 30px;
+  border: none;
+  border-bottom: 1px solid #000000;
+}
+.signUpPage-container .signUpPage-body .signUpPage-type .signUpPage-type-input input:focus {
+  border: none;
+  border-bottom: 1px solid #000000;
+}
+.signUpPage-container .signUpPage-body .signUpPage-type .signUpPage-type-input select {
+  padding: 15px 20px;
+  border: none;
+  border-radius: 0.8rem;
+  background-color: rgb(246, 246, 246);
+  font-size: 12pt;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: rgb(80, 80, 80);
+  width: 20vw;
+}
+.signUpPage-container .signUpPage-body .signUpPage-type .signUpPage-type-input span {
+  position: absolute;
+  top: 15px;
+  left: 10px;
+}
+.signUpPage-container .signUpPage-body .signUpPage-type .signUpPage-type-input .countryCode {
+  width: 3vw;
+  padding: 5px;
+  margin-right: 5pt;
+}
+.signUpPage-container .signUpPage-body .signUpPage-type .signUpPage-documents .signUpPage-type-input input {
+  width: 17vw;
+  padding: 5pt;
+}
+.signUpPage-container .signUpPage-body .signUpPage-submit {
+  display: flex;
+  justify-content: center;
+  margin: 10px;
+}
+.signUpPage-container .signUpPage-body .signUpPage-submit button {
+  padding: 10px 75px;
+  background: #001219;
+  border: none;
+  border-radius: 0.8rem;
+  color: white;
+}
+.signUpPage-container .signUpPage-body .signUpPage-submit button:hover {
+  cursor: pointer;
+}
+.signUpPage-container .signUpPage-body .signUpPage-methods {
+  font-size: 15px;
+  text-align: center;
+  margin: 5px;
+}
+.signUpPage-container .signUpPage-body .signUpPage-methods .signUpPage-methods-type {
+  margin: 10px;
+}
+.signUpPage-container .signUpPage-body .signUpPage-methods .signUpPage-methods-type span {
+  padding: 10px 15px;
+  margin: 10px 5px;
+}
+
+.users-block {
+  display: flex; /* Parent container in row */
+  justify-content: space-between;
+  height: 100vh;
+}
+.users-block .child2 {
+  flex: 1;
+  padding: 10px;
+}
+.users-block .btncontainer {
+  display: flex;
+  justify-content: end;
+}
+.users-block .btncontainer .btn {
+  background: black;
+  color: white;
+  border: none;
+  border-radius: 0.8rem;
+  padding: 10pt;
+}
+.users-block .users-createUser button {
+  background: black;
+  color: white;
+  border: none;
+  border-radius: 0.8rem;
+  padding: 10pt;
+}
+.users-block .users-main-tabs {
+  display: grid;
+  gap: 10px;
+  border-radius: 0.8rem;
+  box-shadow: 0.04rem 0.06rem 0.4rem rgba(0, 0, 0, 0.17);
+  overflow: hidden;
+  width: 40vw;
+  margin-left: 20vw;
+}
+.users-block .users-main-tabs .users-main-tabs-list {
+  font-weight: 700;
+  padding: 15px 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.1s ease-in;
+  text-align: center;
+  height: 100%;
+  font-size: 10pt;
+}
+.users-block .users-main-content {
+  overflow: scroll;
+  height: 80vh;
+  margin-top: 10pt;
+  padding-top: 30px;
+}
+.users-block .users-main-content .users-main-content-header {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  font-weight: bold;
+  padding: 0 10pt;
+}
+.users-block .users-main-content .users-main-content-header .users-main-content-header-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.users-block .users-main-content .users-main-content-items {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  font-weight: bold;
+  border: 1.5px solid rgba(80, 80, 80, 0.534);
+  padding: 5pt 10pt;
+  border-radius: 0.8rem;
+  box-shadow: 0.04rem 0.06rem 0.4rem rgba(0, 0, 0, 0.17);
+  margin: 5pt;
+  cursor: pointer;
+}
+.users-block .users-main-content .users-main-content-items .users-main-content-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}/*# sourceMappingURL=Users.css.map */

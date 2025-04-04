@@ -1,0 +1,9 @@
+@import "../../CommonStyles/CommonColors.scss";
+@import "../../CommonStyles/CommonStyles.scss";
+
+.hiddenSelect-block {
+  margin-bottom: 10px;
+  select {
+    width: 100%;
+  }
+}

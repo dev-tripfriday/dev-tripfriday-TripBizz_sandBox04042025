@@ -1,0 +1,774 @@
+@import "../../CommonStyles/CommonColors.scss";
+@import "../../CommonStyles/CommonStyles.scss";
+
+.adminPage-block {
+  position: relative;
+}
+
+.admin-upload {
+  display: flex;
+  height: 75vh;
+  overflow-y: scroll;
+  align-items: center;
+  justify-content: center;
+  .tripsPage-totalPrice-Desktop {
+    display: flex;
+    border-radius: 0.8rem;
+    flex-direction: column;
+    .tripsPage-totalPrice-section {
+      display: flex;
+      justify-content: space-between;
+      flex-direction: column;
+      .tripsPage-roomDtls-room {
+        background-color: rgb(235, 235, 235);
+        padding: 10px;
+        border-radius: 0.8rem;
+        margin-bottom: 10px;
+
+        .tripsPage-roomDtls-room-titleSection {
+          display: grid;
+          grid-template-columns: 4fr 1fr;
+          justify-content: space-between;
+          flex-wrap: wrap;
+          align-items: center;
+          margin-bottom: 10px;
+          .tripsPage-roomDtls-room-type {
+            font-size: 12pt;
+            font-weight: bold;
+            color: $primary;
+          }
+          .tripsPage-roomDtls-room-price {
+            font-size: 12pt;
+            font-weight: bold;
+            color: $secondary;
+
+            .tripsPage-roomDtls-room-price-icon {
+              margin-right: 3px;
+            }
+          }
+        }
+        .tripsPage-roomDtls-room-otherSection {
+          display: flex;
+          justify-content: space-between;
+          align-items: flex-start;
+
+          .tripsPage-roomDtls-room-meals {
+            font-size: 10pt;
+            font-weight: bold;
+            color: rgb(80, 80, 80);
+
+            .tripsPage-roomDtls-room-meals-icon {
+              margin-right: 5px;
+              color: $primary;
+            }
+          }
+          .tripsPage-roomDtls-room-cancel {
+            font-size: 10pt;
+            font-weight: bold;
+            color: rgb(100, 100, 100);
+            .tripsPage-roomDtls-room-cancel-icon {
+              margin-right: 5px;
+              color: $primary;
+            }
+          }
+        }
+      }
+      .tripsPage-totalPrice {
+        display: flex;
+        justify-content: space-between;
+        .tripsPage-totalPrice-title {
+          font-size: 12pt;
+          font-weight: bold;
+          color: $primary;
+        }
+        .tripsPage-totalPrice-price {
+          font-size: 12pt;
+          font-weight: bold;
+          color: $secondary;
+
+          .tripsPage-totalPrice-price-icon {
+            margin-right: 5px;
+          }
+        }
+      }
+    }
+    .tripsPage-totalPrice-sections {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      .tripsPage-totalPrice-title {
+        font-size: 12pt;
+        font-weight: bold;
+        margin-right: 6pt;
+        color: $primary;
+      }
+      .tripsPage-totalPrice-price {
+        font-size: 12pt;
+        font-weight: bold;
+        color: $secondary;
+
+        .tripsPage-totalPrice-price-icon {
+          margin-right: 5px;
+        }
+      }
+    }
+  }
+}
+
+.hotel-note {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.adminPage-main-statusSave {
+  display: flex;
+  padding: 10px;
+  .adminPage-main-status {
+    // background-color: hsla(0, 5%, 92%, 0.555);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 0.8rem;
+    padding: 2px 20px;
+    .adminPage-main-status-text {
+      margin-right: 5px;
+      font-size: 12pt;
+      font-weight: 700;
+      color: $primary;
+    }
+    .adminPage-status-btn {
+      position: relative;
+      display: inline-flex;
+      vertical-align: middle;
+      gap:20px;
+      select {
+        display: flex;
+        //background-color: hsla(0, 5%, 92%, 0.555);
+        border: none;
+        padding: 10px;
+        border-radius: 0.8rem;
+        margin: 5px 10px;
+        cursor: pointer;
+      }
+    }
+  }
+  .adminPage-main-save {
+    margin: 0px 15px;
+    button {
+      display: flex;
+      align-items: center;
+      font-size: 10pt;
+      padding: 10px 15px;
+      border: 2px solid $primary;
+      border-radius: 0.8rem;
+      background-color: #f5f5f5;
+    }
+  }
+}
+
+// .adminPage-sideNav-block {
+//   height: auto;
+//   width: 20vw;
+//   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+//   display: flex;
+//   flex-direction: column;
+//   background-color: #fff;
+//   .adminPage-sideNav-logo {
+//     font-size: 35pt;
+//     font-weight: bold;
+//     text-align: center;
+//     margin-bottom: 10px;
+//     padding: 15px;
+//   }
+//   .adminPage-sideNav-content {
+//     display: flex;
+//     align-items: center;
+//     justify-content: center;
+//     flex-direction: column;
+//     background-color: #f5f5f5;
+//     padding: 10px;
+//     .adminPage-sideNav-links {
+//       display: flex;
+//       flex-direction: column;
+//       width: 85%;
+//       padding: 10px;
+//       span {
+//         color: $highlight;
+//         font-size: 14pt;
+//         font-weight: 700;
+//         border-bottom: 1.5px solid #e4e4e4;
+//         padding: 5px;
+
+//         .adminPage-sideNav-icon {
+//           padding: 0px 10px;
+//           font-size: 15pt;
+//         }
+//       }
+//       span:hover {
+//         cursor: pointer;
+//       }
+//     }
+//   }
+// }
+
+.hotel-file {
+  font-size: 10pt;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.adminPage-main-block {
+  // position: relative;
+  // margin-left: 20vw;
+  min-height: 100vh;
+  padding-top: 50px;
+  .adminPage-main-header {
+    background-color: #fff;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+    .adminPage-main-topHeader {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      padding: 10px 0;
+      .adminPage-main-search {
+        display: flex;
+        flex-direction: row;
+        .adminPage-main-input {
+          position: relative;
+          margin: 10px 0px;
+          input {
+            border-top-left-radius: 0.8rem;
+            border-bottom-left-radius: 0.8rem;
+            padding: 5px 10px 5px 30px;
+            width: 12vw;
+            border: 2px solid $primary;
+          }
+          .adminPage-main-input-icon {
+            position: absolute;
+            top: 10px;
+            left: 6px;
+          }
+        }
+        .adminPage-main-button {
+          padding: 10px 0px;
+          button {
+            padding: 7px 10px;
+            background-color: $primary;
+            border-top-right-radius: 0.8rem;
+            border-bottom-right-radius: 0.8rem;
+            color: #fff;
+            border: none;
+          }
+        }
+      }
+      .adminPage-main-notifications {
+        margin: 15px 30px;
+        .adminPage-main-notifications-icon {
+          font-size: 20pt;
+        }
+      }
+      .adminPage-main-logout {
+        padding: 10px;
+        button {
+          padding: 12px 30px;
+          background-color: $primary;
+          border-radius: 0.8rem;
+          color: #fff;
+          border: none;
+        }
+      }
+    }
+  }
+  .adminDetails-main-content {
+    padding-top: 14vh;
+    padding-left: 80px;
+    height: 92vh;
+    overflow: scroll;
+    .adminPage-main-section {
+      width: 80%;
+      padding: 20px;
+      background-color: #fff;
+      border-radius: 0.8rem;
+      margin-bottom: 10px;
+      box-shadow: 0.04rem 0.06rem 0.4rem rgba(0, 0, 0, 0.171);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      .adminPage-main-body {
+        display: flex;
+        flex-direction: column;
+        .adminPage-main-body-name {
+          font-size: 13pt;
+          font-weight: bold;
+          color: $primary;
+          margin-bottom: 10px;
+        }
+        .adminPage-main-body-trip {
+          font-size: 20pt;
+          color: $highlight;
+          font-weight: 700;
+          margin-bottom: 5px;
+        }
+        .adminPage-main-body-date {
+          font-size: 12pt;
+          font-weight: 700;
+          color: $primary;
+        }
+      }
+      .adminPage-main-totalPrice {
+        margin-right: 10px;
+        font-size: 14pt;
+        font-weight: bold;
+        color: $secondary;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        span {
+          color: black;
+        }
+        .adminPage-main-totalPrice-icon {
+          margin-right: 5px;
+        }
+      }
+    }
+    .adminPage-user-section {
+      width: 82%;
+      padding: 20px;
+      background-color: #fff;
+      border-radius: 0.8rem;
+      margin-bottom: 10px;
+      box-shadow: 0.04rem 0.06rem 0.4rem rgba(0, 0, 0, 0.171);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-direction: column;
+      .adminPage-user-title {
+        font-size: 13pt;
+        font-weight: bold;
+        color: $primary;
+        margin-bottom: 10px;
+      }
+      .adminPage-user-body {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15pt;
+        width: 100%;
+        .adminPage-user-body-title {
+          font-size: 12pt;
+          span {
+            font-weight: bold;
+            margin-right: 5pt;
+          }
+        }
+      }
+    }
+    .tripDetails-box {
+      display: flex;
+      flex-direction: column;
+      width: 90%;
+      padding: 10pt;
+      .tripDetails-hotel {
+        .tripDetails-hotel-header {
+          font-size: 1.5rem;
+          font-weight: bold;
+        }
+        .hotel-card-total {
+          width: 90%;
+          box-shadow: $shadow1;
+          border-radius: 0.8rem;
+          padding: 10px 20px;
+          margin: 15px 5px;
+          .hotel-card {
+            display: grid;
+            grid-template-columns: 1fr 3fr;
+            justify-content: flex-start;
+            align-items: center;
+            margin-bottom: 15px;
+            border-radius: 0.8rem;
+            padding: 10px;
+            .hotel-card-img {
+              width: 8vw;
+              height: 8vw;
+              border-radius: 0.4rem;
+              overflow: hidden;
+              margin-right: 10px;
+              img {
+                object-fit: cover;
+                width: 100%;
+                height: 100%;
+              }
+            }
+            .hotel-card-details {
+              .hotel-card-details-row {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                gap: 10pt;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+                margin-bottom: 8px;
+                flex-wrap: wrap;
+              }
+            }
+            .hotel-card-name {
+              font-size: 13pt;
+              font-weight: bold;
+              margin-bottom: 8px;
+              display: inline;
+            }
+            .hotel-card-rating {
+              font-size: 12pt;
+              font-weight: bold;
+              margin-bottom: 5px;
+
+              .hotel-card-rating-icon {
+                margin-right: 2px;
+                color: gold;
+              }
+            }
+            .hotel-card-price {
+              font-size: 14pt;
+              font-weight: bold;
+              color: $secondary;
+
+              .hotel-card-price-icon {
+                margin-right: 4px;
+              }
+            }
+
+            .hotel-note {
+              display: flex;
+              button {
+                padding: 10pt;
+                border-radius: 0.8rem;
+                font-size: 8pt;
+                font-weight: bold;
+                border: none;
+                outline: none;
+                color: #fff;
+                background-color: $primary;
+              }
+            }
+            .hotel-card-hotelInfo-desc {
+              font-size: 10pt;
+              margin-bottom: 8px;
+              font-weight: bold;
+              color: rgb(80, 80, 80);
+
+              .hotel-card-hotelInfo-desc-icon {
+                font-size: 11pt;
+                color: $primary;
+                margin-left: 5px;
+                cursor: pointer;
+              }
+            }
+            .hotel-card-hotelInfo-btn {
+              button {
+                background-color: $primary;
+                border: none;
+                border-radius: 0.8rem;
+                color: #ffff;
+                font-weight: bold;
+                font-size: 10pt;
+                padding: 4px 15px;
+              }
+            }
+          }
+          .hotel-card-admin-details {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            justify-items: center;
+            align-items: center;
+            margin: 10pt 0;
+            .hotel-card-upload {
+              cursor: pointer;
+              border: 1px solid $primary;
+              box-shadow: $shadow1;
+              padding: 5px 10px;
+              border-radius: 0.8rem;
+              text-align: center;
+            }
+            .request-status {
+              font-size: 10pt;
+              display: flex;
+              flex-direction: column;
+              font-weight: bold;
+              span {
+                font-size: 8pt;
+                padding: 3pt 5pt;
+                font-weight: bold;
+                color: #ffff;
+                border-radius: 0.8rem;
+                text-align: center;
+              }
+            }
+          }
+          .hotel-card-admin-details-upload {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            justify-items: center;
+            align-items: center;
+            .upload-icon {
+              cursor: pointer;
+            }
+          }
+          .hotelInfo-roomDtls-room {
+            background-color: whitesmoke;
+            padding: 10px;
+            border-radius: 0.8rem;
+            margin-bottom: 10px;
+
+            .hotelInfo-roomDtls-room-titleSection {
+              display: flex;
+              justify-content: space-between;
+              flex-wrap: wrap;
+              align-items: center;
+              margin-bottom: 10px;
+              .hotelInfo-roomDtls-room-type {
+                font-size: 12pt;
+                font-weight: bold;
+                color: $primary;
+              }
+              .hotelInfo-roomDtls-room-price {
+                font-size: 12pt;
+                font-weight: bold;
+                color: $secondary;
+
+                .hotelInfo-roomDtls-room-price-icon {
+                  margin-right: 3px;
+                }
+              }
+            }
+            .hotelInfo-roomDtls-room-otherSection {
+              display: flex;
+              justify-content: space-between;
+              align-items: flex-start;
+
+              .hotelInfo-roomDtls-room-meals {
+                font-size: 10pt;
+                font-weight: bold;
+                color: rgb(80, 80, 80);
+
+                .hotelInfo-roomDtls-room-meals-icon {
+                  margin-right: 5px;
+                  color: $primary;
+                }
+              }
+              .hotelInfo-roomDtls-room-cancel {
+                font-size: 10pt;
+                font-weight: bold;
+                color: rgb(100, 100, 100);
+                .hotelInfo-roomDtls-room-cancel-icon {
+                  margin-right: 5px;
+                  color: $primary;
+                }
+              }
+            }
+            .hotelInfo-roomDtls-room-inclusions {
+              margin-top: 10px;
+              font-size: 10pt;
+              font-weight: bold;
+              color: #001219;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+.adminDetails-main-content::-webkit-scrollbar {
+  display: none; /* Hides the scrollbar */
+}
+
+.admin-upload-popup {
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+  align-items: center;
+  justify-content: center;
+  div {
+    display: flex;
+    align-items: center;
+  }
+  .admin-upload-file {
+    display: flex;
+    flex-direction: column;
+  }
+  span {
+    font-size: 12pt;
+    font-weight: bolder;
+    text-align: left;
+  }
+  input {
+    margin: 10px;
+    padding: 10px;
+    width: 20vw;
+  }
+  textarea {
+    margin: 10px;
+    padding: 10px;
+    border-radius: 0.8rem;
+    border: 1px solid $primary;
+    width: 20vw;
+  }
+  .spin {
+    padding: 10px 75px;
+    background: $primary;
+    border: none;
+    border-radius: 0.8rem;
+    color: white;
+    cursor: not-allowed;
+  }
+  .spinner {
+    border: 4px solid $highlight;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-left: 4px solid #3498db;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    animation: spin 1s linear infinite;
+    margin-top: -8px;
+    margin-left: -8px;
+    display: inline-block;
+    border-width: 2px;
+    margin-top: 5px;
+    cursor: not-allowed;
+  }
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  button {
+    background-color: $primary;
+    color: #f5f5f5;
+    border: none;
+    border-radius: 0.8rem;
+    width: 50%;
+    padding: 10px;
+  }
+}
+
+.admin-ticket-popup {
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+  align-items: center;
+  justify-content: center;
+  span {
+    font-size: 20pt;
+    font-weight: bolder;
+    text-align: left;
+  }
+  input {
+    padding: 8pt;
+    border-radius: 0.8rem;
+    margin: 10pt;
+  }
+  button {
+    background-color: $primary;
+    color: #f5f5f5;
+    border: none;
+    border-radius: 0.8rem;
+    width: 50%;
+    padding: 10px;
+  }
+}
+
+.hotel-ticket-cost {
+  span {
+    font-weight: bold;
+    color: $secondary;
+  }
+}
+
+.hotel-travellers {
+  button {
+    padding: 5px 10px;
+    border-radius: 0.8rem;
+    border: 1px solid $primary;
+    background: none;
+  }
+}
+
+.traveller-details-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  height: 70vh;
+  overflow: overlay;
+  .traveller-details-header {
+    font-size: 15pt;
+    font-weight: bolder;
+  }
+  .role-traveller-block {
+    border-radius: 8px;
+    .role-traveller-header {
+      font-size: 12pt;
+      font-weight: bold;
+    }
+    .role-traveller-box {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 2.5pt;
+    }
+
+    .role-traveller-box div {
+      display: flex;
+      text-align: left;
+      font-size: 10pt;
+    }
+    .role-traveller-box div span {
+      font-weight: bold;
+      margin-left: 2pt;
+    }
+  }
+}
+
+.traveller-details-block {
+  border: 1px solid $highlight;
+  padding: 10pt;
+  border-radius: 8px;
+}
+
+.traveller-details-header {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10pt;
+}
+
+.traveller-details-box {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10pt;
+}
+
+.traveller-details-box div {
+  margin-bottom: 10px;
+}
+
+.traveller-details-box div .file {
+  cursor: pointer;
+}
+
+.traveller-details-box div .file:hover {
+  text-decoration: underline;
+}
+
+.traveller-details-box div span {
+  font-weight: bold;
+}

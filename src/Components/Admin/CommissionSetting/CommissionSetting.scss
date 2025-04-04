@@ -1,0 +1,173 @@
+@import "../../CommonStyles/CommonColors.scss";
+@import "../../CommonStyles/CommonStyles.scss";
+
+.commission-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  flex-wrap: wrap;
+  margin-left: 100px;
+  min-height: 100vh;
+  padding-top: 50px;
+  .commission-main-tabs {
+    display: grid;
+    width: 35vw;
+    margin: 0 10vw;
+    gap: 10px;
+    border-radius: 0.8rem;
+    box-shadow: 0.04rem 0.06rem 0.4rem rgba(0, 0, 0, 0.17);
+    overflow: hidden;
+    padding: 15pt;
+    font-weight: bolder;
+    font-size: 20pt;
+    .commission-main-tabs-list {
+      cursor: pointer;
+      font-weight: 700;
+      padding: 15px 5px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      transition: 0.1s ease-in;
+      text-align: center;
+      height: 100%;
+      font-size: 10pt;
+    }
+    .commission-main-tabs-list-active {
+      background: $highlight;
+      color: #fff;
+    }
+  }
+  .commission-flight-box {
+    display: flex;
+    flex-direction: column;
+    margin: 20pt 10pt;
+    .commission-flight-header {
+      text-align: center;
+      font-size: 15pt;
+      font-weight: 500;
+    }
+    .commission-flight-content {
+      display: flex;
+      flex-direction: column;
+      .commission-flight-edit {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        button {
+          border: 1px solid $primary;
+          background-color: $primary;
+          color: #fff;
+          border-radius: 0.8rem;
+          padding: 2pt 8pt;
+        }
+        margin: 10pt;
+      }
+    }
+  }
+  .commission-hotel-box {
+    display: flex;
+    flex-direction: column;
+    margin: 20pt 10pt;
+    .commission-hotel-header {
+      text-align: center;
+      font-size: 15pt;
+      font-weight: 500;
+    }
+    .commission-hotel-content {
+      display: flex;
+      flex-direction: column;
+      .commission-hotel-edit {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        button {
+          border: 1px solid $primary;
+          background-color: $primary;
+          color: #fff;
+          border-radius: 0.8rem;
+          padding: 2pt 8pt;
+        }
+        margin: 10pt;
+      }
+    }
+  }
+}
+
+.flightService-header {
+  font-size: 20pt;
+  font-weight: bolder;
+  text-align: center;
+}
+
+.flightServie-block {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  .flightService-type {
+    display: grid;
+    align-items: center;
+    gap: 10pt;
+    grid-template-columns: 1fr 1fr;
+    margin: 10pt;
+    span {
+      font-size: 15pt;
+    }
+    input {
+      border: 1px solid $primary;
+      border-radius: 0.8rem;
+      padding: 5pt 10pt;
+    }
+  }
+  .flightService-submit {
+    button {
+      border: 1px solid $primary;
+      background-color: $primary;
+      color: #fff;
+      border-radius: 0.8rem;
+      padding: 5pt 10pt;
+    }
+  }
+}
+
+.hotelService-header {
+  font-size: 15pt;
+  font-weight: bolder;
+  text-align: center;
+}
+
+.hotelServie-block {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  .hotelService-type {
+    display: grid;
+    align-items: center;
+    gap: 10pt;
+    grid-template-columns: 1fr 1fr;
+    margin: 10pt;
+    span {
+      font-size: 12pt;
+    }
+    input {
+      border: 1px solid $primary;
+      border-radius: 0.8rem;
+      padding: 5pt 10pt;
+      font-size: 12pt;
+    }
+  }
+  .hotelService-submit {
+    button {
+      border: 1px solid $primary;
+      background-color: $primary;
+      color: #fff;
+      border-radius: 0.8rem;
+      padding: 5pt 10pt;
+      font-size: 12pt;
+    }
+  }
+}

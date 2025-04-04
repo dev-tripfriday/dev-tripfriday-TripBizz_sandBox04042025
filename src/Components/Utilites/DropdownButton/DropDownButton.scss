@@ -1,0 +1,49 @@
+.dropDown-block {
+  position: relative;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.dropDown-btn-block {
+  padding: 8px 5px;
+  font-size: 11pt;
+  font-weight: bold;
+  border: 1px solid #000000;
+  border-radius: 0.8rem;
+  background-color: #fff;
+  box-shadow: 0.04rem 0.06rem 0.4rem rgba(0, 0, 0, 0.171);
+  transition: all 0.1s ease-out;
+}
+
+.dropDown-menu {
+  position: fixed;
+  top: 17%;
+  min-width: 200px;
+  max-height: 70vh;
+  background-color: #fff;
+  z-index: 1000;
+  box-shadow: 0.04rem 0.06rem 0.4rem rgba(0, 0, 0, 0.171);
+  border-radius: 0.8rem;
+  overflow: hidden;
+  z-index: 1040;
+}
+
+.talk-to-us-modal {
+  position: fixed;
+  opacity: 0;
+  transition: 200ms ease-in-out;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  pointer-events: none;
+  z-index: 1040;
+}
+
+.talk-to-us-modal.activ {
+  opacity: 0;
+  pointer-events: visible;
+}

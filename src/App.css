@@ -1,0 +1,272 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+  font-family: "Montserrat", sans-serif;
+}
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  font-family: "Montserrat", sans-serif;
+  scroll-behavior: smooth;
+}
+/* .flightSearch-journeyType {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.flightSearch-journeyType-btn {
+  margin-right: 10px;
+}
+.flightSearch-journeyType-btn button {
+  padding: 3px 15px;
+  background-color: #fff;
+  border: 1.5px solid #fff;
+  outline: none;
+  cursor: pointer;
+  font-size: 11pt;
+  font-weight: bold;
+  color: rgb(80, 80, 80);
+}
+.flightSearch-journeyType-btn.flightSearch-journeyType-btn-selected button {
+  border: 1.5px solid rgb(80, 80, 80);
+  border-radius: 0.8rem;
+}
+.flightSearch-oriDest {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-bottom: 10px;
+}
+.flightSearch-oriDest-input {
+  margin-right: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  height: 100%;
+}
+.flightSearch-dates {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.flightSearch-dates-out {
+  margin-right: 10px;
+}
+.flightSearch-cabinclass {
+  margin-bottom: 10px;
+}
+.flightSearch-directOneStop {
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.flightSearch-directOneStop-input {
+  margin-right: 15px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.flightSearch-directOneStop-input label {
+  font-size: 10pt;
+  font-weight: bold;
+  color: rgb(80, 80, 80);
+  margin-right: 5px;
+}
+.flightSearch-directOneStop-input input {
+  margin: 0;
+} */
+
+.flightSearch-sessionStatus {
+  padding: 3px 15px;
+  font-size: 10pt;
+  font-weight: bold;
+  border: 2px solid rgb(80, 80, 80);
+  border-radius: 0.8rem;
+  margin-left: 10px;
+}
+.flightSearch-sessionStatus.flightSearch-sessionStatus-started {
+  color: green;
+  border-color: green;
+}
+.flightSearch-sessionStatus.flightSearch-sessionStatus-expired {
+  color: red;
+  border-color: red;
+}
+.flightSearch-search {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.sample-itinerary-popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  transition: all 150ms ease-in-out;
+  border-radius: 10px;
+  z-index: 1050;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2vh;
+  width: 90%;
+}
+.itinerary-popup-bottom {
+  padding-bottom: 4vh;
+}
+.sample-popup-header {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  background-color: white;
+  .close {
+    padding: 0;
+    background-color: white;
+    border: none;
+    font-size: 2rem;
+    margin: 0 9px;
+  }
+}
+.sample-popup-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.sample-popup-body .dragDrop-popup-heading {
+  font-weight: bold;
+  color: #31708e;
+  font-size: 14pt;
+}
+.sample-popup-body .dragDrop-popup-text {
+  font-size: 12pt;
+  color: rgba(53, 53, 53, 0.856);
+}
+.sample-popup-body button {
+  background-color: #5085a5;
+  border-color: #5085a5;
+}
+.sample-popup-body button:hover {
+  background-color: #31708e;
+  border-color: #31708e;
+}
+.sample-popup-header button:active {
+  outline: none;
+}
+.sample-itinerary-popup.active {
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.talk-to-us-modal {
+  position: fixed;
+  opacity: 0;
+  transition: 200ms ease-in-out;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  pointer-events: none;
+  z-index: 1040;
+}
+.talk-to-us-header {
+  width: 100%;
+  z-index: 10000;
+}
+.talk-to-us-header button:active {
+  outline: none;
+}
+.talk-to-us-modal.active {
+  opacity: 1;
+  pointer-events: all;
+}
+
+.flightCancel-popup-tabs {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  column-gap: 10px;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+  border-bottom: 1.5px solid rgb(80, 80, 80);
+  font-size: 12pt;
+  font-weight: bold;
+}
+.flightCancel-popup-tab {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.flightCancel-popup-rules {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  column-gap: 10px;
+}
+.flightCancel-popup-rule {
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 11pt;
+}
+.flightCancel-popup-rulesSection {
+  margin-bottom: 10px;
+  border-bottom: 1.5px dashed rgb(120, 120, 120);
+}
+
+.flightSearch-oriDest-input-results {
+  margin-top: 5px;
+}
+.flightSearch-oriDest-input-result {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  column-gap: 10px;
+  padding: 8px 5px;
+  cursor: pointer;
+}
+.flightSearch-oriDest-input-result:hover {
+  background-color: whitesmoke;
+}
+.flightSearch-oriDest-input-result-countryCity {
+  font-size: 9pt;
+  font-weight: bold;
+}
+.flightSearch-oriDest-input-result-airport {
+  font-size: 7pt;
+  font-weight: bold;
+  color: rgb(150, 150, 150);
+}
+
+@media screen and (width >= 700px) {
+  .sample-itinerary-popup.active {
+    width: 65%;
+  }
+}
+
+.fwRzpx {
+  display: none !important;
+}
+.right {
+  right: 0% !important;
+}
+.gKcDzI {
+  display: none !important;
+}
+.react-tel-input {
+  width: auto !important;
+}
+.react-tel-input .form-control {
+  width: 100% !important;
+}

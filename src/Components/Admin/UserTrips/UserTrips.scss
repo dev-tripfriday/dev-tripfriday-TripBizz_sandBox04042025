@@ -1,0 +1,66 @@
+@import "../../CommonStyles/CommonColors.scss";
+@import "../../CommonStyles/CommonStyles.scss";
+
+.scale-loader {
+  margin: 40vw;
+}
+
+.admin-header-back {
+  padding: 5px;
+  margin: 10px;
+  .admin-header-back-icon {
+    cursor: pointer;
+  }
+}
+
+.admin-trips-container {
+ width: 83%;
+  .admin-trips-header {
+    box-shadow: $shadow1;
+    margin: 20pt;
+    padding: 10pt;
+    border-radius: 0.8rem;
+    display: flex;
+    justify-content: space-between;
+    .header-details {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      span {
+        font-size: 10.5pt;
+        font-weight: bolder;
+        span {
+          color: $highlight;
+        }
+      }
+      .trip-name {
+        font-size: 20pt;
+        font-weight: 900;
+      }
+    }
+    .header-price {
+      display: flex;
+      flex-direction: column;
+      padding: 10px 15px;
+      .header-price-section {
+        display: flex;
+        margin-bottom: 10px;
+        padding: 10px;
+      }
+      .header-price-title {
+        font-size: 13pt;
+        font-weight: bold;
+        color: $primary;
+      }
+      .header-price-main {
+        font-size: 15pt;
+        font-weight: bold;
+        color: $secondary;
+
+        .header-price-main-icon {
+          margin-right: 2px;
+        }
+      }
+    }
+  }
+}

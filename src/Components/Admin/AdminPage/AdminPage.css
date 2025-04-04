@@ -1,0 +1,138 @@
+.adminPage-block {
+  display: flex;
+}
+
+.adminPage-main-block {
+  min-height: 100vh;
+  padding-top: 50px;
+  width: 84%;
+}
+.adminPage-main-block .adminPage-main-header {
+  background-color: #fff;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  z-index: 1001;
+}
+.adminPage-main-block .adminPage-main-header .adminPage-main-topHeader {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 10px 0;
+}
+.adminPage-main-block .adminPage-main-header .adminPage-main-topHeader .adminPage-main-search {
+  display: flex;
+  flex-direction: row;
+}
+.adminPage-main-block .adminPage-main-header .adminPage-main-topHeader .adminPage-main-search .adminPage-main-input {
+  position: relative;
+  margin: 10px 0px;
+}
+.adminPage-main-block .adminPage-main-header .adminPage-main-topHeader .adminPage-main-search .adminPage-main-input input {
+  border-top-left-radius: 0.8rem;
+  border-bottom-left-radius: 0.8rem;
+  padding: 5px 10px 5px 30px;
+  width: 12vw;
+}
+.adminPage-main-block .adminPage-main-header .adminPage-main-topHeader .adminPage-main-search .adminPage-main-input .adminPage-main-input-icon {
+  position: absolute;
+  top: 10px;
+  left: 6px;
+}
+.adminPage-main-block .adminPage-main-header .adminPage-main-topHeader .adminPage-main-search .adminPage-main-button {
+  padding: 10px 0px;
+}
+.adminPage-main-block .adminPage-main-header .adminPage-main-topHeader .adminPage-main-search .adminPage-main-button button {
+  padding: 7px 10px;
+  background-color: #001219;
+  border-top-right-radius: 0.8rem;
+  border-bottom-right-radius: 0.8rem;
+  color: #fff;
+  border: none;
+}
+.adminPage-main-block .adminPage-main-header .adminPage-main-topHeader .adminPage-main-notifications {
+  margin: 15px 30px;
+}
+.adminPage-main-block .adminPage-main-header .adminPage-main-topHeader .adminPage-main-notifications .adminPage-main-notifications-icon {
+  font-size: 20pt;
+}
+.adminPage-main-block .adminPage-main-header .adminPage-main-topHeader .adminPage-main-logout {
+  padding: 10px;
+}
+.adminPage-main-block .adminPage-main-header .adminPage-main-topHeader .adminPage-main-logout button {
+  padding: 12px 30px;
+  background-color: #001219;
+  border-radius: 0.8rem;
+  color: #fff;
+  border: none;
+}
+.adminPage-main-block .adminPage-main-header .adminPage-main-tabs {
+  display: flex;
+  align-items: center;
+  grid-template-columns: repeat(2, 1fr);
+  margin-right: 14vw;
+  gap: 10px;
+  border-radius: 0.8rem;
+  box-shadow: 0.04rem 0.06rem 0.4rem rgba(0, 0, 0, 0.17);
+  overflow: hidden;
+}
+.adminPage-main-block .adminPage-main-header .adminPage-main-tabs .adminPage-main-tabs-list {
+  cursor: pointer;
+  font-weight: 700;
+  padding: 15px 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.1s ease-in;
+  text-align: center;
+  height: 100%;
+  font-size: 10pt;
+}
+.adminPage-main-block .adminPage-main-header .adminPage-main-tabs .adminPage-main-tabs-list-active {
+  background: #94D2BD;
+  color: #fff;
+}
+.adminPage-main-block .adminPage-main-content {
+  height: 92vh;
+  overflow: scroll;
+  padding-top: 20vh;
+  padding-left: 75px;
+}
+.adminPage-main-block .adminPage-main-content .adminPage-main-content-header {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  width: 65vw;
+  margin-left: 20px;
+}
+.adminPage-main-block .adminPage-main-content .adminPage-main-content-header .adminPage-main-header-names-email {
+  padding: 0px 50px;
+}
+.adminPage-main-block .adminPage-main-content .adminPage-main-content-items {
+  margin-top: 10px;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 20px;
+  width: 70vw;
+  padding: 15px 10px;
+  border-radius: 0.8rem;
+  box-shadow: 0.04rem 0.06rem 0.4rem rgba(0, 0, 0, 0.17);
+  overflow: hidden;
+  margin-bottom: 10px;
+  border: 1.5px solid rgba(80, 80, 80, 0.534);
+  cursor: pointer;
+}
+.adminPage-main-block .adminPage-main-content .adminPage-main-content-items .adminPage-main-content-item-name {
+  padding: 0px 8px;
+  color: #94D2BD;
+}
+.adminPage-main-block .adminPage-main-content .adminPage-main-content-items .adminPage-main-content-item-sdate {
+  padding: 0px 13px;
+}
+.adminPage-main-block .adminPage-main-content .adminPage-main-content-items .adminPage-main-content-item-num {
+  padding: 0px 30px;
+}/*# sourceMappingURL=AdminPage.css.map */

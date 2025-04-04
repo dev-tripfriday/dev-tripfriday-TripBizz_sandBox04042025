@@ -1,0 +1,44 @@
+@import "../../CommonStyles/CommonColors.scss";
+@import "../../CommonStyles/CommonStyles.scss";
+
+.popup-select-container {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  left: 30%;
+  position: absolute;
+  border: none;
+  border-radius: 0.8rem;
+  background-color: rgb(221, 221, 221);
+  margin-bottom: 10px;
+}
+
+.popup-list-block {
+  z-index: 1050;
+}
+
+.popup-select-option {
+  font-size: 12pt;
+  margin: 10px 5px;
+  border-bottom: 1px dotted $primary;
+  z-index: 1050;
+}
+
+.talk-to-us-modal {
+  position: fixed;
+  opacity: 0;
+  transition: 200ms ease-in-out;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  pointer-events: none;
+  z-index: -1;
+}
+
+.talk-to-us-modal.active {
+  opacity: 1;
+  pointer-events: all;
+  z-index: -1;
+}

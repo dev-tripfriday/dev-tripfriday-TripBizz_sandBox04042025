@@ -1,0 +1,44 @@
+@import "../../CommonStyles/CommonColors.scss";
+@import "../../CommonStyles/CommonStyles.scss";
+
+.busRes-header {
+  width: 100%;
+  padding: 5pt 15pt;
+  background-color: $primary;
+  border: 1px solid $primary;
+  display: flex;
+  align-items: center;
+  gap: 20pt;
+}
+.busRes-header-destName {
+  color: #ffff;
+  font-weight: bold;
+  font-size: 12pt;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 10pt 0;
+  .busRes-header-destName-edit {
+    align-items: center;
+    background-color: $highlight;
+    border-radius: 50%;
+    color: #fff;
+    cursor: pointer;
+    display: flex;
+    font-size: 9pt;
+    height: 25px;
+    justify-content: center;
+    margin-left: 10px;
+    width: 25px;
+  }
+}
+
+.busRes-block {
+  width: 100%;
+}
+
+@media screen and (width>=700px) {
+  .busRes-block {
+    width: auto;
+  }
+}

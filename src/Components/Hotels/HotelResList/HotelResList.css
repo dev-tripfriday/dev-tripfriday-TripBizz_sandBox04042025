@@ -1,0 +1,507 @@
+.hotelRes-block {
+  width: 100%;
+}
+
+.hotelRes-header {
+  width: 100%;
+  padding: 5pt 15pt;
+  background-color: #001219;
+  border: 1px solid #001219;
+}
+
+.hotelRes-header-destName {
+  color: white;
+  font-weight: bold;
+  font-size: 12pt;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.hotelRes-header-destName .hotelRes-header-destName-edit {
+  align-items: center;
+  background-color: #94D2BD;
+  border-radius: 50%;
+  color: #fff;
+  cursor: pointer;
+  display: flex;
+  font-size: 9pt;
+  height: 25px;
+  justify-content: center;
+  margin-left: 10px;
+  width: 25px;
+}
+
+.hotelRes-header-othrDtls {
+  color: #dcdcdc;
+  font-size: 10pt;
+  font-weight: 700;
+}
+
+.hotelRes-title {
+  font-size: 15pt;
+  font-weight: bold;
+  color: #001219;
+  margin-bottom: 20px;
+}
+
+.hotelRes-card {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-bottom: 12pt;
+  box-shadow: 0.04rem 0.06rem 0.4rem rgba(0, 0, 0, 0.171);
+  border-radius: 0.8rem;
+  padding: 5pt 0 5pt 10pt;
+  overflow: hidden;
+}
+
+.hotelRes-card::-webkit-scrollbar {
+  display: none;
+}
+
+.hotelRes-card-img {
+  width: 10vh;
+  height: 10vh;
+  border-radius: 0.4rem;
+  overflow: hidden;
+  margin-right: 10px;
+}
+.hotelRes-card-img img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.hotelRes-card-details {
+  width: 100%;
+}
+.hotelRes-card-details .hotelRes-card-details-box {
+  display: flex;
+  gap: 10px;
+  padding: 0 10pt 0 0;
+}
+.hotelRes-card-details .hotelRes-card-details-box .hotelRes-card-details-row {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.hotelRes-card-name {
+  font-size: 11pt;
+  font-weight: bold;
+  display: flex;
+  justify-content: space-between;
+}
+.hotelRes-card-name .hotelRes-name {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  margin-bottom: 0;
+}
+.hotelRes-card-name .expand {
+  -webkit-line-clamp: inherit;
+}
+
+.hotelRes-card-rating {
+  font-size: 12pt;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+.hotelRes-card-rating .hotelRes-card-rating-icon {
+  margin-right: 2px;
+  color: gold;
+}
+
+.hotelRes-noResults {
+  font-weight: bolder;
+  font-size: 18pt;
+}
+
+.hotelRes-error {
+  font-weight: bolder;
+  font-size: 18pt;
+}
+
+.hotelRes-card-price {
+  font-size: 12pt;
+  font-weight: bold;
+  color: #BB3E03;
+}
+.hotelRes-card-price .hotelRes-card-price-icon {
+  margin-right: 4px;
+}
+
+.hotelRes-card-hotelInfo-desc {
+  font-size: 10pt;
+  margin-bottom: 8px;
+  font-weight: bold;
+  color: rgb(80, 80, 80);
+}
+.hotelRes-card-hotelInfo-desc .hotelRes-card-hotelInfo-desc-icon {
+  font-size: 11pt;
+  color: #001219;
+  margin-left: 5px;
+}
+
+.hotelRes-card-hotelInfo-btn {
+  margin-top: 5pt;
+}
+.hotelRes-card-hotelInfo-btn button {
+  background-color: #001219;
+  border: none;
+  border-radius: 0.8rem;
+  color: white;
+  font-weight: bold;
+  font-size: 10pt;
+  padding: 4px 15px;
+}
+
+.hotelRes-filters-search-mobile {
+  display: flex;
+  width: 100%;
+}
+.hotelRes-filters-search-mobile input {
+  border: 1px solid #001219;
+  border-radius: 0.8rem;
+  width: 60%;
+  padding: 10px 26px;
+  width: 100%;
+}
+
+.hotelRes-filters-Desktop {
+  display: none;
+}
+
+.hotelRes-filters-Mobile {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  flex-direction: column;
+}
+.hotelRes-filters-Mobile .hotelRes-filters-Mobile-rating-radio {
+  margin: 5px 0px;
+  display: flex;
+  flex-direction: column;
+  padding: 5px 15px;
+}
+.hotelRes-filters-Mobile .hotelRes-filters-Mobile-rating-radio label {
+  font-size: 20px;
+  color: rgb(100, 100, 100);
+  font-weight: bold;
+  padding: 10px;
+}
+.hotelRes-filters-Mobile .hotelRes-filters-Mobile-rating-radio label .hotelRes-filters-Mobile-rating-input {
+  margin: 6px;
+  width: 10px;
+  height: 10px;
+  cursor: pointer;
+}
+.hotelRes-filters-Mobile .hotelRes-filters-Mobile-rating-radio .selected {
+  padding: 10px;
+  border: 1px solid #001219;
+  border-radius: 0.8rem;
+}
+.hotelRes-filters-Mobile .hotelRes-filters-Mobile-price-radio {
+  margin: 5px 0px;
+  display: flex;
+  flex-direction: column;
+}
+.hotelRes-filters-Mobile .hotelRes-filters-Mobile-price-radio label {
+  font-size: 13px;
+  color: rgb(100, 100, 100);
+  font-weight: bold;
+  padding: 10px;
+}
+.hotelRes-filters-Mobile .hotelRes-filters-Mobile-price-radio label .hotelRes-filters-Mobile-price-input {
+  margin: 6px;
+  width: 10px;
+  height: 10px;
+  cursor: pointer;
+}
+.hotelRes-filters-Mobile .hotelRes-filters-Mobile-price-radio .selected {
+  margin: 10px;
+  border: 1px solid #001219;
+  border-radius: 0.8rem;
+}
+.hotelRes-filters-Mobile .hotelRes-card-rating-icon {
+  margin-right: 2px;
+  color: gold;
+}
+
+.hotelRes-mobile-filters {
+  padding: 10px;
+  box-shadow: 0.04rem 0.06rem 0.4rem rgba(0, 0, 0, 0.171);
+}
+.hotelRes-mobile-filters .hotelRes-mobile-filters-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.hotelRes-mobile-filters .hotelRes-mobile-filters-header span {
+  font-size: 17pt;
+}
+.hotelRes-mobile-filters .hotelRes-mobile-filters-header span span {
+  margin: 5pt;
+  padding: 1pt 5pt;
+  border: 1px solid;
+  border-radius: 100%;
+  background-color: #94D2BD;
+}
+.hotelRes-mobile-filters .hotelRes-mobile-filters-block {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+}
+.hotelRes-mobile-filters .hotelRes-mobile-filters-block.show {
+  max-height: 100%;
+  transition: max-height 0.3s ease;
+}
+.hotelRes-mobile-filters .hotelRes-filters-mobile-rating {
+  margin: 10pt;
+}
+.hotelRes-mobile-filters .hotelRes-filters-mobile-rating .hotelRes-filters-mobile-rating-header {
+  font-size: 15pt;
+  font-weight: 500;
+}
+.hotelRes-mobile-filters .hotelRes-filters-mobile-rating .hotelRes-filters-Mobile-rating-radio {
+  display: flex;
+  flex-direction: column;
+}
+.hotelRes-mobile-filters .hotelRes-filters-mobile-rating .hotelRes-filters-Mobile-rating-radio label {
+  font-size: 20px;
+  color: rgb(100, 100, 100);
+  font-weight: bold;
+  padding: 10px;
+}
+.hotelRes-mobile-filters .hotelRes-filters-mobile-rating .hotelRes-filters-Mobile-rating-radio label .hotelRes-filters-Mobile-rating-input {
+  margin: 6px;
+  width: 10px;
+  height: 10px;
+  cursor: pointer;
+}
+.hotelRes-mobile-filters .hotelRes-filters-mobile-rating .hotelRes-filters-Mobile-rating-radio .selected {
+  padding: 10px;
+  border: 1px solid #001219;
+  border-radius: 0.8rem;
+}
+.hotelRes-mobile-filters .hotelRes-filters-Mobile-price {
+  margin: 10pt;
+}
+.hotelRes-mobile-filters .hotelRes-filters-Mobile-price .hotelRes-filters-Mobile-price-header {
+  font-size: 15pt;
+  font-weight: 500;
+}
+.hotelRes-mobile-filters .hotelRes-filters-Mobile-price .hotelRes-filters-Mobile-price-radio {
+  margin: 5px 0px;
+  display: flex;
+  flex-direction: column;
+}
+.hotelRes-mobile-filters .hotelRes-filters-Mobile-price .hotelRes-filters-Mobile-price-radio label {
+  font-size: 13px;
+  color: rgb(100, 100, 100);
+  font-weight: bold;
+  padding: 10px;
+}
+.hotelRes-mobile-filters .hotelRes-filters-Mobile-price .hotelRes-filters-Mobile-price-radio label .hotelRes-filters-Mobile-price-input {
+  margin: 6px;
+  width: 10px;
+  height: 10px;
+  cursor: pointer;
+}
+.hotelRes-mobile-filters .hotelRes-filters-Mobile-price .hotelRes-filters-Mobile-price-radio .selected {
+  margin: 10px;
+  border: 1px solid #001219;
+  border-radius: 0.8rem;
+}
+.hotelRes-mobile-filters .hotelRes-apply-filters {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+.hotelRes-mobile-filters .hotelRes-apply-filters button {
+  background-color: #001219;
+  border-radius: 0.8rem;
+  padding: 5pt 10pt;
+  color: #fff;
+  border: none;
+}
+.hotelRes-mobile-filters .hotelRes-close-filters {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.hotelRes-mobile-filters .hotelRes-card-rating-icon {
+  margin-right: 2px;
+  color: gold;
+}
+@keyframes show {
+  0% {
+    height: 0;
+  }
+  100% {
+    height: 100%;
+  }
+}
+
+.hotelRes-filters-Desktop-clear {
+  display: none;
+}
+
+.hotelRes-filters-Mobile-clear {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  margin: 0 1vw;
+  text-decoration: underline;
+  width: 100%;
+}
+
+.hotelRes-filters-search-desktop {
+  display: none;
+}
+
+.hotelRes-filters-Mobile-filter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20vw;
+}
+
+.hotelRes-featured {
+  background-color: rgb(166, 240, 166);
+  font-size: 0.7rem;
+  font-weight: bolder;
+  padding: 2pt 10pt;
+  height: 17pt;
+  border-radius: 0.8rem 0rem 0rem 0.8rem;
+  color: #001219;
+}
+
+.flightStatus {
+  font-size: 8pt;
+  padding: auto 2pt;
+  border-radius: 0.8rem;
+}
+
+@media screen and (width >= 700px) {
+  .hotelRes-block {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+  }
+  .hotelRes-filters-Mobile {
+    display: none;
+  }
+  .hotelRes-mobile-filters {
+    display: none;
+  }
+  .hotelRes-filters-Desktop {
+    display: block;
+    box-shadow: 0.04rem 0.06rem 0.4rem rgba(0, 0, 0, 0.171);
+    margin: 10px 20px;
+    border-radius: 0.8rem;
+    padding: 10px;
+    width: 22vw;
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+  .hotelRes-filters-Desktop .hotelRes-filters-Desktop-rating {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+  }
+  .hotelRes-filters-Desktop .hotelRes-filters-Desktop-rating .hotelRes-filters-Desktop-rating-header {
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px 0px;
+    text-align: left;
+  }
+  .hotelRes-filters-Desktop .hotelRes-filters-Desktop-rating .hotelRes-filters-Desktop-rating-radio {
+    margin: 5px 0px;
+    display: flex;
+    flex-direction: column;
+  }
+  .hotelRes-filters-Desktop .hotelRes-filters-Desktop-rating .hotelRes-filters-Desktop-rating-radio label {
+    font-size: 20px;
+    color: rgb(100, 100, 100);
+    font-weight: bold;
+    margin: 3px;
+  }
+  .hotelRes-filters-Desktop .hotelRes-filters-Desktop-rating .hotelRes-filters-Desktop-rating-radio .selected {
+    padding: 10px;
+    border: 1px solid #001219;
+    border-radius: 0.8rem;
+  }
+  .hotelRes-filters-Desktop .hotelRes-filters-Desktop-price {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+  }
+  .hotelRes-filters-Desktop .hotelRes-filters-Desktop-price .hotelRes-filters-Desktop-price-header {
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px 0px;
+    text-align: left;
+  }
+  .hotelRes-filters-Desktop .hotelRes-filters-Desktop-price .hotelRes-filters-Desktop-price-radio {
+    margin: 5px 0px;
+    display: flex;
+    flex-direction: column;
+  }
+  .hotelRes-filters-Desktop .hotelRes-filters-Desktop-price .hotelRes-filters-Desktop-price-radio label {
+    font-size: 15px;
+    color: rgb(100, 100, 100);
+    font-weight: bold;
+    margin: 3px;
+  }
+  .hotelRes-filters-Desktop .hotelRes-filters-Desktop-price .hotelRes-filters-Desktop-price-radio .selected {
+    padding: 10px;
+    border: 1px solid #001219;
+    border-radius: 0.8rem;
+  }
+  .hotelRes-filters-Desktop .hotelRes-card-rating-icon {
+    margin-right: 2px;
+    color: gold;
+  }
+  .hotelRes-card {
+    margin-right: 15vw;
+  }
+  .hotelRes-card .hotelRes-card-img {
+    height: 6vw;
+    width: 6vw;
+  }
+  .hotelRes-card-hotelInfo-desc-icon {
+    cursor: pointer;
+  }
+  .hotelRes-filters-Desktop-clear {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    margin: 1vh 0vw;
+    text-decoration: underline;
+    cursor: pointer;
+  }
+  .hotelRes-filters-Mobile-clear {
+    display: none;
+  }
+  .hotelRes-filters-search-desktop {
+    display: flex;
+    margin: 10px 0px;
+  }
+  .hotelRes-filters-search-desktop input {
+    border: 1px solid #001219;
+    border-radius: 0.8rem;
+    width: 60%;
+    padding: 10px 26px;
+  }
+  .hotelRes-filters-search-mobile {
+    display: none;
+  }
+}/*# sourceMappingURL=HotelResList.css.map */

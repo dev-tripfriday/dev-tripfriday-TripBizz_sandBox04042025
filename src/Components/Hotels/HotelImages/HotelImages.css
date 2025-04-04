@@ -1,0 +1,53 @@
+.hotelImages-block {
+  height: 80vh;
+  overflow-y: scroll;
+  width: 80%;
+}
+
+.hotelImages-mainImg {
+  height: 50vh;
+  margin-bottom: 10px;
+}
+.hotelImages-mainImg img {
+  -o-object-fit: fill;
+     object-fit: fill;
+  width: 100%;
+  height: 100%;
+  border-radius: 0.8rem;
+}
+
+.hotelImages-imgThumb-list {
+  height: 35vh;
+  overflow-y: scroll;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.hotelImages-imgThumb-list .hotelImages-imgThumb {
+  width: 21%;
+  margin: 2%;
+  height: 50px;
+  border-radius: 0.4rem;
+  position: relative;
+}
+.hotelImages-imgThumb-list .hotelImages-imgThumb .hotelImages-imgThumb-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: none;
+}
+.hotelImages-imgThumb-list .hotelImages-imgThumb img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 100%;
+  border-radius: 0.4rem;
+}
+.hotelImages-imgThumb-list .hotelImages-imgThumb.hotelImages-imgThumb-selected {
+  border: 2px solid #94D2BD;
+}
+.hotelImages-imgThumb-list .hotelImages-imgThumb.hotelImages-imgThumb-selected .hotelImages-imgThumb-overlay {
+  background-color: rgba(148, 210, 189, 0.662745098);
+}/*# sourceMappingURL=HotelImages.css.map */

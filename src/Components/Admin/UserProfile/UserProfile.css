@@ -1,0 +1,433 @@
+.userProfile-admin-container .userProfile-admin-block {
+  width: 83%;
+  height: 100vh;
+}
+.userProfile-admin-container .userProfile-admin-block .userProfile-header-back {
+  padding: 5px;
+  margin: 10px;
+}
+.userProfile-admin-container .userProfile-admin-block .userProfile-header-back .userProfile-header-back-icon {
+  cursor: pointer;
+}
+.userProfile-admin-container .userProfile-admin-block .userProfile-admin-balance {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0.04rem 0.06rem 0.4rem rgba(0, 0, 0, 0.171);
+  border-radius: 0.8rem;
+  font-size: 12pt;
+  padding: 10pt 20pt;
+  margin: 20pt;
+}
+.userProfile-admin-container .userProfile-admin-block .userProfile-admin-balance .userProfile-admin-balance-details {
+  display: flex;
+  flex-direction: column;
+  font-weight: bolder;
+}
+.userProfile-admin-container .userProfile-admin-block .userProfile-admin-balance .userProfile-admin-balance-content {
+  padding: 10pt;
+  border-radius: 0.8rem;
+  font-size: 12pt;
+  display: flex;
+  flex-direction: column;
+}
+.userProfile-admin-container .userProfile-admin-block .userProfile-admin-balance .userProfile-admin-balance-content .balance-header {
+  font-weight: 700;
+}
+.userProfile-admin-container .userProfile-admin-block .userProfile-admin-balance .userProfile-admin-balance-content .balance-header span {
+  color: #bb3e03;
+  font-weight: 700;
+}
+.userProfile-admin-container .userProfile-admin-block .userProfile-admin-balance .userProfile-admin-balance-content .balance-button {
+  display: flex;
+  gap: 10pt;
+}
+.userProfile-admin-container .userProfile-admin-block .userProfile-admin-balance .userProfile-admin-balance-content .balance-button button {
+  background-color: #001219;
+  border: none;
+  border-radius: 0.8rem;
+  color: #ececec;
+  padding: 5pt;
+  font-size: 10pt;
+}
+.userProfile-admin-container .userProfile-admin-block .userProfile-admin-type {
+  box-shadow: 0.04rem 0.06rem 0.4rem rgba(0, 0, 0, 0.171);
+}
+.userProfile-admin-container .userProfile-admin-block .userProfile-admin-trips {
+  padding: 10pt 20pt;
+}
+.userProfile-admin-container .userProfile-admin-block .userProfile-admin-trips .userProfile-admin-trips-header {
+  font-size: 15pt;
+  font-weight: 600;
+  margin: 10pt 0;
+  display: flex;
+  justify-content: space-between;
+}
+.userProfile-admin-container .userProfile-admin-block .userProfile-admin-trips .userProfile-admin-trips-header button {
+  display: flex;
+  align-items: center;
+  font-size: 10pt;
+  padding: 5pt 10pt;
+  border: none;
+  background-color: #001219;
+  color: #d4d3d3;
+  border-radius: 0.8rem;
+}
+.userProfile-admin-container .userProfile-admin-block .userProfile-admin-trips .userProfile-admin-trips-content {
+  font-size: 12pt;
+}
+.userProfile-admin-container .userProfile-admin-block .userProfile-admin-trips .userProfile-admin-trips-content .userProfile-admin-trips-header {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  font-weight: bold;
+  padding: 0 10pt;
+  font-size: 12pt;
+}
+.userProfile-admin-container .userProfile-admin-block .userProfile-admin-trips .userProfile-admin-trips-content .userProfile-admin-trips-header span {
+  text-align: center;
+}
+.userProfile-admin-container .userProfile-admin-block .userProfile-admin-trips .userProfile-admin-trips-content .userProfile-admin-trips-items {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  font-weight: bold;
+  border: 1.5px solid rgba(80, 80, 80, 0.534);
+  padding: 5pt 10pt;
+  border-radius: 0.8rem;
+  box-shadow: 0.04rem 0.06rem 0.4rem rgba(0, 0, 0, 0.17);
+  margin: 5pt;
+  font-size: 10pt;
+  cursor: pointer;
+}
+.userProfile-admin-container .userProfile-admin-block .userProfile-admin-trips .userProfile-admin-trips-content .userProfile-admin-trips-items span {
+  text-align: center;
+}
+
+.user-admin-popup {
+  width: 80%;
+  height: 80vh;
+  overflow-y: scroll;
+  padding: 10pt 20pt;
+}
+.user-admin-popup .scale-loader {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.role-review-flights-header {
+  font-size: 15pt;
+  font-weight: bolder;
+  margin: 10pt 0;
+}
+
+.role-review-hotels-header {
+  font-size: 15pt;
+  font-weight: bolder;
+  margin: 10pt 0;
+}
+
+.tripDetails-flight-card {
+  box-shadow: 0.04rem 0.06rem 0.4rem rgba(0, 0, 0, 0.171);
+  padding: 5pt 0pt 5pt 5pt;
+  border-radius: 0.8rem;
+  margin-bottom: 10pt;
+}
+.tripDetails-flight-card .tripDetails-flight-airline-block {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 6px;
+}
+.tripDetails-flight-card .tripDetails-flight-airline-block .tripDetails-flight-airline {
+  font-size: 12pt;
+  font-weight: bold;
+  color: #001219;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.tripDetails-flight-card .tripDetails-flight-airline-block .tripDetails-flight-airline span {
+  font-size: 10pt;
+  color: rgb(121, 121, 121);
+}
+.tripDetails-flight-card .tripDetails-flight-airline-block .tripDetails-flight-airline .tripDetails-flight-logo {
+  margin: 10px 10px 10px 0px;
+}
+.tripDetails-flight-card .tripDetails-flight-airline-block .tripDetails-flight-airline .tripDetails-flight-logo span {
+  height: 25px;
+  width: 25px;
+  display: block;
+  background-position: 50%;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.tripDetails-flight-card .tripDetails-flight-airline-block .tripDetails-flight-airline .tripDetails-flight-logo span .tripDetails-flight-logo-icon {
+  height: 22px;
+}
+.tripDetails-flight-card .tripDetails-flight-airline-block .tripDetails-flight-depDate-block {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: #94D2BD;
+  border-radius: 0.8rem 0rem 0rem 0.8rem;
+  padding: 5pt;
+  font-size: 10pt;
+}
+.tripDetails-flight-card .tripDetails-flight-segment-section {
+  border-radius: 0.8rem;
+  margin-bottom: 15px;
+  background-color: rgb(245, 245, 245);
+}
+.tripDetails-flight-card .tripDetails-flight-segment-section .tripDetails-flight-arrDep {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 10pt 0 0;
+  padding: 10pt;
+}
+.tripDetails-flight-card .tripDetails-flight-segment-section .tripDetails-flight-arrDep .tripDetails-flight-dep .tripDetails-flight-depTime {
+  font-size: 12pt;
+  font-weight: bold;
+}
+.tripDetails-flight-card .tripDetails-flight-segment-section .tripDetails-flight-arrDep .tripDetails-flight-dep .tripDetails-flight-depCity {
+  font-size: 12pt;
+  font-weight: bold;
+  color: rgb(111, 111, 111);
+}
+.tripDetails-flight-card .tripDetails-flight-segment-section .tripDetails-flight-arrDep .tripDetails-flight-duration {
+  height: 60px;
+  width: 55%;
+}
+.tripDetails-flight-card .tripDetails-flight-segment-section .tripDetails-flight-arrDep .tripDetails-flight-duration .tripDetails-flight-duration-stopPts {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  padding-bottom: 5px;
+  border-bottom: 1px dashed rgb(150, 150, 150);
+  font-size: 8pt;
+  font-weight: bold;
+  color: rgb(160, 160, 160);
+  height: 30px;
+}
+.tripDetails-flight-card .tripDetails-flight-segment-section .tripDetails-flight-arrDep .tripDetails-flight-duration .tripDetails-flight-duration-stopPts .tripDetails-flight-duration-stopType {
+  font-size: 10pt;
+  color: rgb(80, 80, 80);
+  margin-right: 3px;
+  color: #94D2BD;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.tripDetails-flight-card .tripDetails-flight-segment-section .tripDetails-flight-arrDep .tripDetails-flight-duration .tripDetails-flight-duration-stopPts .tripDetails-flight-duration-stopType .tripDetails-flight-duration-stopType-icon {
+  margin-left: 5px;
+  color: rgb(80, 80, 80);
+  font-size: 9pt;
+}
+.tripDetails-flight-card .tripDetails-flight-segment-section .tripDetails-flight-arrDep .tripDetails-flight-duration .tripDetails-flight-duration-stopPts .tripDetails-flight-duration-stopPt {
+  margin-right: 3px;
+}
+.tripDetails-flight-card .tripDetails-flight-segment-section .tripDetails-flight-arrDep .tripDetails-flight-duration .tripDetails-flight-duration-time {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding-top: 2px;
+  font-size: 10pt;
+  font-weight: bold;
+  color: #001219;
+  height: 30px;
+}
+.tripDetails-flight-card .tripDetails-flight-segment-section .tripDetails-flight-arrDep .tripDetails-flight-arr-section {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+}
+.tripDetails-flight-card .tripDetails-flight-segment-section .tripDetails-flight-arrDep .tripDetails-flight-arr-section .tripDetails-flight-dep.tripDetails-flight-arr {
+  text-align: right;
+}
+.tripDetails-flight-card .tripDetails-flight-segment-section .tripDetails-flight-arrDep .tripDetails-flight-arr-section .tripDetails-flight-dep.tripDetails-flight-arr .tripDetails-flight-depTime {
+  font-size: 12pt;
+  font-weight: bold;
+}
+.tripDetails-flight-card .tripDetails-flight-segment-section .tripDetails-flight-arrDep .tripDetails-flight-arr-section .tripDetails-flight-dep.tripDetails-flight-arr .tripDetails-flight-depCity {
+  font-size: 12pt;
+  font-weight: bold;
+  color: rgb(111, 111, 111);
+}
+.tripDetails-flight-card .tripDetails-flight-segment-section .tripDetails-flight-arrDep .tripDetails-flight-arr-section .tripDetails-flight-depTime-afterDays {
+  font-size: 6pt;
+  font-weight: bold;
+  margin-left: 6px;
+  color: red;
+}
+.tripDetails-flight-card .tripDetails-flight-segment-section .tripDetails-flight-arrDep .tripDetails-flight-arr-section .tripDetails-flight-depTime-afterDays .tripDetails-flight-depTime-afterDays-num {
+  font-size: 9pt;
+}
+.tripDetails-flight-card .tripDetails-flight-flightCard-price {
+  margin-right: 10px;
+  font-size: 12pt;
+  font-weight: bold;
+  color: #BB3E03;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.tripDetails-flight-card .tripDetails-flight-flightCard-price .tripDetails-flight-flightCard-price-icon {
+  margin-right: 5px;
+}
+
+.tripDetails-hotel-card {
+  box-shadow: 0.04rem 0.06rem 0.4rem rgba(0, 0, 0, 0.171);
+  padding: 5pt 0pt 5pt 5pt;
+  border-radius: 0.8rem;
+  margin-bottom: 10pt;
+}
+.tripDetails-hotel-card .tripDetails-hotel-details {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10pt;
+  flex-direction: row;
+}
+.tripDetails-hotel-card .tripDetails-hotel-details .tripDetails-hotel-name {
+  font-size: 12pt;
+  font-weight: bold;
+}
+.tripDetails-hotel-card .tripDetails-hotel-details .tripDetails-hotel-people {
+  font-size: 10pt;
+}
+.tripDetails-hotel-card .tripDetails-hotel-details .tripDetails-hotel-date {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: #94d2bd;
+  border-radius: 0.8rem 0rem 0rem 0.8rem;
+  padding: 5pt;
+  font-size: 10pt;
+}
+.tripDetails-hotel-card .tripDetails-roomDtls-room {
+  background-color: whitesmoke;
+  padding: 10px;
+  border-radius: 0.8rem;
+  margin-bottom: 10px;
+}
+.tripDetails-hotel-card .tripDetails-roomDtls-room .tripDetails-roomDtls-room-titleSection {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.tripDetails-hotel-card .tripDetails-roomDtls-room .tripDetails-roomDtls-room-titleSection .tripDetails-roomDtls-room-type {
+  font-size: 12pt;
+  font-weight: bold;
+  color: #001219;
+}
+.tripDetails-hotel-card .tripDetails-roomDtls-room .tripDetails-roomDtls-room-titleSection .tripDetails-roomDtls-room-price {
+  font-size: 10pt;
+  font-weight: bold;
+  color: #BB3E03;
+}
+.tripDetails-hotel-card .tripDetails-roomDtls-room .tripDetails-roomDtls-room-titleSection .tripDetails-roomDtls-room-price .tripDetails-roomDtls-room-price-icon {
+  margin-right: 3px;
+}
+.tripDetails-hotel-card .tripDetails-roomDtls-room .tripDetails-roomDtls-room-otherSection {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.tripDetails-hotel-card .tripDetails-roomDtls-room .tripDetails-roomDtls-room-otherSection .tripDetails-roomDtls-room-meals {
+  font-size: 10pt;
+  font-weight: bold;
+  color: rgb(80, 80, 80);
+}
+.tripDetails-hotel-card .tripDetails-roomDtls-room .tripDetails-roomDtls-room-otherSection .tripDetails-roomDtls-room-meals .tripDetails-roomDtls-room-meals-icon {
+  margin-right: 5px;
+  color: #001219;
+}
+.tripDetails-hotel-card .tripDetails-roomDtls-room .tripDetails-roomDtls-room-otherSection .tripDetails-roomDtls-room-cancel {
+  font-size: 10pt;
+  font-weight: bold;
+  color: rgb(100, 100, 100);
+}
+.tripDetails-hotel-card .tripDetails-roomDtls-room .tripDetails-roomDtls-room-otherSection .tripDetails-roomDtls-room-cancel .tripDetails-roomDtls-room-cancel-icon {
+  margin-right: 5px;
+  color: #001219;
+}
+
+.update-balance {
+  display: flex;
+  margin: 10pt;
+  flex-direction: column;
+  gap: 20pt;
+}
+.update-balance label {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12pt;
+  gap: 10pt;
+}
+.update-balance label input {
+  border: none;
+  width: 30vw;
+  box-shadow: 0.04rem 0.06rem 0.4rem rgba(0, 0, 0, 0.171);
+  border-radius: 0.5rem;
+  padding: 5pt 10pt;
+  font-size: 10pt;
+}
+.update-balance button {
+  background-color: #001219;
+  border: none;
+  border-radius: 0.8rem;
+  color: #ececec;
+  padding: 5pt;
+}
+
+.transactions-block {
+  margin: 20pt 10pt;
+  border-radius: 0.8rem;
+  border: 1px solid #001219;
+  box-shadow: 0.04rem 0.06rem 0.4rem rgba(0, 0, 0, 0.171);
+  height: 70vh;
+  overflow-y: scroll;
+}
+.transactions-block .transactions-header {
+  font-size: 18pt;
+  font-weight: bolder;
+  padding: 10pt;
+  border-bottom: 1px solid #d4d3d3;
+  display: flex;
+  align-items: center;
+}
+.transactions-block .transactions-header div {
+  font-size: 10pt;
+  border-radius: 0.8rem;
+  padding: 10pt;
+  border: 1px solid #001219;
+  margin-left: 40pt;
+  font-weight: lighter;
+}
+.transactions-block .transactions-header div span {
+  font-size: 10pt;
+  font-weight: bolder;
+}
+.transactions-block .transactions-content .transactions-content-header {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  justify-items: center;
+  background-color: #94D2BD;
+  padding: 10pt 0;
+}
+.transactions-block .transactions-content .transactions-content-body {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  justify-items: center;
+  padding: 10pt;
+}
+.transactions-block .transactions-content .transactions-content-body .icon {
+  font-size: 10pt;
+}
+.transactions-block .transactions-content .transactions-content-body.even {
+  background-color: #e1e2e6;
+}/*# sourceMappingURL=UserProfile.css.map */

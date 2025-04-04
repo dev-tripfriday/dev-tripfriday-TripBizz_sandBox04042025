@@ -1,0 +1,2593 @@
+@import "../../CommonStyles/CommonStyles.scss";
+@import "../../CommonStyles/CommonColors.scss";
+
+.tripDetails-header {
+  display: flex;
+  margin: 10px 20px;
+  flex-direction: column;
+  .tripDetails-download-report {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10pt;
+    button {
+      background-color: $primary;
+      border: none;
+      border-radius: 0.8rem;
+      color: #ffff;
+      font-weight: bold;
+      font-size: 10pt;
+      padding: 4px 15px;
+    }
+  }
+  .tripDetails-header-name {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    span {
+      font-size: 10.5pt;
+      font-weight: bolder;
+      span {
+        color: $highlight;
+      }
+    }
+    .trip-name {
+      font-size: 20pt;
+      font-weight: 900;
+    }
+  }
+  .tripDetails-header-date {
+    padding: 10px;
+    border-radius: 0.8rem;
+    background-color: $primary;
+    color: #f5f5f5;
+    width: 55%;
+  }
+}
+
+.tripDetails-box {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.info-icon {
+  font-size: 10pt;
+  cursor: pointer;
+  color: $primary;
+}
+
+.booking-popup {
+  height: 80vh;
+  width: 100%;
+  .tripDetails-traveller-tabs{
+
+  }
+}
+
+.tripDetails-box {
+  padding: 10pt;
+  .tripDetails-hotel-header {
+    font-size: 15pt;
+    font-weight: bolder;
+    margin: 10pt 0;
+  }
+  .hotel-card-total {
+    box-shadow: $shadow1;
+    border-radius: 0.8rem;
+    // padding: -1px 0px 10px 0px;
+    padding-top: 15px;
+    margin: 10pt 0;
+    .timestamp {
+      padding: 3pt 10pt;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      font-size: 10pt;
+      span {
+        font-weight: bold;
+      }
+      .delete-icon {
+        font-weight: bold;
+        color: #ff0000;
+        cursor: pointer;
+      }
+    }
+    .hotel-card {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      margin-bottom: 15px;
+      border-radius: 0.8rem;
+      padding: 10px 0px 10px 10px;
+      .hotel-card-img {
+        width: 30vw;
+        height: 30vw;
+        border-radius: 0.4rem;
+        overflow: hidden;
+        margin-right: 10px;
+        img {
+          object-fit: cover;
+          width: 100%;
+          height: 100%;
+        }
+      }
+      .hotel-card-details {
+        width: 80%;
+        .hotelType {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          align-items: center;
+          .hotel-card-download {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            border: 1px solid $primary;
+            border-radius: 0.8rem;
+            padding: 4pt;
+            font-size: 10pt;
+            font-weight: bolder;
+          }
+          .hotelStatus {
+            font-size: 10pt;
+            padding: 5pt 8pt;
+            font-weight: bold;
+            color: #ffff;
+            border-radius: 0.8rem;
+          }
+        }
+
+        .hotel-card-details-row {
+          width: 100%;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          margin-bottom: 8px;
+          flex-wrap: wrap;
+          margin: 10px;
+        }
+        .hotel-card-people {
+          margin: 10px;
+          span {
+            font-weight: bolder;
+          }
+        }
+      }
+      .hotel-card-header {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        .hotel-card-name {
+          font-size: 12pt;
+          font-weight: bold;
+          margin-bottom: 8px;
+        }
+        .hotelInfo-details-date {
+          font-size: 10pt;
+          display: flex;
+          justify-content: flex-start;
+          align-items: center;
+          background-color: #94d2bd;
+          border-radius: 0.8rem 0rem 0rem 0.8rem;
+          padding: 5pt;
+          span {
+            font-weight: bold;
+          }
+        }
+      }
+
+      .hotel-card-rating {
+        font-size: 12pt;
+        font-weight: bold;
+        margin-bottom: 5px;
+
+        .hotel-card-rating-icon {
+          margin-right: 2px;
+          color: gold;
+        }
+      }
+      .hotel-card-price {
+        font-size: 14pt;
+        font-weight: bold;
+        color: $secondary;
+
+        .hotel-card-price-icon {
+          margin-right: 4px;
+        }
+      }
+      .hotel-card-hotelInfo-desc {
+        font-size: 10pt;
+        margin-bottom: 8px;
+        font-weight: bold;
+        color: rgb(80, 80, 80);
+
+        .hotel-card-hotelInfo-desc-icon {
+          font-size: 11pt;
+          color: $primary;
+          margin-left: 5px;
+          cursor: pointer;
+        }
+      }
+      .hotel-card-hotelInfo-btn {
+        button {
+          background-color: $primary;
+          border: none;
+          border-radius: 0.8rem;
+          color: #ffff;
+          font-weight: bold;
+          font-size: 10pt;
+          padding: 4px 15px;
+        }
+      }
+    }
+    .hotelInfo-roomDtls-room {
+      background-color: whitesmoke;
+      padding: 10px;
+      border-radius: 0.8rem;
+      margin-bottom: 10px;
+      margin-left: 10px;
+      margin-right: 10px;
+      padding-left: 10px;
+
+      .hotelInfo-roomDtls-room-titleSection {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 10px;
+        .hotelInfo-roomDtls-room-type {
+          font-size: 12pt;
+          font-weight: bold;
+          color: $primary;
+          width: 75%;
+        }
+        .hotelInfo-roomDtls-room-price {
+          font-size: 10pt;
+          font-weight: bold;
+          color: $secondary;
+
+          .hotelInfo-roomDtls-room-price-icon {
+            margin-right: 3px;
+          }
+        }
+      }
+      .hotelInfo-roomDtls-room-otherSection {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+
+        .hotelInfo-roomDtls-room-meals {
+          font-size: 10pt;
+          font-weight: bold;
+          color: rgb(80, 80, 80);
+
+          .hotelInfo-roomDtls-room-meals-icon {
+            margin-right: 5px;
+            color: $primary;
+          }
+        }
+        .hotelInfo-roomDtls-room-cancel {
+          font-size: 10pt;
+          font-weight: bold;
+          color: rgb(100, 100, 100);
+          .hotelInfo-roomDtls-room-cancel-icon {
+            margin-right: 5px;
+            color: $primary;
+          }
+        }
+      }
+      .hotelInfo-roomDtls-room-inclusions {
+        margin-top: 10px;
+        font-size: 10pt;
+        font-weight: bold;
+        color: #001219;
+      }
+    }
+  }
+  .tripsPage-createTrip {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+    width: 180px;
+   
+    button {
+      background-color: $highlightLite;
+      border-radius: 8px;
+      padding: 4pt;
+      border: 0.1px solid #000000;
+      color: $primary;
+      width: 100%;
+      font-weight: bold;
+      font-size: 16px;
+      display: flex;
+      gap: 10px;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+  .expense-card {
+    display: flex;
+    box-shadow: $shadow1;
+    border-radius: 0.8rem;
+    padding: 10pt 0 10pt 10pt;
+    width: 90%;
+    .expense-card-img {
+      width: 10vw;
+      height: 8vw;
+      border-radius: 0.4rem;
+      overflow: hidden;
+      margin-right: 10px;
+      img {
+        object-fit: contain;
+        width: 100%;
+        height: 100%;
+      }
+    }
+    .expense-card-details {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      gap: 10pt;
+      .expense-card-header {
+        display: flex;
+        justify-content: space-between;
+        .expense-card-name {
+          font-size: 15pt;
+          font-weight: bold;
+        }
+        .expense-details-date {
+          font-size: 10pt;
+          display: flex;
+          justify-content: flex-start;
+          align-items: center;
+          background-color: #94d2bd;
+          border-radius: 0.8rem 0rem 0rem 0.8rem;
+          padding: 5pt;
+          span {
+            font-weight: bold;
+          }
+        }
+      }
+      .expense-card-desc {
+        display: flex;
+        justify-content: space-between;
+        .expense-card-people {
+          font-size: 12pt;
+          font-weight: bold;
+          span {
+            font-weight: normal;
+          }
+        }
+      }
+      .expense-price {
+        font-size: 12pt;
+        font-weight: bold;
+        color: $secondary;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        span {
+          border-radius: 0.8rem;
+          border: 1px solid $primary;
+          color: $primary;
+          margin: 5pt;
+          padding: 3pt 6pt;
+          cursor: pointer;
+        }
+        .expense-icon {
+          margin-right: 5px;
+        }
+      }
+    }
+  }
+}
+
+.tripDetails-box::after {
+  content: "";
+  display: block;
+  height: 12vh;
+}
+
+.tripsPage-totalPrice-Desktop {
+  display: flex;
+  border-radius: 0.8rem;
+  flex-direction: column;
+  .tripsPage-totalPrice-section {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    .tripsPage-roomDtls-room {
+      background-color: rgb(235, 235, 235);
+      padding: 10px;
+      border-radius: 0.8rem;
+      margin-bottom: 10px;
+
+      .tripsPage-roomDtls-room-titleSection {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        align-items: center;
+        margin-bottom: 10px;
+        .tripsPage-roomDtls-room-type {
+          font-size: 12pt;
+          font-weight: bold;
+          color: $primary;
+        }
+        .tripsPage-roomDtls-room-price {
+          font-size: 12pt;
+          font-weight: bold;
+          color: $secondary;
+
+          .tripsPage-roomDtls-room-price-icon {
+            margin-right: 3px;
+          }
+        }
+      }
+      .tripsPage-roomDtls-room-otherSection {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+
+        .tripsPage-roomDtls-room-meals {
+          font-size: 10pt;
+          font-weight: bold;
+          color: rgb(80, 80, 80);
+
+          .tripsPage-roomDtls-room-meals-icon {
+            margin-right: 5px;
+            color: $primary;
+          }
+        }
+        .tripsPage-roomDtls-room-cancel {
+          font-size: 10pt;
+          font-weight: bold;
+          color: rgb(100, 100, 100);
+          .tripsPage-roomDtls-room-cancel-icon {
+            margin-right: 5px;
+            color: $primary;
+          }
+        }
+      }
+    }
+    .tripsPage-totalPrice {
+      display: flex;
+      justify-content: space-between;
+      .tripsPage-totalPrice-title {
+        font-size: 13pt;
+        font-weight: bold;
+        color: $primary;
+      }
+      .tripsPage-totalPrice-price {
+        font-size: 15pt;
+        font-weight: bold;
+        color: $secondary;
+
+        .tripsPage-totalPrice-price-icon {
+          margin-right: 5px;
+        }
+      }
+    }
+  }
+  .tripsPage-totalPrice-sections {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .tripsPage-totalPrice-title {
+      font-size: 15pt;
+      font-weight: bold;
+      margin-right: 6pt;
+      color: $primary;
+    }
+    .tripsPage-totalPrice-price {
+      font-size: 15pt;
+      font-weight: bold;
+      color: $secondary;
+
+      .tripsPage-totalPrice-price-icon {
+        margin-right: 5px;
+      }
+    }
+  }
+}
+
+.tripDetails-header-back {
+  padding: 5px;
+  margin: 10px;
+  .tripDetails-header-back-icon {
+    cursor: pointer;
+  }
+}
+
+.delete-item {
+  span {
+    font-size: 12pt;
+  }
+  div {
+    display: flex;
+    justify-content: space-around;
+    margin: 10pt;
+    button {
+      background-color: $primary;
+      border-radius: 0.8rem;
+      color: white;
+      border: none;
+      padding: 5pt 10pt;
+    }
+    .back {
+      background-color: #ececec;
+      color: $primary;
+    }
+  }
+}
+
+.tripDetails-add {
+  margin: 15px 0px;
+  margin-bottom: 5vw;
+  position: relative;
+  button {
+    background-color: $primary;
+    border-radius: 0.8rem;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+  }
+  .tripDetails-addTrips {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    box-shadow: $shadow1;
+    padding: 10px 20px;
+    border-radius: 0.4rem;
+    transform: translate(-24%);
+    span {
+      cursor: pointer;
+      border-bottom: 1px solid black;
+    }
+  }
+}
+
+.tripDetails-totalPrice-Mobile {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  box-shadow: $shadow1;
+  background-color: #ffff;
+  padding: 5px 10px;
+  justify-content: space-between;
+  align-items: center;
+  .tripDetails-totalPrice-section-Mobile {
+    display: flex;
+    justify-content: space-between;
+    .tripDetails-totalPrice-title-Mobile {
+      font-size: 10pt;
+      font-weight: bold;
+      color: $primary;
+    }
+    .tripDetails-totalPrice-price-Mobile {
+      font-size: 10pt;
+      font-weight: bold;
+      color: $secondary;
+
+      .tripDetails-totalPrice-price-icon {
+        margin-right: 5px;
+      }
+    }
+  }
+  button {
+    background: $primary;
+    border-radius: 0.8rem;
+    color: #ececec;
+    border: none;
+    padding: 5pt;
+    margin: 5pt;
+  }
+
+  .tripDetails-totalPrice-submit-Mobile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0px 20px 0px;
+    button {
+      border-radius: 0.8rem;
+      background-color: $primary;
+      color: #ececec;
+      border: none;
+      padding: 10px;
+      font-size: 10pt;
+    }
+  }
+}
+
+.tripDetails-totalPrice-Desktop {
+  display: none;
+}
+
+.hotel-card-status {
+  display: flex;
+  flex-direction: column;
+  margin: 5pt 10pt;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 8pt;
+  .request-status {
+    font-size: 10pt;
+    span {
+      font-size: 8pt;
+      padding: 3pt 5pt;
+      font-weight: bold;
+      color: #ffff;
+      border-radius: 0.8rem;
+    }
+  }
+  .hotel-card-download {
+    cursor: pointer;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    border: 1px solid $primary;
+    border-radius: 0.8rem;
+    padding: 4pt;
+    font-size: 10pt;
+    font-weight: bolder;
+  }
+  .hotelType {
+    gap: 15pt;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    .hotelStatus {
+      font-size: 10pt;
+      span {
+        padding: 3pt 5pt;
+        font-weight: bold;
+        color: #ffff;
+        border-radius: 0.8rem;
+        font-size: 8pt;
+      }
+    }
+  }
+  .hotel-price-trips {
+    font-size: 12pt;
+    font-weight: bold;
+    color: #bb3e03;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+}
+
+.tripDetails-traveller-container {
+  height: 70vh;
+  overflow: scroll;
+  .tripDetails-traveller-block {
+    padding-bottom: 50pt;
+    .tripDetails-traveller-header {
+      font-size: 15pt;
+      font-weight: bolder;
+    }
+    .tripDetails-trip-type {
+      font-size: 12pt;
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+    .tripDetails-traveller-box {
+      margin: 10pt;
+      span {
+        font-size: 12pt;
+      }
+      .tripDetails-traveller-details {
+        display: flex;
+        flex-direction: column;
+        gap: 15pt;
+        input {
+          border: none;
+          width: 50vw;
+          box-shadow: $shadow1;
+          border-radius: 0.5rem;
+          padding: 5pt 10pt;
+          font-size: 10pt;
+        }
+      }
+      .tripDetails-company-details {
+        display: flex;
+        flex-direction: column;
+        gap: 15pt;
+        span {
+          border-radius: 0.5rem;
+          font-size: 10pt;
+        }
+      }
+    }
+    .tripDetails-submit {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 10px 0px 20px 0px;
+      button {
+        border-radius: 0.8rem;
+        background-color: $primary;
+        color: #ececec;
+        border: none;
+        padding: 10px;
+        font-size: 10pt;
+      }
+      .edit {
+        background-color: #ececec;
+        color: $primary;
+      }
+    }
+  }
+  .tripDetails-traveller-sidebar {
+    .tripDetails-traveller-main {
+      gap: 5pt;
+      display: flex;
+      width: 80vw;
+      margin: auto;
+      overflow: scroll;
+
+      .tripDetails-trip-details-flight {
+        .request-status {
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          span {
+            text-align: center;
+            font-size: 8pt;
+            padding: 7px;
+            margin: 2pt;
+            color: #ffff;
+            border-radius: 0.8rem;
+            font-weight: bold;
+            width: 90%;
+          }
+          .pending {
+            background-color: #ffa500;
+          }
+          .approve {
+            background-color: #008000;
+          }
+        }
+        .tripDetails-trip-city {
+          display: flex;
+          width: 30vw;
+          flex-direction: column;
+          font-size: 10pt;
+        }
+      }
+      .tripDetails-trip-details-hotel {
+        .request-status {
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+
+          span {
+            text-align: center;
+            font-size: 8pt;
+            padding: 7px;
+
+            margin: 2pt;
+            color: #ffff;
+            border-radius: 0.8rem;
+            font-weight: bold;
+            width: 90%;
+          }
+          .pending {
+            background-color: #ffa500;
+          }
+          .approve {
+            background-color: #008000;
+          }
+        }
+        .tripDetails-trip-city {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-around;
+          padding: 5pt;
+          font-size: 10pt;
+        }
+      }
+      .active {
+        background-color: rgba(0, 18, 25, 0.35);
+        color: white;
+        height: 100%;
+      }
+      .tripDetails-submit {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 30vw;
+        button {
+          border-radius: 0.8rem;
+          background-color: $primary;
+          color: #ececec;
+          border: none;
+          padding: 10px;
+          font-size: 10pt;
+          width: 30vw;
+        }
+        .edit {
+          background-color: #ececec;
+          color: $primary;
+        }
+      }
+    }
+  }
+  .tripDetails-traveller-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.expense-container {
+  height: 80vh;
+  overflow-y: scroll;
+  padding: 0 40pt;
+  .expense-header {
+    font-size: 20pt;
+    font-weight: bolder;
+    text-align: center;
+    margin: 15pt;
+  }
+  .expense-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10pt;
+    .expense-input-feild {
+      display: flex;
+      flex-direction: column;
+      gap: 5pt;
+      label {
+        font-size: 12pt;
+        font-weight: 600;
+      }
+      input {
+        border: none;
+        box-shadow: $shadow1;
+        border-radius: 0.5rem;
+        padding: 5pt 10pt;
+        font-size: 10pt;
+        width: 100%;
+      }
+      select {
+        border: none;
+        box-shadow: $shadow1;
+        border-radius: 0.5rem;
+        padding: 5pt 10pt;
+        font-size: 10pt;
+      }
+      textarea {
+        border: none;
+        box-shadow: $shadow1;
+        border-radius: 0.5rem;
+        padding: 5pt 10pt;
+        font-size: 10pt;
+      }
+    }
+    .expense-submit {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      button {
+        border-radius: 0.8rem;
+        background-color: $primary;
+        color: #ececec;
+        border: none;
+        padding: 5pt 10pt;
+        font-size: 10pt;
+        margin: 10pt;
+      }
+    }
+  }
+}
+
+.recheck-popup-container {
+  padding: 0 15pt;
+  .recheck-popup-header {
+    font-size: 20pt;
+    font-weight: bolder;
+    text-align: center;
+  }
+  .recheck-block {
+    .recheck-block-header {
+      display: flex;
+      font-size: 12pt;
+      span {
+        font-weight: bold;
+      }
+    }
+    .hotelInfo-roomDtls-room {
+      background-color: whitesmoke;
+      padding: 10px;
+      border-radius: 0.8rem;
+      margin-bottom: 10px;
+      .hotelInfo-roomDtls-room-titleSection {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 10px;
+        .hotelInfo-roomDtls-room-type {
+          font-size: 12pt;
+          font-weight: bold;
+          color: $primary;
+          width: 75%;
+        }
+        .hotelInfo-roomDtls-room-price {
+          font-size: 10pt;
+          font-weight: bold;
+          color: $secondary;
+
+          .hotelInfo-roomDtls-room-price-icon {
+            margin-right: 3px;
+          }
+        }
+      }
+      .hotelInfo-roomDtls-room-otherSection {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+
+        .hotelInfo-roomDtls-room-meals {
+          font-size: 10pt;
+          font-weight: bold;
+          color: rgb(80, 80, 80);
+
+          .hotelInfo-roomDtls-room-meals-icon {
+            margin-right: 5px;
+            color: $primary;
+          }
+        }
+        .hotelInfo-roomDtls-room-cancel {
+          font-size: 10pt;
+          font-weight: bold;
+          color: rgb(100, 100, 100);
+          .hotelInfo-roomDtls-room-cancel-icon {
+            margin-right: 5px;
+            color: $primary;
+          }
+        }
+      }
+      .hotelInfo-roomDtls-room-inclusions {
+        margin-top: 10px;
+        font-size: 10pt;
+        font-weight: bold;
+        color: #001219;
+      }
+    }
+    .recheck-block-rates {
+      display: flex;
+      justify-content: space-around;
+      .prices {
+        font-weight: bold;
+        span {
+          font-size: 10pt;
+          font-weight: bold;
+          color: #bb3e03;
+          .hotelInfo-roomDtls-room-price-icon {
+            margin-right: 3px;
+          }
+        }
+      }
+    }
+    .recheck-confirm {
+      margin: 15pt;
+      display: flex;
+      justify-content: space-around;
+      button {
+        border-radius: 0.8rem;
+        background-color: $primary;
+        color: #ececec;
+        border: none;
+        padding: 5pt 10pt;
+        font-size: 12pt;
+        margin: 10pt;
+      }
+      .delete-btn {
+        color: $primary;
+        background-color: #ececec;
+        font-size: 10pt;
+      }
+    }
+  }
+  .recheck-na {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    .recheck-na-btn {
+      display: flex;
+      justify-content: center;
+      button {
+        border-radius: 0.8rem;
+        background-color: $primary;
+        color: #ececec;
+        border: none;
+        padding: 5pt 10pt;
+        font-size: 10pt;
+      }
+    }
+  }
+}
+
+.payment-container {
+  height: 65vh;
+    overflow: scroll;
+  display: flex;
+  flex-direction: column;
+  .payment-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 5pt 30pt;
+    .payment-block-header {
+      font-size: 15pt;
+    }
+    .payment-block-main {
+      width: 100%;
+      .payment-main-header {
+        font-size: 12pt;
+        .payment-main-checkbox {
+          display: flex;
+          align-items: center;
+          box-shadow: $shadow1;
+          border-radius: 0.4rem;
+          padding: 0 8pt;
+          margin: 10pt 0;
+          .payment-main-submitted {
+            width: 100%;
+            padding: 1rem 0;
+            margin-inline-start: 0.5rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 10pt;
+            gap: 10pt;
+            .status {
+              padding: 3pt 5pt;
+              font-weight: bold;
+              color: white;
+              border-radius: 0.8rem;
+            }
+            .price-card {
+              display: flex;
+              align-items: center;
+              .price {
+                font-weight: bold;
+                color: #bb3e03;
+                display: flex;
+                justify-content: flex-end;
+                align-items: center;
+              }
+            }
+          }
+          input {
+            width: 1rem;
+            height: 1rem;
+          }
+          label {
+            width: 100%;
+            padding: 1rem 0;
+            margin-inline-start: 0.5rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 10pt;
+            .status {
+              padding: 3pt 5pt;
+              font-weight: bold;
+              color: white;
+              border-radius: 0.8rem;
+            }
+            .price-card {
+              display: flex;
+              align-items: center;
+              .price {
+                font-weight: bold;
+                color: #bb3e03;
+                display: flex;
+                justify-content: flex-end;
+                align-items: center;
+              }
+            }
+          }
+        }
+      }
+      .payment-main-submitted {
+        width: 100%;
+        padding: 1rem 8pt;
+        margin-inline-start: 0.5rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 10pt;
+        gap: 10pt;
+        box-shadow: $shadow1;
+        border-radius: 0.4rem;
+        margin: 10pt 0;
+        .status {
+          padding: 3pt 5pt;
+          font-weight: bold;
+          color: white;
+          border-radius: 0.8rem;
+        }
+        .price-card {
+          display: flex;
+          align-items: center;
+          .price {
+            font-weight: bold;
+            color: #bb3e03;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+          }
+        }
+      }
+    }
+    button {
+      border-radius: 0.8rem;
+      background-color: $primary;
+      color: #ececec;
+      border: none;
+      padding: 5pt;
+      font-size: 10pt;
+      margin: 10pt;
+    }
+  }
+  .wallet-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 5pt 30pt;
+    font-size: 12pt;
+    button {
+      border-radius: 0.8rem;
+      background-color: $primary;
+      color: #ececec;
+      border: none;
+      padding: 5pt;
+      font-size: 10pt;
+      margin: 10pt;
+    }
+    .spin {
+      padding: 10px 75px;
+      background: $primary;
+      border: none;
+      border-radius: 0.8rem;
+      color: white;
+      cursor: not-allowed;
+    }
+    .spinner {
+      border: 4px solid $highlight;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-left: 4px solid #3498db;
+      border-radius: 50%;
+      width: 20px;
+      height: 20px;
+      animation: spin 1s linear infinite;
+      margin-top: -8px;
+      margin-left: -8px;
+      display: inline-block;
+      border-width: 2px;
+      margin-top: 5px;
+      cursor: not-allowed;
+    }
+    @keyframes spin {
+      0% {
+        transform: rotate(0deg);
+      }
+      100% {
+        transform: rotate(360deg);
+      }
+    }
+  }
+  .balance {
+    display: flex;
+    gap: 5pt;
+    padding: 5pt;
+    align-items: center;
+    font-size: 12pt;
+    justify-content: center;
+    span {
+      color: $secondary;
+      font-size: 12pt;
+      .balance-icon {
+        margin-right: 3px;
+        font-size: 11pt;
+      }
+    }
+  }
+  .alert {
+    color: #ff0000;
+  }
+  .payment-thankyou {
+    font-size: 10pt;
+    font-weight: bold;
+    margin: 10pt;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    button {
+      background-color: $primary;
+      color: #ffff;
+      border: none;
+      padding: 5pt 10pt;
+      border-radius: 0.8rem;
+      margin: 10pt;
+    }
+  }
+}
+
+.tripDetails-submit-main {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  background: $highlightLite;
+  border-radius: 0.8rem;
+  padding: 5pt 15pt;
+  gap: 15pt;
+  button {
+    border-radius: 0.8rem;
+    background-color: $primary;
+    color: #ececec;
+    border: none;
+    padding: 5pt;
+    font-size: 10pt;
+  }
+  .alerted {
+    color: #ff0000;
+    font-size: 10px;
+  }
+}
+
+.alerted {
+  color: #ff0000;
+}
+
+.flightResults-nav-item-icon {
+  margin: 0;
+}
+
+.tripDetails-traveller-tabs {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 15px;
+  background-color: $highlightLite;
+  border-radius: 0.8rem;
+  overflow: hidden;
+  .tripDetails-traveller-tab {
+    color: $primary;
+    padding: 8px 10px;
+    font-size: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    width: 100%;
+    text-align: center;
+  }
+  .tripDetails-traveller-tab.tripDetails-traveller-tab-selected {
+    background-color: $primaryLite;
+    color: #ffff;
+  }
+}
+
+.tripDetails-approval {
+  height: 63vh;
+  width: 100%;
+  overflow-y: scroll;
+  .tripDetails-approval-block {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    // box-shadow: $shadow1;
+    border-radius: 0.8rem;
+    margin: 10pt 0;
+    .loading-approvals {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 15pt;
+    }
+    .role-trip-card {
+      display: flex;
+      flex-direction: column;
+      margin: 10pt;
+      padding: 10px;
+      border-radius: 0.8rem;
+      font-size: 10pt;
+      .role-trip-card-header {
+        display: flex;
+        font-weight: bold;
+        text-align: center;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: column;
+      }
+      .role-trip-list {
+        display: flex;
+        // align-items: center;
+        // justify-content: space-between;
+        flex-direction: column;
+        .tripDetails-totalPrice-section-Desktop {
+          display: flex;
+          justify-content: space-between;
+          padding: 10px;
+        }
+        .tripDetails-totalPrice-title-Desktop {
+          font-weight: bold;
+          color: $primary;
+        }
+        .tripDetails-totalPrice-price-Desktop {
+          font-weight: bold;
+          color: $secondary;
+        }
+
+        .role-trip-type {
+          // margin: auto;
+          margin-top: 10px;
+         display: flex;
+        //  flex-direction: row;
+         gap: 15px;
+        //  justify-content: center;
+         align-items: center;
+         flex-wrap: wrap;
+          .role-trip-hotel {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            // background-color: $primary;
+            font-weight: 600;
+            border: 1px solid black;
+            border-radius: 0.8rem;
+            // color: #f5f5f5;
+            color: black;
+            padding: 3px 10px;
+          }
+        }
+        .role-trip-status {
+          display: flex;
+          align-items: center;
+          font-size: 12pt;
+          span {
+            font-size: 10pt;
+            padding: 5pt 8pt;
+            color: #ffff;
+            border-radius: 0.8rem;
+            font-weight: bold;
+          }
+          .orange {
+            background-color: #ffa500;
+          }
+          .green {
+            background-color: #008000;
+          }
+        }
+      }
+      .role-trip-date {
+        display: flex;
+        span {
+          margin: 0 5pt;
+        }
+        p {
+          color: $highlight;
+          margin: 0;
+        }
+      }
+    }
+    .role-trip-openDtls {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 5px;
+      cursor: pointer;
+    }
+    .role-trip-openDtls.role-trip-openDtls-open {
+      .role-trip-openDtls-icon {
+        transform: rotate(180deg);
+        transition: 0.2s ease-in-out;
+      }
+    }
+    .role-trip-section {
+      margin: 10px;
+      padding: 10px;
+      .role-review {
+        .role-review-hotels {
+          text-align: center;
+          border-radius: 0.8rem;
+          .role-review-hotels-header {
+            font-size: 15pt;
+            font-weight: bolder;
+            margin: 20pt;
+          }
+          .tripDetails-hotel-card {
+            box-shadow: $shadow1;
+            padding: 5pt 0pt 5pt 5pt;
+            border-radius: 0.8rem;
+            margin-bottom: 10pt;
+            .tripDetails-hotel-details {
+              display: flex;
+              justify-content: space-between;
+              align-items: center;
+              margin-bottom: 10pt;
+              flex-direction: column;
+              .tripDetails-hotel-name {
+                font-size: 10pt;
+                font-weight: bold;
+              }
+              .tripDetails-hotel-people {
+                font-size: 10pt;
+              }
+              .tripDetails-hotel-date {
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+                background-color: #94d2bd;
+                border-radius: 0.8rem 0rem 0rem 0.8rem;
+                padding: 5pt;
+                font-size: 10pt;
+              }
+            }
+            .tripDetails-roomDtls-room {
+              background-color: whitesmoke;
+              padding: 10px;
+              border-radius: 0.8rem;
+              margin-bottom: 10px;
+
+              .tripDetails-roomDtls-room-titleSection {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                margin-bottom: 10px;
+                .tripDetails-roomDtls-room-type {
+                  font-size: 10pt;
+                  font-weight: bold;
+                  color: $primary;
+                }
+                .tripDetails-roomDtls-room-price {
+                  font-size: 10pt;
+                  font-weight: bold;
+                  color: $secondary;
+
+                  .tripDetails-roomDtls-room-price-icon {
+                    margin-right: 3px;
+                  }
+                }
+              }
+              .tripDetails-roomDtls-room-otherSection {
+                display: flex;
+                justify-content: space-between;
+                align-items: flex-start;
+
+                .tripDetails-roomDtls-room-meals {
+                  font-size: 10pt;
+                  font-weight: bold;
+                  color: rgb(80, 80, 80);
+
+                  .tripDetails-roomDtls-room-meals-icon {
+                    margin-right: 5px;
+                    color: $primary;
+                  }
+                }
+                .tripDetails-roomDtls-room-cancel {
+                  font-size: 10pt;
+                  font-weight: bold;
+                  color: rgb(100, 100, 100);
+                  .tripDetails-roomDtls-room-cancel-icon {
+                    margin-right: 5px;
+                    color: $primary;
+                  }
+                }
+              }
+            }
+            .tripDetails-total-price {
+              margin-right: 10px;
+              font-size: 12pt;
+              font-weight: bold;
+              color: #bb3e03;
+              display: flex;
+              justify-content: flex-end;
+              align-items: center;
+            }
+          }
+          .role-travellers-hotel {
+            // box-shadow: $shadow1;
+            margin-bottom: 10pt;
+            border-radius: 0.8rem;
+            padding: 10pt;
+            .role-traveller-container {
+              display: flex;
+              flex-direction: column;
+              gap: 10pt;
+              padding: 0 10pt;
+              .role-traveller-block {
+                border-radius: 8px;
+                .role-traveller-header {
+                  font-size: 12pt;
+                  font-weight: bold;
+                  margin-bottom: 10pt;
+                }
+                .role-traveller-box {
+                  display: flex;
+                  flex-direction: column;
+                  gap: 2.5pt;
+                  overflow: overlay;
+                }
+
+                .role-traveller-box div {
+                  display: flex;
+                  text-align: left;
+                  font-size: 10pt;
+                }
+                .role-traveller-box div span {
+                  font-weight: bold;
+                  margin-left: 2pt;
+                }
+              }
+            }
+          }
+        }
+        .role-review-flights {
+          text-align: center;
+          border-radius: 0.8rem;
+          margin: 10pt 0;
+          .role-review-flights-header {
+            font-size: 15pt;
+            font-weight: bolder;
+            margin: 20pt;
+          }
+          .tripDetails-flight-card {
+            box-shadow: $shadow1;
+            padding: 5pt 0pt 5pt 5pt;
+            border-radius: 0.8rem;
+            margin-bottom: 10pt;
+            .tripDetails-flight-airline-block {
+              display: flex;
+              justify-content: space-between;
+              align-items: center;
+              margin-bottom: 6px;
+              .tripDetails-flight-airline {
+                font-size: 12pt;
+                font-weight: bold;
+                color: $primary;
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+                span {
+                  font-size: 10pt;
+                  color: rgb(121, 121, 121);
+                }
+                .tripDetails-flight-logo {
+                  margin: 10px 10px 10px 0px;
+                  span {
+                    height: 25px;
+                    width: 25px;
+                    display: block;
+                    background-position: 50%;
+                    background-size: contain;
+                    background-repeat: no-repeat;
+                    .tripDetails-flight-logo-icon {
+                      height: 22px;
+                    }
+                  }
+                }
+              }
+              .tripDetails-flight-depDate-block {
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+                background-color: $highlight;
+                border-radius: 0.8rem 0rem 0rem 0.8rem;
+                padding: 5pt;
+                font-size: 10pt;
+              }
+            }
+            .tripDetails-flight-segment-section {
+              border-radius: 0.8rem;
+              margin-bottom: 15px;
+              background-color: rgb(245, 245, 245);
+              .tripDetails-flight-arrDep {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                margin: 0 10pt 0 0;
+                padding: 10pt;
+                .tripDetails-flight-dep {
+                  .tripDetails-flight-depTime {
+                    font-size: 12pt;
+                    font-weight: bold;
+                  }
+                  .tripDetails-flight-depCity {
+                    font-size: 12pt;
+                    font-weight: bold;
+                    color: rgb(111, 111, 111);
+                  }
+                }
+                .tripDetails-flight-duration {
+                  height: 60px;
+                  width: 55%;
+                  .tripDetails-flight-duration-stopPts {
+                    display: flex;
+                    justify-content: center;
+                    align-items: flex-end;
+                    padding-bottom: 5px;
+                    border-bottom: 1px dashed rgb(150, 150, 150);
+                    font-size: 8pt;
+                    font-weight: bold;
+                    color: rgb(160, 160, 160);
+                    height: 30px;
+                    .tripDetails-flight-duration-stopType {
+                      font-size: 10pt;
+                      color: rgb(80, 80, 80);
+                      margin-right: 3px;
+                      color: $highlight;
+                      display: flex;
+                      justify-content: center;
+                      align-items: center;
+                      cursor: pointer;
+
+                      .tripDetails-flight-duration-stopType-icon {
+                        margin-left: 5px;
+                        color: rgb(80, 80, 80);
+                        font-size: 9pt;
+                      }
+                    }
+                    .tripDetails-flight-duration-stopPt {
+                      margin-right: 3px;
+                    }
+                  }
+                  .tripDetails-flight-duration-time {
+                    display: flex;
+                    justify-content: center;
+                    align-items: flex-start;
+                    padding-top: 2px;
+                    font-size: 10pt;
+                    font-weight: bold;
+                    color: $primary;
+                    height: 30px;
+                  }
+                }
+                .tripDetails-flight-arr-section {
+                  display: flex;
+                  justify-content: flex-end;
+                  align-items: flex-start;
+                  .tripDetails-flight-dep.tripDetails-flight-arr {
+                    text-align: right;
+                    .tripDetails-flight-depTime {
+                      font-size: 12pt;
+                      font-weight: bold;
+                    }
+                    .tripDetails-flight-depCity {
+                      font-size: 12pt;
+                      font-weight: bold;
+                      color: rgb(111, 111, 111);
+                    }
+                  }
+                  .tripDetails-flight-depTime-afterDays {
+                    font-size: 6pt;
+                    font-weight: bold;
+                    margin-left: 6px;
+                    color: red;
+                    .tripDetails-flight-depTime-afterDays-num {
+                      font-size: 9pt;
+                    }
+                  }
+                }
+              }
+            }
+            .tripDetails-flight-flightCard-price {
+              margin-right: 10px;
+              font-size: 12pt;
+              font-weight: bold;
+              color: $secondary;
+              display: flex;
+              justify-content: flex-end;
+              align-items: center;
+
+              .tripDetails-flight-flightCard-price-icon {
+                margin-right: 5px;
+              }
+            }
+          }
+          .role-travellers-flight {
+            box-shadow: $shadow1;
+            border-radius: 0.8rem;
+            padding: 10pt;
+            margin-bottom: 10pt;
+            .role-traveller-container {
+              display: flex;
+              flex-direction: column;
+              gap: 10pt;
+              padding: 0 10pt;
+              .role-traveller-block {
+                border-radius: 8px;
+                .role-traveller-header {
+                  font-size: 12pt;
+                  font-weight: bold;
+                  margin-bottom: 10pt;
+                }
+                .role-traveller-box {
+                  display: flex;
+                  flex-direction: column;
+                  gap: 2.5pt;
+                  overflow: overlay;
+                }
+
+                .role-traveller-box div {
+                  display: flex;
+                  text-align: left;
+                  font-size: 10pt;
+                }
+                .role-traveller-box div span {
+                  font-weight: bold;
+                  margin-left: 2pt;
+                }
+              }
+            }
+          }
+        }
+      }
+      .role-travellers {
+        text-align: center;
+        border-radius: 0.8rem;
+        margin: 10pt 0;
+        .role-review-travellers-header {
+          font-size: 15pt;
+          font-weight: bolder;
+          margin: 20pt;
+        }
+      }
+      .role-approve {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        span {
+          font-size: 12pt;
+        }
+        button {
+          border: none;
+          background-color: $primary;
+          font-size: 12pt;
+          font-weight: bolder;
+          padding: 5pt 15pt;
+          color: #ffff;
+          border-radius: 0.8rem;
+        }
+      }
+      .role-close {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 5px;
+        .close-icon {
+          cursor: pointer;
+        }
+      }
+    }
+  }
+  .tripDetails-approval-manager {
+    box-shadow: $shadow1;
+    padding: 10pt;
+    text-align: center;
+    border-radius: 0.8rem;
+    margin: 10pt 0;
+    width: auto;
+    .tripDetails-approval-manager-header {
+      font-size: 15pt;
+      font-weight: bold;
+      margin-bottom: 10pt;
+    }
+    .tripDetails-manager-block {
+      .tripDetails-manager-name {
+        border-radius: 0.8rem;
+        padding: 10pt;
+        font-size: 12px;
+        span {
+          font-weight: bolder;
+          font-size: 12px;
+        }
+      }
+      .tripDetails-manager-request {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        border-radius: 0.8rem;
+        span {
+          font-weight: bolder;
+          font-size: 12pt;
+        }
+        .request-send-message {
+          span {
+            font-weight: normal;
+            font-size: 12pt;
+          }
+          button {
+            border-radius: 0.8rem;
+            background-color: $primary;
+            color: #ececec;
+            border: none;
+            padding: 3pt 15pt;
+            font-size: 10pt;
+          }
+          .spin {
+            padding: 10px 75px;
+            background: $primary;
+            border: none;
+            border-radius: 0.8rem;
+            color: white;
+            cursor: not-allowed;
+          }
+          .spinner {
+            border: 4px solid $highlight;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-left: 4px solid #3498db;
+            border-radius: 50%;
+            width: 20px;
+            height: 20px;
+            animation: spin 1s linear infinite;
+            margin-top: -8px;
+            margin-left: -8px;
+            display: inline-block;
+            border-width: 2px;
+            margin-top: 5px;
+            cursor: not-allowed;
+          }
+          @keyframes spin {
+            0% {
+              transform: rotate(0deg);
+            }
+            100% {
+              transform: rotate(360deg);
+            }
+          }
+        }
+        .request-status {
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          div {
+            padding: 3pt;
+            span {
+              font-size: 10pt;
+              padding: 5pt 8pt;
+              margin: 0pt 10pt;
+              color: #ffff;
+              border-radius: 0.8rem;
+              font-weight: bold;
+            }
+            .pending {
+              background-color: #ffa500;
+            }
+            .approve {
+              background-color: #008000;
+            }
+          }
+        }
+        .request-message {
+          span {
+            font-weight: normal;
+            font-size: 12pt;
+          }
+        }
+      }
+    }
+  }
+}
+
+.tripDetails-status-block {
+  height: 80vh;
+  overflow-y: scroll;
+  width: 80%;
+  padding: 10pt;
+  .tripDetails-status-hotels {
+    text-align: center;
+    border-radius: 0.8rem;
+    .tripDetails-status-hotels-header {
+      font-size: 20pt;
+      font-weight: bolder;
+    }
+    .tripDetails-hotel-card {
+      box-shadow: $shadow1;
+      padding: 5pt 0pt 5pt 5pt;
+      border-radius: 0.8rem;
+      margin-bottom: 10pt;
+      .tripDetails-hotel-details {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 10pt;
+        flex-direction: column;
+        .tripDetails-hotel-name {
+          font-size: 13pt;
+          font-weight: bold;
+        }
+        .tripDetails-hotel-date {
+          display: flex;
+          justify-content: flex-start;
+          align-items: center;
+          background-color: #94d2bd;
+          border-radius: 0.8rem 0rem 0rem 0.8rem;
+          padding: 5pt;
+        }
+      }
+      .tripDetails-roomDtls-room {
+        background-color: whitesmoke;
+        padding: 10px;
+        border-radius: 0.8rem;
+        margin-bottom: 10px;
+
+        .tripDetails-roomDtls-room-titleSection {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          margin-bottom: 10px;
+          .tripDetails-roomDtls-room-type {
+            font-size: 12pt;
+            font-weight: bold;
+            color: $primary;
+          }
+          .tripDetails-roomDtls-room-price {
+            font-size: 8pt;
+            font-weight: bold;
+            color: $secondary;
+
+            .tripDetails-roomDtls-room-price-icon {
+              margin-right: 3px;
+            }
+          }
+        }
+        .tripDetails-roomDtls-room-otherSection {
+          display: flex;
+          justify-content: space-between;
+          align-items: flex-start;
+
+          .tripDetails-roomDtls-room-meals {
+            font-size: 10pt;
+            font-weight: bold;
+            color: rgb(80, 80, 80);
+
+            .tripDetails-roomDtls-room-meals-icon {
+              margin-right: 5px;
+              color: $primary;
+            }
+          }
+          .tripDetails-roomDtls-room-cancel {
+            font-size: 10pt;
+            font-weight: bold;
+            color: rgb(100, 100, 100);
+            .tripDetails-roomDtls-room-cancel-icon {
+              margin-right: 5px;
+              color: $primary;
+            }
+          }
+        }
+      }
+    }
+  }
+  .tripDetails-status-flights {
+    text-align: center;
+    border-radius: 0.8rem;
+    margin: 10pt 0;
+    .tripDetails-status-flights-header {
+      font-size: 20pt;
+      font-weight: bolder;
+    }
+    .tripDetails-flight-card {
+      box-shadow: $shadow1;
+      padding: 5pt 0pt 5pt 5pt;
+      border-radius: 0.8rem;
+      margin-bottom: 10pt;
+      .tripDetails-flight-airline-block {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 6px;
+        .tripDetails-flight-airline {
+          font-size: 12pt;
+          font-weight: bold;
+          color: $primary;
+          display: flex;
+          justify-content: flex-start;
+          align-items: center;
+          span {
+            font-size: 8pt;
+            color: rgb(121, 121, 121);
+          }
+          .tripDetails-flight-logo {
+            margin: 10px 10px 10px 0px;
+            span {
+              height: 25px;
+              width: 25px;
+              display: block;
+              background-position: 50%;
+              background-size: contain;
+              background-repeat: no-repeat;
+              .tripDetails-flight-logo-icon {
+                height: 22px;
+              }
+            }
+          }
+        }
+        .tripDetails-flight-depDate-block {
+          display: flex;
+          justify-content: flex-start;
+          align-items: center;
+          background-color: $highlight;
+          border-radius: 0.8rem 0rem 0rem 0.8rem;
+          padding: 5pt;
+        }
+      }
+      .tripDetails-flight-segment-section {
+        border-radius: 0.8rem;
+        margin-bottom: 15px;
+        background-color: rgb(245, 245, 245);
+        .tripDetails-flight-arrDep {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          margin: 0 10pt 0 0;
+          padding: 10pt;
+          .tripDetails-flight-dep {
+            .tripDetails-flight-depTime {
+              font-size: 18pt;
+              font-weight: bold;
+            }
+            .tripDetails-flight-depCity {
+              font-size: 13pt;
+              font-weight: bold;
+              color: rgb(111, 111, 111);
+            }
+          }
+          .tripDetails-flight-duration {
+            height: 60px;
+            width: 55%;
+            .tripDetails-flight-duration-stopPts {
+              display: flex;
+              justify-content: center;
+              align-items: flex-end;
+              padding-bottom: 5px;
+              border-bottom: 1px dashed rgb(150, 150, 150);
+              font-size: 8pt;
+              font-weight: bold;
+              color: rgb(160, 160, 160);
+              height: 30px;
+              .tripDetails-flight-duration-stopType {
+                font-size: 10pt;
+                color: rgb(80, 80, 80);
+                margin-right: 3px;
+                color: $highlight;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                cursor: pointer;
+
+                .tripDetails-flight-duration-stopType-icon {
+                  margin-left: 5px;
+                  color: rgb(80, 80, 80);
+                  font-size: 9pt;
+                }
+              }
+              .tripDetails-flight-duration-stopPt {
+                margin-right: 3px;
+              }
+            }
+            .tripDetails-flight-duration-time {
+              display: flex;
+              justify-content: center;
+              align-items: flex-start;
+              padding-top: 2px;
+              font-size: 12pt;
+              font-weight: bold;
+              color: $primary;
+              height: 30px;
+            }
+          }
+          .tripDetails-flight-arr-section {
+            display: flex;
+            justify-content: flex-end;
+            align-items: flex-start;
+            .tripDetails-flight-dep.tripDetails-flight-arr {
+              text-align: right;
+              .tripDetails-flight-depTime {
+                font-size: 18pt;
+                font-weight: bold;
+              }
+              .tripDetails-flight-depCity {
+                font-size: 13pt;
+                font-weight: bold;
+                color: rgb(111, 111, 111);
+              }
+            }
+            .tripDetails-flight-depTime-afterDays {
+              font-size: 6pt;
+              font-weight: bold;
+              margin-left: 6px;
+              color: red;
+              .tripDetails-flight-depTime-afterDays-num {
+                font-size: 9pt;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.approval {
+  display: flex;
+}
+
+.approval-tabs {
+  margin: 3pt;
+  display: flex;
+  .approval-tab-block {
+    display: flex;
+    flex-direction: column;
+    height: 65vh;
+    width: 18vw;
+  }
+}
+
+.tripDetails-trip-details-flight {
+  cursor: pointer;
+  border-top: 1px solid $primary;
+  .tripDetails-trip-city {
+    display: flex;
+    flex-direction: column;
+    padding: 3pt;
+    font-size: 10pt;
+  }
+  &.active {
+    background-color: rgba(0, 18, 25, 0.35);
+    color: white;
+  }
+}
+
+.tripDetails-header-status {
+  padding: 10pt;
+  border-radius: 0.8rem;
+  box-shadow: $shadow1;
+  font-size: 12pt;
+  margin: 10pt 0;
+  font-weight: bold;
+  width: 100%;
+  .tripsPage-main-status {
+    display: flex;
+    justify-content: space-between;
+    margin: 5pt;
+    div {
+      font-size: 10pt;
+    }
+    span {
+      font-size: 10pt;
+      padding: 3pt 5pt;
+      font-weight: bold;
+      color: white;
+      border-radius: 0.8rem;
+    }
+  }
+}
+
+.recheck-rates {
+  position: relative;
+  .recheck-bg {
+    position: absolute;
+    background: $primary;
+    height: 18vh;
+    width: 100%;
+    opacity: 0.9;
+    border-radius: 0.8rem;
+  }
+  .recheck-content {
+    position: absolute;
+    height: 18vh;
+    width: 90vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    button {
+      border-radius: 0.8rem;
+      background-color: #ececec;
+      color: $primary;
+      border: none;
+      padding: 10px;
+    }
+  }
+}
+
+.recheck-submit {
+  display: flex;
+  flex-direction: column;
+  .recheck-submit-header {
+    font-size: 15pt;
+    font-weight: bolder;
+    text-align: center;
+  }
+  .recheck-submit-content {
+    margin: 10pt 0;
+    font-size: 12pt;
+    font-weight: bold;
+  }
+  .recheck-submit-items {
+    .recheck-submit-item-header {
+      font-size: 12pt;
+      font-weight: bold;
+    }
+  }
+}
+
+@media screen and (width >= 700px) {
+  .tripDetails-main {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+  }
+  .tripDetails-main-block {
+    width: 70vw;
+  }
+  .recheck-rates {
+    position: relative;
+
+    .recheck-bg {
+      position: absolute;
+      background: $primary;
+      height: 82px;
+      width: 100%;
+      opacity: 0.9;
+    }
+    .recheck-content {
+      position: absolute;
+      height: 82px;
+      width: 54vw;
+      display: flex;
+      align-items: center;
+    justify-content: center;
+    gap: 20px;
+    }
+  }
+  .tripDetails-header {
+    margin: 10pt 10pt 10pt 40pt;
+    flex-direction: row;
+    justify-content: space-between;
+    .tripDetails-header-name {
+      width: 60%;
+    }
+  }
+
+  .hotel-card-status {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 5pt 10pt;
+    flex-direction: row;
+    align-items: center;
+    padding-bottom: 10px;
+  }
+
+  .tripDetails-header-status {
+    padding: 10pt;
+    border-radius: 0.8rem;
+    box-shadow: $shadow1;
+    font-size: 12pt;
+    font-weight: bold;
+    width: 32vw;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    .tripsPage-main-status {
+      width: 80%;
+      display: flex;
+      justify-content: space-between;
+      margin: auto;
+      div {
+        font-size: 12pt;
+      }
+      span {
+        font-size: 10pt;
+        padding: 3pt 5pt;
+        font-weight: bold;
+        color: white;
+        border-radius: 0.8rem;
+      }
+    }
+  }
+  .approval-tabs {
+    margin: 3pt;
+    display: flex;
+    height: 65vh;
+    overflow-y: scroll;
+    .approval-tab-block {
+      display: flex;
+      width: 10vw;
+    }
+  }
+
+  .tripDetails-box {
+    padding: 10pt 10pt 10pt 40pt;
+    .tripDetails-hotel-header {
+      font-size: 18pt;
+      font-weight: bold;
+      margin: 10pt 0;
+      width: 140px;
+    }
+    .hotel-card-total {
+      // padding: -1px 0px 10px 0px;
+      padding-top: 15px;
+      width: 90%;
+      .hotel-card {
+        .hotel-card-img {
+          width: 10vw;
+          height: 10vw;
+        }
+        .hotel-card-details {
+          width: 47vw;
+          .hotel-card-header {
+            flex-direction: row;
+          }
+        }
+      }
+    }
+  }
+
+  .tripDetails-totalPrice-Mobile {
+    display: none;
+  }
+  .tripDetails-totalPrice-Desktop {
+    display: flex;
+    flex-direction: column;
+    padding: 10px 15px;
+    border-radius: 0.8rem;
+    box-shadow: $shadow1;
+    height: fit-content;
+    margin: 75px 20px 0 0;
+    .tripDetails-totalPrice-section-Desktop {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 10px;
+      padding: 10px;
+      border-bottom: 1px dashed rgb(200, 200, 200);
+    }
+    .tripDetails-totalPrice-title-Desktop {
+      font-size: 13pt;
+      font-weight: bold;
+      color: $primary;
+    }
+    .tripDetails-totalPrice-price-Desktop {
+      font-size: 15pt;
+      font-weight: bold;
+      color: $secondary;
+
+      .tripDetails-totalPrice-price-icon {
+        margin-right: 5px;
+      }
+    }
+    .tripDetails-totalPrice-submit-Desktop {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 10px 0px 20px 0px;
+      button {
+        border-radius: 0.8rem;
+        background-color: $primary;
+        color: #ececec;
+        border: none;
+        padding: 10px;
+      }
+    }
+  }
+  .tripDetails-traveller-container {
+    height: 63vh;
+    .tripDetails-traveller-sidebar {
+      width: 30%;
+      height: 57vh;
+      border-right: 1px solid $primary;
+      overflow-y: scroll;
+      .tripDetails-traveller-main {
+        flex-direction: column;
+        gap: 0pt;
+        width: 100%;
+        overflow: hidden;
+        .tripDetails-submit {
+          margin: 10px 0px 20px 0px;
+          width: 10vw;
+        }
+        .tripDetails-trip-details-hotel {
+          border-bottom: 1px solid $primary;
+          cursor: pointer;
+          .tripDetails-trip-city {
+            display: flex;
+            flex-direction: row;
+            justify-content: start;
+            gap: 10px;
+            font-size: 10pt;
+          }
+        }
+        .tripDetails-trip-details-flight {
+          width: 100%;
+          border-bottom: 1px solid $primary;
+          cursor: pointer;
+          .tripDetails-trip-city {
+            flex-direction: row;
+            gap: 6px;
+            padding-top: 5px;
+            padding-bottom: 5px;
+
+            font-size: 10pt;
+          }
+        }
+      }
+    }
+    .tripDetails-traveller-block {
+      width: 70%;
+      .tripDetails-traveller-box {
+        .company {
+          font-size: 12pt;
+        }
+
+        .tripDetails-traveller-details {
+          display: grid;
+          grid-template-columns: repeat(2, 1fr);
+          gap: 10pt;
+          .active {
+            padding: 2pt;
+            border: 1px solid $highlightLite;
+          }
+          input {
+            width: 20vw;
+          }
+          .file-input {
+            box-shadow: $shadow1;
+            display: flex;
+            flex-direction: row;
+            width: 20vw;
+            align-items: center;
+            justify-content: center;
+            padding: 5pt 3pt;
+            border-radius: 0.8rem;
+            span {
+              width: 8vw;
+              font-size: 10pt;
+            }
+            input {
+              box-shadow: none;
+            }
+          }
+          .fileType-input-size {
+            cursor: pointer;
+            font-size: 14pt;
+            text-decoration: underline;
+            color: rgb(91, 100, 300);
+          }
+        }
+        .tripDetails-company-details {
+          display: grid;
+          grid-template-columns: repeat(2, 1fr);
+          gap: 10pt;
+          div {
+            font-size: 10pt;
+            width: 20vw;
+            span {
+              padding: 5pt;
+              font-size: 10pt;
+              font-weight: 800;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .tripDetails-approval {
+    // ::-webkit-scrollbar {
+    //   display: none;
+    // }
+    -ms-overflow-style: none; 
+    // scrollbar-width: none; 
+    height: 65vh;
+    width: 50vw;
+    .tripDetails-approval-block {
+      margin: 10pt;
+      .loading-approvals {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 15pt;
+      }
+      .role-trip-card {
+        .role-trip-card-header {
+          flex-direction: row;
+        }
+        .role-trip-list {
+          // flex-direction: row;
+        }
+      }
+      .role-trip-section {
+        .role-review {
+          .role-review-hotels {
+            .tripDetails-hotel-card {
+              .tripDetails-hotel-details {
+                flex-direction: row;
+              }
+            }
+            .role-travellers-hotel {
+              .role-traveller-container {
+                .role-traveller-block {
+                  .role-traveller-box {
+                    display: grid;
+                    grid-template-columns: 1fr 1fr;
+                    gap: 2.5pt;
+                  }
+                }
+              }
+              .role-trip-city {
+                margin: 10pt;
+              }
+            }
+          }
+          .role-review-flights {
+            .role-travellers-flight {
+              .role-traveller-container {
+                .role-traveller-block {
+                  border-radius: 8px;
+                  .role-traveller-box {
+                    display: grid;
+                    grid-template-columns: 1fr 1fr;
+                    gap: 2.5pt;
+                  }
+                }
+              }
+              .role-trip-city {
+                margin: 10pt;
+              }
+            }
+          }
+        }
+        .role-travellers {
+        }
+      }
+    }
+    .tripDetails-approval-manager {
+      ::-webkit-scrollbar {
+        display: none;
+      }
+      -ms-overflow-style: none; 
+      scrollbar-width: none; 
+      margin: 10pt;
+    }
+  }
+ 
+  .tripDetails-status-block {
+    .tripDetails-status-hotels {
+      .tripDetails-hotel-card {
+        .tripDetails-hotel-details {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          margin-bottom: 10pt;
+          flex-direction: row;
+        }
+      }
+    }
+  }
+  .booking-popup {
+    .tripDetails-traveller-tabs {
+      .tripDetails-traveller-tabs {
+        font-size: 12pt;
+      }
+    }
+  }
+}

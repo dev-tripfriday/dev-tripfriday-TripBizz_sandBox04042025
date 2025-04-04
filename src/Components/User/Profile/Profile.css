@@ -1,0 +1,113 @@
+.userProfile-container {
+  padding: 5pt;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.userProfile-container .userProfile-header {
+  font-size: 25pt;
+  font-weight: bolder;
+  text-align: center;
+}
+.userProfile-container .userProfile-body {
+  display: flex;
+  flex-direction: column;
+  width: 75vw;
+}
+.userProfile-container .userProfile-body .userProfile-edit {
+  display: flex;
+  justify-content: end;
+}
+.userProfile-container .userProfile-body .userProfile-edit button {
+  background: none;
+  border: 1px solid #001219;
+  font-size: 14pt;
+  border-radius: 0.8rem;
+  font-weight: bold;
+  padding: 5pt 10pt;
+}
+.userProfile-container .userProfile-body .userProfile-header-details {
+  font-size: 15pt;
+  font-weight: bold;
+  margin: 5pt;
+}
+.userProfile-container .userProfile-body .userProfile-data {
+  display: flex;
+  gap: 10pt;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 10px;
+}
+.userProfile-container .userProfile-body .userProfile-data .userProfile-data-section-email {
+  display: flex;
+}
+.userProfile-container .userProfile-body .userProfile-data .userProfile-data-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+}
+.userProfile-container .userProfile-body .userProfile-data .userProfile-data-section .userProfile-type-input {
+  padding: 10px 0px;
+  position: relative;
+}
+.userProfile-container .userProfile-body .userProfile-data .userProfile-data-section .userProfile-type-input input {
+  border: none;
+  box-shadow: 0.04rem 0.06rem 0.4rem rgba(0, 0, 0, 0.171);
+  border-radius: 0.5rem;
+  padding: 5pt 10pt;
+  font-size: 10pt;
+}
+.userProfile-container .userProfile-body .userProfile-data .userProfile-data-section .userProfile-type-input span {
+  position: absolute;
+  top: 15px;
+  left: 10px;
+}
+.userProfile-container .userProfile-body .userProfile-data .userProfile-data-section .userProfile-type-input .countryCode {
+  width: 3vw;
+  padding: 5px;
+  margin-right: 5pt;
+}
+.userProfile-container .userProfile-body .userProfile-data .userProfile-data-section .userProfile-type-link {
+  padding: 10px 0px;
+  position: relative;
+}
+.userProfile-container .userProfile-body .userProfile-data .userProfile-data-section .userProfile-type-link span {
+  cursor: pointer;
+  text-decoration: underline;
+  color: blue;
+}
+.userProfile-container .userProfile-body .userProfile-data .userProfile-documents .userProfile-type-input input {
+  width: 17vw;
+  padding: 5pt;
+}
+.userProfile-container .userProfile-body .userProfile-submit {
+  display: flex;
+  justify-content: end;
+  margin: 10px;
+}
+.userProfile-container .userProfile-body .userProfile-submit .userProfile-submit-btns {
+  display: flex;
+  gap: 10pt;
+}
+.userProfile-container .userProfile-body .userProfile-submit .userProfile-submit-btns button {
+  padding: 5pt;
+  background: #001219;
+  border: none;
+  border-radius: 0.8rem;
+  color: white;
+}
+.userProfile-container .userProfile-body .userProfile-submit .userProfile-submit-btns button:hover {
+  cursor: pointer;
+}
+
+@media screen and (width >= 700px) {
+  .userProfile-data {
+    display: grid !important;
+    grid-template-columns: 1fr 1fr;
+  }
+  .userProfile-data .userProfile-data-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}/*# sourceMappingURL=Profile.css.map */

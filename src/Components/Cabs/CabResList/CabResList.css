@@ -1,0 +1,35 @@
+.cabRes-header {
+  width: 100%;
+  padding: 5pt 15pt;
+  background-color: #001219;
+  border: 1px solid #001219;
+}
+
+.cabRes-header-destName {
+  color: white;
+  font-weight: bold;
+  font-size: 12pt;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.cabRes-header-destName .cabRes-header-destName-edit {
+  align-items: center;
+  background-color: #94D2BD;
+  border-radius: 50%;
+  color: #fff;
+  cursor: pointer;
+  display: flex;
+  font-size: 9pt;
+  height: 25px;
+  justify-content: center;
+  margin-left: 10px;
+  width: 25px;
+}
+
+.cabRes-header-othrDtls {
+  color: #dcdcdc;
+  font-size: 10pt;
+  font-weight: 700;
+}/*# sourceMappingURL=CabResList.css.map */

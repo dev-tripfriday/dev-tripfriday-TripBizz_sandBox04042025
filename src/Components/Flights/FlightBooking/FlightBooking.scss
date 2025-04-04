@@ -1,0 +1,884 @@
+@import "../../CommonStyles/CommonColors.scss";
+@import "../../CommonStyles/CommonStyles.scss";
+
+.flightBook-block {
+  padding: 15px 15px 100px 15px;
+  margin-bottom: 10vh;
+
+  .flightResults-block {
+    padding: 0;
+  }
+}
+.flightResults-nav-item-icon {
+  margin: 0 8px;
+}
+
+.flightResults-flightCards {
+  margin-bottom: 60px;
+  margin-top: 20px;
+}
+
+.flightBook-baggageMeals {
+  margin: 0;
+}
+.flightBook-baggageMeals-title {
+  font-size: 16pt;
+  font-weight: bold;
+  color: $primary;
+  margin-bottom: 10px;
+}
+.flightBook-baggageMeals-nav {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.flightBook-baggageMeals-navItem {
+  font-size: 12pt;
+  padding: 5px 15px;
+  border-radius: 1.2rem;
+  font-weight: bold;
+  border: 1px solid $primary;
+  margin-right: 10px;
+  color: $primary;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.flightBook-baggageMeals-navItem.flightBook-baggageMeals-navItem-selected {
+  background-color: $primary;
+  color: #ffff;
+}
+.flightBook-baggageMeals-section {
+  background-color: whitesmoke;
+  border-radius: 0.8rem;
+  padding: 15px;
+}
+.flightBook-baggageMeals-bag-title {
+  font-size: 14pt;
+  font-weight: bold;
+  color: $primary;
+  margin-bottom: 10px;
+}
+.flightBook-baggageMeals-bag-details-section {
+  // background-color: #fff;
+  // border-radius: 0.8rem;
+  // padding: 10px;
+  // box-shadow: 0.04rem 0.06rem 0.4rem rgba(0, 0, 0, 0.171);
+}
+.flightBook-baggageMeals-bag-route {
+  font-size: 12pt;
+  font-weight: bold;
+  color: $primary;
+  margin-bottom: 10px;
+}
+.flightBook-baggageMeals-bag-detail {
+  margin-bottom: 5px;
+  font-size: 12pt;
+  font-weight: bold;
+  color: rgb(80, 80, 80);
+
+  span {
+    margin-left: 8px;
+    font-size: 13pt;
+    color: $highlight;
+  }
+}
+.flightBook-baggageMeals-bag-detail-icon {
+  margin-right: 5px;
+}
+.flightBook-baggageMeals-bag-section {
+  margin-bottom: 10px;
+  // padding-bottom: 10px;
+  // border-bottom: 1px dashed rgb(150, 150, 150);
+  input,
+  select {
+    padding: 15px 20px;
+    border: none;
+    border-radius: 0.8rem;
+    background-color: rgb(221, 221, 221);
+    font-size: 12pt;
+    font-weight: bold;
+    width: 84vw;
+    margin-bottom: 10px;
+    option {
+      font-size: 9pt;
+    }
+  }
+}
+.flightBook-baggageMeals-bag-section.flightBook-baggageMeals-bag-section-last {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.flightBook-baggageMeals-meal-block {
+  padding-bottom: 10px;
+  .flightBook-baggageMeals-bag-section {
+    margin-bottom: 0;
+    .flightBook-baggageMeals-bag-section-select {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+}
+
+.flightBook-cancel {
+  margin-bottom: 30px;
+}
+.flightBook-cancel-title {
+  font-size: 16pt;
+  font-weight: bold;
+  color: $primary;
+  margin-bottom: 10px;
+}
+.flightBook-cancel-section {
+  padding: 15px;
+  background-color: whitesmoke;
+  border-radius: 0.8rem;
+}
+.flightBook-cancel-details {
+  margin-bottom: 8px;
+  padding-bottom: 8px;
+  border-bottom: 1px dashed rgb(150, 150, 150);
+}
+.flightBook-cancel-details.flightBook-cancel-details-last {
+  border: none;
+  padding-bottom: 0;
+}
+.flightBook-cancel-details-title {
+  font-size: 14pt;
+  font-weight: bold;
+  color: $primary;
+  margin-bottom: 8px;
+}
+.flightBook-cancel-details-text {
+  margin-bottom: 8px;
+  font-size: 11pt;
+  font-weight: bold;
+  color: rgb(100, 100, 100);
+
+  span {
+    display: block;
+    font-size: 12pt;
+    color: $highlight;
+    margin-top: 3px;
+  }
+  span.flightBook-cancel-details-text-details {
+    display: inline;
+  }
+}
+.flightBook-cancel-details-text-icon {
+  margin-right: 5px;
+}
+
+.flightBook-fare-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.flightBook-fare {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  box-shadow: $shadow1;
+  background-color: #ffff;
+  padding: 10px 15px 15px 15px;
+}
+.flightBook-fare-section {
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+  border-bottom: 1.5px solid rgb(150, 150, 150);
+}
+.flightBook-fare-openDtls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 5px;
+}
+.flightBook-fare-openDtls.flightBook-fare-openDtls-open {
+  .flightBook-fare-openDtls-icon {
+    transform: rotate(180deg);
+    transition: 0.2s ease-in-out;
+  }
+}
+.flightBook-fare-fareItem {
+  // display: grid;
+  grid-template-columns: 2fr 1fr;
+  margin-bottom: 5px;
+}
+.flightBook-fare-fareItem-section {
+  margin-bottom: 10px;
+}
+.flightBook-fare-fareItem-title {
+  text-align: left;
+  font-size: 12pt;
+  font-weight: bold;
+  color: rgb(80, 80, 80);
+
+  .flightBook-fare-fareItem-title-icon {
+    margin: 0 10px;
+    font-size: 10pt;
+  }
+}
+.flightBook-fare-fareItem-value {
+  text-align: right;
+  font-size: 13pt;
+  font-weight: bold;
+  color: $highlight;
+}
+.flightBook-fare-totalFare {
+  display: grid;
+  grid-template-columns: 3fr 2fr;
+  margin-top: 5px;
+}
+.flightBook-fare-totalFare-title {
+  text-align: left;
+  font-size: 14pt;
+  font-weight: bold;
+  color: $primary;
+}
+.flightBook-fare-totalFare-value {
+  text-align: right;
+  font-size: 15pt;
+  font-weight: bold;
+  color: $secondary;
+}
+.flightBook-fare-fareItem.flightBook-fare-fareItem-flightFare {
+  margin-bottom: 6px;
+  padding-bottom: 6px;
+  border-bottom: 1px dashed rgb(200, 200, 200);
+}
+
+.flightBook-seatMap {
+  margin-bottom: 20px;
+  padding: 15px 10px;
+  background-color: whitesmoke;
+  border-radius: 0.8rem;
+
+  .flightBook-seatMap-seats {
+    margin-bottom: 10px;
+    font-size: 14pt;
+    font-weight: bold;
+    color: rgb(80, 80, 80);
+
+    span {
+      margin-left: 10px;
+    }
+  }
+  button {
+    padding: 7pt 10pt;
+    font-size: 10pt;
+    font-weight: bold;
+    color: #ffff;
+    background-color: $primary;
+    border: none;
+    border-radius: 0.8rem;
+  }
+}
+.flightBook-selectSeats {
+  height: 100%;
+  // overflow-y: scroll;
+  max-height: 80vh;
+  overflow: hidden;
+}
+.flightBook-selectSeats-segNav {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  margin-bottom: 15px;
+}
+.flightBook-selectSeats-segNav-item {
+  margin-right: 10px;
+  margin-bottom: 10px;
+  padding: 5px 10px;
+  font-size: 9pt;
+  font-weight: bold;
+  color: $primary;
+  border: 1px solid $primary;
+  border-radius: 1.2rem;
+  cursor: pointer;
+}
+.flightBook-selectSeats-segNav-item.flightBook-selectSeats-segNav-item-selected {
+  background-color: $primary;
+  color: #ffff;
+}
+.flightBook-selectSeats-segSeatMap {
+  max-height: 80vh;
+  overflow-y: scroll;
+  padding-bottom: 100px;
+}
+.flightBook-selectSeats-segSeatMap-row {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 40px;
+  margin-bottom: 10px;
+  padding: 0px 30px;
+}
+.flightBook-selectSeats-segSeatMap-row-wingLeft {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 25px;
+  height: 25px;
+  border-right: 2px solid rgb(80, 80, 80);
+}
+.flightBook-selectSeats-segSeatMap-row-wingLeft.flightBook-selectSeats-segSeatMap-row-wingLeft-first {
+  border-top: 2px solid rgb(80, 80, 80);
+  border-top-right-radius: 0.4rem;
+}
+.flightBook-selectSeats-segSeatMap-row-wingLeft.flightBook-selectSeats-segSeatMap-row-wingLeft-last {
+  border-bottom: 2px solid rgb(80, 80, 80);
+  border-bottom-right-radius: 0.4rem;
+}
+.flightBook-selectSeats-segSeatMap-row-wingRight {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 25px;
+  height: 25px;
+  border-left: 2px solid rgb(80, 80, 80);
+}
+.flightBook-selectSeats-segSeatMap-row-wingRight.flightBook-selectSeats-segSeatMap-row-wingRight-first {
+  border-top: 2px solid rgb(80, 80, 80);
+  border-top-left-radius: 0.4rem;
+}
+.flightBook-selectSeats-segSeatMap-row-wingRight.flightBook-selectSeats-segSeatMap-row-wingRight-last {
+  border-bottom: 2px solid rgb(80, 80, 80);
+  border-bottom-left-radius: 0.4rem;
+}
+.flightBook-selectSeats-segSeatMap-exitRow {
+  position: relative;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0px 30px;
+}
+.flightBook-selectSeats-segSeatMap-exitRow-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 10px;
+  font-size: 11pt;
+  font-weight: bold;
+  color: rgb(184, 2, 2);
+  background-color: rgb(241, 220, 220);
+  border-radius: 0.2rem;
+  width: 100%;
+}
+
+.flightBook-selectSeats-segSeatMap-row-leftCol,
+.flightBook-selectSeats-segSeatMap-row-rightCol {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+.flightBook-selectSeats-segSeatMap-row-seat-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.flightBook-selectSeats-segSeatMap-row-seat-price {
+  font-size: 8pt;
+  font-weight: bold;
+}
+.flightBook-selectSeats-segSeatMap-row-seat {
+  height: 30px;
+  width: 30px;
+  background-color: whitesmoke;
+  border-radius: 0.4rem;
+  margin-bottom: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 8pt;
+  font-weight: bold;
+  color: rgb(80, 80, 80);
+  cursor: pointer;
+}
+.flightBook-selectSeats-segSeatMap-row-seat.flightBook-selectSeats-segSeatMap-row-seat-reserved {
+  background-color: rgb(141, 141, 141);
+}
+.flightBook-selectSeats-segSeatMap-row-seat.flightBook-selectSeats-segSeatMap-row-seat-open {
+  border: 1px solid rgb(80, 80, 80);
+}
+.flightBook-selectSeats-segSeatMap-row-seat.flightBook-selectSeats-segSeatMap-row-seat-selected {
+  background-color: rgba(0, 128, 0, 0.486);
+}
+.flightBook-selectSeats-segSeatMap-row-seat.flightBook-selectSeats-segSeatMap-row-seat-noSeat {
+  background: none;
+}
+
+.flightBook-seatMap-seats-routes {
+  margin-top: 10px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+.flightBook-seatMap-seats-route {
+  margin-right: 10px;
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 0.8rem;
+}
+.flightBook-seatMap-seats-route-title {
+  font-size: 8pt;
+  font-weight: bold;
+  color: $primary;
+  margin-bottom: 3px;
+
+  .flightBook-seatMap-seats-route-title-icon {
+    margin: 0 3px;
+  }
+}
+.flightBook-selectSeats-segSeatMap-selectedSeats {
+  margin-bottom: 15px;
+  background-color: whitesmoke;
+  padding: 10px;
+  border-radius: 0.8rem;
+
+  .flightBook-selectSeats-segSeatMap-selectedSeats-title {
+    font-size: 11pt;
+    font-weight: bold;
+    color: rgb(80, 80, 80);
+  }
+}
+.flightBook-seatMap-seats-route-seatCodes {
+  font-size: 11pt;
+  font-weight: bold;
+  color: $highlight;
+  margin: 5pt 2pt;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 7pt;
+  span {
+    border: 1px solid $primary;
+    color: $primary;
+    padding: 3pt;
+    border-radius: 0.4rem;
+  }
+}
+
+.flightBook-fare-desktop {
+  display: none;
+}
+.flightBook-submitTrip {
+  margin: 10px auto;
+  height: 70vh;
+  overflow-y: scroll;
+  .tripsPage-trip-card {
+    display: flex;
+    flex-direction: column;
+    box-shadow: $shadow1;
+    margin: 20px;
+    padding: 10px;
+    border-radius: 0.8rem;
+    span {
+      font-size: 20px;
+      text-align: center;
+    }
+  }
+}
+
+.flghtBook-fareRules {
+  margin: 10pt;
+  .flightBook-fareRules-header {
+    font-size: 16pt;
+    font-weight: bold;
+    color: $primary;
+    margin-bottom: 10px;
+  }
+  .flightBook-fareRules-section {
+    background-color: whitesmoke;
+    border-radius: 0.8rem;
+    padding: 15px;
+    overflow-y: scroll;
+    height: 55vh;
+    border-radius: 0.8rem;
+    margin: 0;
+  }
+  .flightBook-fareRules-imp {
+    padding: 6px 12px;
+    background-color: #ffe3d5;
+    margin: 10pt 0;
+    border-radius: 0.8rem;
+    width: 100%;
+    font-size: 10pt;
+    width: auto;
+    span {
+      color: $primary;
+      font-weight: 900;
+    }
+  }
+}
+
+.flightBook-fare-submit {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .flightBook-fare-existing {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    div {
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+      gap: 20px;
+      .hotelBook-addData {
+        padding: 5pt;
+        background-color: $primary;
+        color: #fff;
+        border-radius: 0.8rem;
+        border: none;
+      }
+      .hotelBook-back {
+        padding: 2pt;
+        background-color: $primary;
+        color: #fff;
+        border-radius: 0.8rem;
+        border: none;
+        font-size: 8pt;
+      }
+    }
+  }
+  button {
+    padding: 10px;
+    background-color: $primary;
+    color: #fff;
+    border-radius: 0.8rem;
+    border: none;
+    font-size: 10pt;
+    font-weight: bolder;
+  }
+}
+
+.hotelBook-submitTrip {
+  display: flex;
+  flex-direction: column;
+  margin: 10px auto;
+  height: 70vh;
+
+  button {
+    padding: 10px;
+    background-color: $primary;
+    color: #fff;
+    border-radius: 0.8rem;
+    border: none;
+    width: 50%;
+    margin: 10px auto;
+  }
+  .tripsPage-trip-card {
+    display: flex;
+    flex-direction: column;
+    box-shadow: $shadow1;
+    margin: 20px;
+    padding: 10px;
+    border-radius: 0.8rem;
+    span {
+      font-size: 20px;
+      text-align: center;
+    }
+  }
+}
+
+.hotelBook-addBtn {
+  margin: 5vh 0 12vh 0;
+  button {
+    border: none;
+    background: white;
+    padding: 10px;
+    border-radius: 0.8rem;
+  }
+}
+
+.hotelBook-add {
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  font-size: 18pt;
+  .spin {
+    padding: 10px 75px;
+    background: $primary;
+    border: none;
+    border-radius: 0.8rem;
+    color: white;
+    cursor: not-allowed;
+  }
+  .spinner {
+    border: 4px solid $highlight;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-left: 4px solid #3498db;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    animation: spin 1s linear infinite;
+    margin-top: -8px;
+    margin-left: -8px;
+    display: inline-block;
+    border-width: 2px;
+    margin-top: 5px;
+    cursor: not-allowed;
+  }
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  &.loading {
+    cursor: not-allowed;
+    opacity: 0.7;
+  }
+  textarea {
+    padding: 10px 20px;
+    margin: 10pt 0;
+    border-radius: 0.8rem;
+    border: 1px solid $primary;
+    background-color: rgb(246, 246, 246);
+    width: 100%;
+    font-size: 12pt;
+  }
+  span {
+    font-weight: bolder;
+    font-size: 15pt;
+    text-align: left;
+  }
+
+  button {
+    margin: 5px 0px;
+    background-color: $primary;
+    color: #fff;
+  }
+}
+
+.hotelBook-createNew {
+  height: 60vh;
+  width: 50vw;
+  overflow: hidden;
+  .hotelBook-bar {
+    display: flex;
+    button {
+      flex: 1;
+      padding: 10px;
+      background-color: #eee;
+      border: none;
+      cursor: pointer;
+    }
+    button.active {
+      background-color: #ddd;
+    }
+  }
+
+  .hotelBook-submit {
+    .hotelBook-submitTrip {
+      display: flex;
+      .tripsPage-createTrip-add {
+        overflow-y: scroll;
+        .tripsPage-change {
+          text-align: center;
+          font-weight: bolder;
+          font-size: 15pt;
+        }
+        .tripsPage-createTrip-header {
+          font-weight: bold;
+          display: flex;
+          justify-content: center;
+          font-size: 15pt;
+          font-weight: bolder;
+        }
+        .hotelBook-trip-card {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          border-radius: 0.8rem;
+          box-shadow: $shadow1;
+          padding: 10px;
+          margin: 5pt;
+          cursor: pointer;
+          span {
+            font-size: 12pt;
+            font-weight: bolder;
+          }
+          p {
+            font-size: 10pt;
+            color: $highlight;
+          }
+        }
+      }
+
+      .tripsPage-createTrip {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 10px;
+        font-weight: bolder;
+        font-size: 15pt;
+        button {
+          background-color: $highlightLite;
+          border-radius: 0.8rem;
+          padding: 8px;
+          border: 2px dashed #000000;
+          color: $primary;
+          margin: 4px 5px;
+          width: 100%;
+          height: 60px;
+          font-weight: bolder;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (width >= 700px) {
+  .flightBook-block {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    padding: 20px 50px;
+  }
+
+  .flightBook-baggageMeals {
+    margin-right: 85px;
+    margin-bottom: 30px;
+  }
+  .hotelBook-createNew {
+    width: 30vw;
+    .hotelBook-submit {
+      .hotelBook-submitTrip {
+        .tripsPage-createTrip-add {
+          .hotelBook-trip-card {
+            flex-direction: row;
+          }
+        }
+      }
+    }
+  }
+
+  .flightBook-header {
+    margin-bottom: 20px;
+  }
+  .flghtBook-fareRules {
+    .flightBook-fareRules-imp {
+      width: 61vw;
+    }
+  }
+
+  .flightBook-header-back-icon {
+    cursor: pointer;
+  }
+
+  .flightBook-fareRules {
+    margin-right: 85px;
+  }
+
+  .flightBook-cancel {
+    margin-right: 85px;
+  }
+
+  .flightBook-selectSeats {
+    width: 50%;
+  }
+
+  .flightBook-baggageMeals-section {
+    select {
+      width: 30vw;
+    }
+  }
+
+  .flightBook-baggageMeals-bag-block {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5rem;
+    margin-bottom: 10px;
+  }
+  .flightBook-fare-fareItem-value {
+    width: 10vw;
+  }
+  .flightBook-fare-totalFare-value {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    width: 10vw;
+  }
+  .flightBook-seatMap {
+    margin-right: 85px;
+  }
+  .flightBook-fare {
+    display: none;
+  }
+  .flightBook-fare-desktop {
+    width: 100%;
+    height: fit-content;
+    box-shadow: $shadow1;
+    background-color: #ffff;
+    padding: 12px 12px;
+    display: block;
+    margin-top: 55px;
+    border-radius: 0.8rem;
+  }
+
+  .flightBook-fare-section-desktop {
+    padding: 20px 10px;
+    border-bottom: 1.5px solid rgb(150, 150, 150);
+    border: none;
+    display: block;
+    border-radius: 0.8rem;
+  }
+  .flightBook-fare-totalFare {
+    padding: 0px 10px;
+  }
+
+  .flightBook-fare-submit {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+    .flightBook-fare-existing {
+      display: flex;
+      flex-direction: column;
+      margin: 10px;
+      div {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+        button {
+          padding: 5px;
+          background-color: $primary;
+          color: #fff;
+          border-radius: 0.8rem;
+          border: none;
+        }
+      }
+    }
+    button {
+      padding: 10px;
+      background-color: $primary;
+      color: #fff;
+      border-radius: 0.8rem;
+      border: none;
+      font-size: 14pt;
+    }
+  }
+
+  .flightBook-submitTrip {
+    margin: 5px;
+    button {
+      padding: 10px;
+      background-color: $primary;
+      color: #fff;
+      border-radius: 0.8rem;
+      border: none;
+    }
+  }
+}
